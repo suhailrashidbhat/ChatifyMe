@@ -14,6 +14,20 @@
 		0061574819EA3DF400C20203 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0061574719EA3DF400C20203 /* Images.xcassets */; };
 		0061574B19EA3DF400C20203 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0061574919EA3DF400C20203 /* LaunchScreen.xib */; };
 		0061575719EA3DF400C20203 /* ChatifyMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0061575619EA3DF400C20203 /* ChatifyMeTests.m */; };
+		0061576319EA406400C20203 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0061576219EA406400C20203 /* Parse.framework */; };
+		0061576419EA406400C20203 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0061576219EA406400C20203 /* Parse.framework */; };
+		0061576619EA410100C20203 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0061576519EA410100C20203 /* Accounts.framework */; };
+		0061576819EA410900C20203 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0061576719EA410900C20203 /* AudioToolbox.framework */; };
+		0061576A19EA411000C20203 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0061576919EA411000C20203 /* CFNetwork.framework */; };
+		0061576C19EA411900C20203 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0061576B19EA411900C20203 /* CoreGraphics.framework */; };
+		0061576E19EA412100C20203 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0061576D19EA412100C20203 /* CoreLocation.framework */; };
+		0061577019EA412D00C20203 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0061576F19EA412D00C20203 /* libz.dylib */; };
+		0061577219EA413600C20203 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0061577119EA413600C20203 /* MobileCoreServices.framework */; };
+		0061577419EA413D00C20203 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0061577319EA413D00C20203 /* QuartzCore.framework */; };
+		0061577619EA414600C20203 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0061577519EA414600C20203 /* Security.framework */; };
+		0061577819EA414E00C20203 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0061577719EA414E00C20203 /* Social.framework */; };
+		0061577A19EA415700C20203 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0061577919EA415700C20203 /* StoreKit.framework */; };
+		0061577C19EA416300C20203 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0061577B19EA416300C20203 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +54,19 @@
 		0061575019EA3DF400C20203 /* ChatifyMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatifyMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0061575519EA3DF400C20203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0061575619EA3DF400C20203 /* ChatifyMeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatifyMeTests.m; sourceTree = "<group>"; };
+		0061576219EA406400C20203 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		0061576519EA410100C20203 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		0061576719EA410900C20203 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0061576919EA411000C20203 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		0061576B19EA411900C20203 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0061576D19EA412100C20203 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0061576F19EA412D00C20203 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		0061577119EA413600C20203 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		0061577319EA413D00C20203 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0061577519EA414600C20203 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0061577719EA414E00C20203 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		0061577919EA415700C20203 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		0061577B19EA416300C20203 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +74,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0061577C19EA416300C20203 /* SystemConfiguration.framework in Frameworks */,
+				0061577A19EA415700C20203 /* StoreKit.framework in Frameworks */,
+				0061577819EA414E00C20203 /* Social.framework in Frameworks */,
+				0061577619EA414600C20203 /* Security.framework in Frameworks */,
+				0061577419EA413D00C20203 /* QuartzCore.framework in Frameworks */,
+				0061577219EA413600C20203 /* MobileCoreServices.framework in Frameworks */,
+				0061577019EA412D00C20203 /* libz.dylib in Frameworks */,
+				0061576E19EA412100C20203 /* CoreLocation.framework in Frameworks */,
+				0061576C19EA411900C20203 /* CoreGraphics.framework in Frameworks */,
+				0061576A19EA411000C20203 /* CFNetwork.framework in Frameworks */,
+				0061576819EA410900C20203 /* AudioToolbox.framework in Frameworks */,
+				0061576619EA410100C20203 /* Accounts.framework in Frameworks */,
+				0061576319EA406400C20203 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0061576419EA406400C20203 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				0061573919EA3DF400C20203 /* ChatifyMe */,
+				0061576119EA3FAE00C20203 /* Frameworks */,
+				0061576019EA3F8100C20203 /* Libraries */,
 				0061575319EA3DF400C20203 /* ChatifyMeTests */,
 				0061573819EA3DF400C20203 /* Products */,
 			);
@@ -117,6 +160,34 @@
 				0061575519EA3DF400C20203 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0061576019EA3F8100C20203 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			path = ChatifyMe;
+			sourceTree = "<group>";
+		};
+		0061576119EA3FAE00C20203 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0061577B19EA416300C20203 /* SystemConfiguration.framework */,
+				0061577919EA415700C20203 /* StoreKit.framework */,
+				0061577719EA414E00C20203 /* Social.framework */,
+				0061577519EA414600C20203 /* Security.framework */,
+				0061577319EA413D00C20203 /* QuartzCore.framework */,
+				0061577119EA413600C20203 /* MobileCoreServices.framework */,
+				0061576F19EA412D00C20203 /* libz.dylib */,
+				0061576D19EA412100C20203 /* CoreLocation.framework */,
+				0061576B19EA411900C20203 /* CoreGraphics.framework */,
+				0061576919EA411000C20203 /* CFNetwork.framework */,
+				0061576719EA410900C20203 /* AudioToolbox.framework */,
+				0061576519EA410100C20203 /* Accounts.framework */,
+				0061576219EA406400C20203 /* Parse.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,6 +416,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ChatifyMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,6 +430,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ChatifyMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -368,6 +447,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -387,6 +467,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = ChatifyMeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
