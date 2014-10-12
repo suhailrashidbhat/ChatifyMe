@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
-@interface ViewController : UIViewController<UITextFieldDelegate>
+@interface ViewController : UIViewController<UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate>
 
+-(void) registerForKeyboardNotifications;
+-(void) freeKeyboardNotifications;
+-(void) keyboardWasShown:(NSNotification*)aNotification;
+-(void) keyboardWillHide:(NSNotification*)aNotification;
 
 @end
 

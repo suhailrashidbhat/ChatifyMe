@@ -14,8 +14,6 @@
 		0061574819EA3DF400C20203 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0061574719EA3DF400C20203 /* Images.xcassets */; };
 		0061574B19EA3DF400C20203 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0061574919EA3DF400C20203 /* LaunchScreen.xib */; };
 		0061575719EA3DF400C20203 /* ChatifyMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0061575619EA3DF400C20203 /* ChatifyMeTests.m */; };
-		0061576319EA406400C20203 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0061576219EA406400C20203 /* Parse.framework */; };
-		0061576419EA406400C20203 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0061576219EA406400C20203 /* Parse.framework */; };
 		0061576619EA410100C20203 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0061576519EA410100C20203 /* Accounts.framework */; };
 		0061576819EA410900C20203 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0061576719EA410900C20203 /* AudioToolbox.framework */; };
 		0061576A19EA411000C20203 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0061576919EA411000C20203 /* CFNetwork.framework */; };
@@ -35,6 +33,8 @@
 		0061578819EA4C0100C20203 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 0061578619EA4C0100C20203 /* user.png */; };
 		0061578A19EA503500C20203 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0061578919EA503500C20203 /* Bolts.framework */; };
 		0061579519EA5CA300C20203 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0061579419EA5CA300C20203 /* Foundation.framework */; };
+		0061579B19EA6CB400C20203 /* ChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0061579A19EA6CB400C20203 /* ChatCell.m */; };
+		0061579D19EA7BB400C20203 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0061579C19EA7BB400C20203 /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +61,6 @@
 		0061575019EA3DF400C20203 /* ChatifyMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatifyMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0061575519EA3DF400C20203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0061575619EA3DF400C20203 /* ChatifyMeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatifyMeTests.m; sourceTree = "<group>"; };
-		0061576219EA406400C20203 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		0061576519EA410100C20203 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		0061576719EA410900C20203 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		0061576919EA411000C20203 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -82,6 +81,9 @@
 		0061578619EA4C0100C20203 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		0061578919EA503500C20203 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../Downloads/parse-library-1/Bolts.framework"; sourceTree = "<group>"; };
 		0061579419EA5CA300C20203 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0061579919EA6CB400C20203 /* ChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatCell.h; sourceTree = "<group>"; };
+		0061579A19EA6CB400C20203 /* ChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatCell.m; sourceTree = "<group>"; };
+		0061579C19EA7BB400C20203 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				0061578A19EA503500C20203 /* Bolts.framework in Frameworks */,
 				0061577C19EA416300C20203 /* SystemConfiguration.framework in Frameworks */,
 				0061577A19EA415700C20203 /* StoreKit.framework in Frameworks */,
+				0061579D19EA7BB400C20203 /* Parse.framework in Frameworks */,
 				0061577819EA414E00C20203 /* Social.framework in Frameworks */,
 				0061577619EA414600C20203 /* Security.framework in Frameworks */,
 				0061577419EA413D00C20203 /* QuartzCore.framework in Frameworks */,
@@ -103,7 +106,6 @@
 				0061576A19EA411000C20203 /* CFNetwork.framework in Frameworks */,
 				0061576819EA410900C20203 /* AudioToolbox.framework in Frameworks */,
 				0061576619EA410100C20203 /* Accounts.framework in Frameworks */,
-				0061576319EA406400C20203 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,7 +113,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0061576419EA406400C20203 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,13 +143,11 @@
 		0061573919EA3DF400C20203 /* ChatifyMe */ = {
 			isa = PBXGroup;
 			children = (
+				0061579819EA6C8700C20203 /* Modal */,
+				0061579719EA6C8100C20203 /* Views */,
+				0061579619EA6C7A00C20203 /* Controllers */,
 				0061573E19EA3DF400C20203 /* AppDelegate.h */,
 				0061573F19EA3DF400C20203 /* AppDelegate.m */,
-				0061574119EA3DF400C20203 /* ViewController.h */,
-				0061574219EA3DF400C20203 /* ViewController.m */,
-				0061577D19EA4A3000C20203 /* LoginViewController.h */,
-				0061577E19EA4A3000C20203 /* LoginViewController.m */,
-				0061577F19EA4A3000C20203 /* LoginViewController.xib */,
 				0061574419EA3DF400C20203 /* Main.storyboard */,
 				0061574719EA3DF400C20203 /* Images.xcassets */,
 				0061574919EA3DF400C20203 /* LaunchScreen.xib */,
@@ -194,6 +193,7 @@
 		0061576119EA3FAE00C20203 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0061579C19EA7BB400C20203 /* Parse.framework */,
 				0061579419EA5CA300C20203 /* Foundation.framework */,
 				0061578919EA503500C20203 /* Bolts.framework */,
 				0061577B19EA416300C20203 /* SystemConfiguration.framework */,
@@ -208,7 +208,6 @@
 				0061576919EA411000C20203 /* CFNetwork.framework */,
 				0061576719EA410900C20203 /* AudioToolbox.framework */,
 				0061576519EA410100C20203 /* Accounts.framework */,
-				0061576219EA406400C20203 /* Parse.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -221,6 +220,34 @@
 				0061578319EA4AE100C20203 /* ChatifymeBG.jpg */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		0061579619EA6C7A00C20203 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0061574119EA3DF400C20203 /* ViewController.h */,
+				0061574219EA3DF400C20203 /* ViewController.m */,
+				0061577D19EA4A3000C20203 /* LoginViewController.h */,
+				0061577E19EA4A3000C20203 /* LoginViewController.m */,
+				0061577F19EA4A3000C20203 /* LoginViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		0061579719EA6C8100C20203 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0061579919EA6CB400C20203 /* ChatCell.h */,
+				0061579A19EA6CB400C20203 /* ChatCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		0061579819EA6C8700C20203 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Modal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +357,7 @@
 				0061578019EA4A3000C20203 /* LoginViewController.m in Sources */,
 				0061574319EA3DF400C20203 /* ViewController.m in Sources */,
 				0061574019EA3DF400C20203 /* AppDelegate.m in Sources */,
+				0061579B19EA6CB400C20203 /* ChatCell.m in Sources */,
 				0061573D19EA3DF400C20203 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,7 +434,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -442,7 +470,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

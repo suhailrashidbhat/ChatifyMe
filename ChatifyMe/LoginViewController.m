@@ -15,7 +15,7 @@
 
 @property (strong, nonatomic) IBOutlet UITextField *userNameField;
 @property (strong, nonatomic) IBOutlet UIButton *enterChatButton;
-
+@property (nonatomic, strong) UIAlertView *alert;
 
 @end
 
@@ -26,15 +26,23 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.userNameField.text = nil;
+    [self.userNameField becomeFirstResponder];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-
+    if ([segue.identifier isEqualToString:@"showChatView"]) {
+        [self enterChat];
+    }
 }
-- (IBAction)enterChat:(id)sender {
+
+- (void)enterChat {
     // Create a User in parse.
     PFUser *user = [PFUser user];
     if ([self validateUserNameField]) {
@@ -47,8 +55,9 @@
 
         [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
             if (!error) {
-                // Hooray! Let them use the app now.
-                [self loginTheUserToChat:user];
+                self.alert = [[UIAlertView alloc] initWithTitle:@"Logging In..." message:@"Please wait" delegate:self cancelButtonTitle:@"" otherButtonTitles:nil];
+                [self.alert show];
+                [self performSelector:@selector(loginTheUserToChat:) withObject:user afterDelay:0.3];
             } else {
                 NSString *errorString = [error userInfo][@"error"];
                 NSLog(@"%@", errorString);
@@ -76,12 +85,8 @@
 
 -(void)loginTheUserToChat:(PFUser*)userToRegister {
     [PFUser logInWithUsernameInBackground:userToRegister.username password:userToRegister.password block:^(PFUser *user, NSError *error) {
-         [self enterChatView];
+         [self.alert dismissWithClickedButtonIndex:0 animated:YES];
     }];
-}
-
--(void)enterChatView {
-    [self performSegueWithIdentifier:@"showChatView" sender:self];
 }
 
 

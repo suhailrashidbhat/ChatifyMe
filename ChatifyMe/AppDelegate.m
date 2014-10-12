@@ -41,7 +41,11 @@
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    // Delete the user and log him out from Parse
+    PFUser *cUser = [PFUser currentUser];
+    [PFUser logOut];
+    PFQuery *query = [PFQuery queryWithClassName:@"User"];
+    [query delete:cUser];
 }
 
 @end
