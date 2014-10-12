@@ -7,7 +7,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="chatView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,7 +21,7 @@
                                 <color key="backgroundColor" red="0.6352248415510845" green="1" blue="0.458735555600428" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Ha3-AR-u3J">
-                                <rect key="frame" x="0.0" y="1" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="480"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DUt-i1-03C">
@@ -35,6 +35,15 @@
                                     <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9V-Rc-SV2">
+                                <rect key="frame" x="235" y="20" width="73" height="20"/>
+                                <state key="normal" title="LogOut">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logOut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fbe-Uo-iFq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -42,18 +51,19 @@
                     <size key="freeformSize" width="600" height="600"/>
                     <connections>
                         <outlet property="chatTable" destination="Ha3-AR-u3J" id="TGO-7h-ru9"/>
+                        <outlet property="lgoutButton" destination="g9V-Rc-SV2" id="vLj-KD-K96"/>
                         <outlet property="sendButton" destination="ZRb-YB-i3X" id="TJ8-g0-Jfd"/>
                         <outlet property="textField" destination="DUt-i1-03C" id="Yhz-j9-ePk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="215" y="335"/>
+            <point key="canvasLocation" x="356" y="166"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="4O0-nF-4dE">
             <objects>
-                <viewController id="Uud-1u-3Ek" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Uud-1u-3Ek" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WXh-Gd-04a"/>
                         <viewControllerLayoutGuide type="bottom" id="pWl-uR-pNi"/>
@@ -90,15 +100,21 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="152-o0-us2"/>
+                                    <action selector="enterChat:" destination="Uud-1u-3Ek" eventType="touchUpInside" id="t7L-aJ-yIk"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="showChatView" id="JLI-4L-fOh"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="enterChatButton" destination="hy3-kp-ybs" id="WWL-cZ-Vrp"/>
+                        <outlet property="userNameField" destination="SiB-5E-FzJ" id="lgw-de-ceh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eUC-2p-T1u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-74" y="182"/>
         </scene>
     </scenes>
     <resources>

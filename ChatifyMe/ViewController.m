@@ -14,6 +14,7 @@
 @property (strong, nonatomic) IBOutlet UITextField *textField;
 @property (strong, nonatomic) IBOutlet UIButton *sendButton;
 @property (strong, nonatomic) IBOutlet UITableView *chatTable;
+@property (strong, nonatomic) IBOutlet UIButton *lgoutButton;
 
 @end
 
@@ -72,21 +73,25 @@
     [UIView setAnimationDuration:0.3]; // if you want to slide up the view
 
     CGRect rect = self.view.frame;
+    CGRect rectForLogoutButton = self.lgoutButton.frame;
     if (movedUp)
     {
         // 1. move the view's origin up so that the text field that will be hidden come above the keyboard
         // 2. increase the size of the view so that the area behind the keyboard is covered up.
+        rectForLogoutButton.origin.y += kOFFSET_FOR_KEYBOARD;
         rect.origin.y -= kOFFSET_FOR_KEYBOARD;
         rect.size.height += kOFFSET_FOR_KEYBOARD;
     }
     else
     {
         // revert back to the normal state.
+        rectForLogoutButton.origin.y -= kOFFSET_FOR_KEYBOARD;
         rect.origin.y += kOFFSET_FOR_KEYBOARD;
         rect.size.height -= kOFFSET_FOR_KEYBOARD;
     }
     self.view.frame = rect;
-
+    self.lgoutButton.frame = rectForLogoutButton;
+    
     [UIView commitAnimations];
 }
 
@@ -118,4 +123,8 @@
                                                     name:UIKeyboardWillHideNotification
                                                   object:nil];
 }
+
+- (IBAction)logOut:(id)sender {
+}
+
 @end

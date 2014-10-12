@@ -34,6 +34,7 @@
 		0061578719EA4C0100C20203 /* chat.png in Resources */ = {isa = PBXBuildFile; fileRef = 0061578519EA4C0100C20203 /* chat.png */; };
 		0061578819EA4C0100C20203 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 0061578619EA4C0100C20203 /* user.png */; };
 		0061578A19EA503500C20203 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0061578919EA503500C20203 /* Bolts.framework */; };
+		0061579519EA5CA300C20203 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0061579419EA5CA300C20203 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		0061578519EA4C0100C20203 /* chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat.png; sourceTree = "<group>"; };
 		0061578619EA4C0100C20203 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		0061578919EA503500C20203 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../Downloads/parse-library-1/Bolts.framework"; sourceTree = "<group>"; };
+		0061579419EA5CA300C20203 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0061579519EA5CA300C20203 /* Foundation.framework in Frameworks */,
 				0061578A19EA503500C20203 /* Bolts.framework in Frameworks */,
 				0061577C19EA416300C20203 /* SystemConfiguration.framework in Frameworks */,
 				0061577A19EA415700C20203 /* StoreKit.framework in Frameworks */,
@@ -191,6 +194,7 @@
 		0061576119EA3FAE00C20203 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0061579419EA5CA300C20203 /* Foundation.framework */,
 				0061578919EA503500C20203 /* Bolts.framework */,
 				0061577B19EA416300C20203 /* SystemConfiguration.framework */,
 				0061577919EA415700C20203 /* StoreKit.framework */,
