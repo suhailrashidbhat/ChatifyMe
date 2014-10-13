@@ -14,7 +14,10 @@
 @interface LoginViewController ()
 
 @property (strong, nonatomic) IBOutlet UITextField *userNameField;
+@property (strong, nonatomic) IBOutlet UITextField *passwordField;
 @property (strong, nonatomic) IBOutlet UIButton *enterChatButton;
+@property (strong, nonatomic) IBOutlet UIButton *signUpButton;
+
 @property (nonatomic, strong) UIAlertView *alert;
 
 @end

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScringoPanelCell" id="bgl-Bd-Woj" customClass="ScringoPanelViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bgl-Bd-Woj" id="uqY-Ll-3xx">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jr2-ko-PS6">
+                        <rect key="frame" x="13" y="10" width="23" height="23"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="P1u-IN-daz"/>
+                            <constraint firstAttribute="width" constant="23" id="W4Q-Xf-qDv"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbp-wM-0pq" userLabel="Label - name">
+                        <rect key="frame" x="44" y="11" width="212" height="21"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Vkr-uI-ZXM"/>
+                            <constraint firstAttribute="width" priority="750" constant="198" id="xWS-zT-Ava"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_DashboardBadge1.png" translatesAutoresizingMaskIntoConstraints="NO" id="SUI-J4-13V" userLabel="Image View - badge">
+                        <rect key="frame" x="265" y="11" width="24" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="033-xB-5nq"/>
+                            <constraint firstAttribute="height" constant="21" id="NYN-id-CRR"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZZ-x5-ILL" userLabel="Label - badge">
+                        <rect key="frame" x="268" y="12" width="18" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="18" id="cdt-2x-1QU"/>
+                            <constraint firstAttribute="height" constant="18" id="gKe-dC-sn8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_DashbaordArrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="6Ry-PS-j4y" userLabel="Image View - more">
+                        <rect key="frame" x="300" y="16" width="7" height="12"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="7" id="3gp-jd-5Ot"/>
+                            <constraint firstAttribute="height" constant="12" id="Yra-fI-D5N"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_DashLine.png" translatesAutoresizingMaskIntoConstraints="NO" id="D4j-Df-nne" userLabel="Image View - line">
+                        <rect key="frame" x="0.0" y="43" width="320" height="2"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="oEq-88-e8o"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="dZZ-x5-ILL" firstAttribute="centerX" secondItem="SUI-J4-13V" secondAttribute="centerX" id="79w-Vf-dMh"/>
+                <constraint firstItem="D4j-Df-nne" firstAttribute="top" secondItem="bgl-Bd-Woj" secondAttribute="top" constant="43" id="8QH-mz-u1S"/>
+                <constraint firstItem="SUI-J4-13V" firstAttribute="top" secondItem="bgl-Bd-Woj" secondAttribute="top" constant="11" id="9lv-si-5QS"/>
+                <constraint firstItem="hbp-wM-0pq" firstAttribute="top" secondItem="bgl-Bd-Woj" secondAttribute="top" constant="11" id="CF6-df-wWu"/>
+                <constraint firstItem="jr2-ko-PS6" firstAttribute="top" secondItem="bgl-Bd-Woj" secondAttribute="top" constant="10" id="Cgc-BN-CrT"/>
+                <constraint firstItem="D4j-Df-nne" firstAttribute="leading" secondItem="bgl-Bd-Woj" secondAttribute="leading" id="E6o-1g-eaZ"/>
+                <constraint firstItem="hbp-wM-0pq" firstAttribute="leading" secondItem="jr2-ko-PS6" secondAttribute="trailing" constant="8" symbolic="YES" id="G1m-gY-Y4C"/>
+                <constraint firstItem="SUI-J4-13V" firstAttribute="leading" secondItem="hbp-wM-0pq" secondAttribute="trailing" constant="9" id="KK8-f0-btt"/>
+                <constraint firstItem="dZZ-x5-ILL" firstAttribute="centerY" secondItem="SUI-J4-13V" secondAttribute="centerY" id="Oi6-fb-IWL"/>
+                <constraint firstAttribute="trailing" secondItem="6Ry-PS-j4y" secondAttribute="trailing" constant="13" id="QiJ-dg-fy7"/>
+                <constraint firstItem="jr2-ko-PS6" firstAttribute="leading" secondItem="bgl-Bd-Woj" secondAttribute="leading" constant="13" id="R0a-OF-ax3"/>
+                <constraint firstItem="SUI-J4-13V" firstAttribute="bottom" secondItem="hbp-wM-0pq" secondAttribute="bottom" id="Vht-tJ-WMx"/>
+                <constraint firstItem="6Ry-PS-j4y" firstAttribute="leading" secondItem="SUI-J4-13V" secondAttribute="trailing" constant="11" id="hfg-Pm-JmG"/>
+                <constraint firstAttribute="trailing" secondItem="D4j-Df-nne" secondAttribute="trailing" id="q5x-GP-G30"/>
+                <constraint firstItem="6Ry-PS-j4y" firstAttribute="top" secondItem="bgl-Bd-Woj" secondAttribute="top" constant="16" id="rqZ-zZ-Tiq"/>
+            </constraints>
+            <connections>
+                <outlet property="badgeImage" destination="SUI-J4-13V" id="S1d-Lf-QgV"/>
+                <outlet property="badgeLabel" destination="dZZ-x5-ILL" id="kmC-SK-KSX"/>
+                <outlet property="titleIcon" destination="jr2-ko-PS6" id="yiB-MP-YsE"/>
+                <outlet property="titleLabel" destination="hbp-wM-0pq" id="4Ky-Ef-rFM"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Scringo.bundle/images/dark2/ScrImg_DashLine.png" width="320" height="2"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_DashbaordArrow.png" width="320" height="2"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_DashboardBadge1.png" width="320" height="2"/>
+    </resources>
+</document>

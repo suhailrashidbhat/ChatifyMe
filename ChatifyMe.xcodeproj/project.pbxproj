@@ -35,6 +35,7 @@
 		0061579519EA5CA300C20203 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0061579419EA5CA300C20203 /* Foundation.framework */; };
 		0061579B19EA6CB400C20203 /* ChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0061579A19EA6CB400C20203 /* ChatCell.m */; };
 		0061579D19EA7BB400C20203 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0061579C19EA7BB400C20203 /* Parse.framework */; };
+		00F1F8C119EC339B00FDBC4E /* Scringo in Resources */ = {isa = PBXBuildFile; fileRef = 00F1F8C019EC339B00FDBC4E /* Scringo */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		0061579919EA6CB400C20203 /* ChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatCell.h; sourceTree = "<group>"; };
 		0061579A19EA6CB400C20203 /* ChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatCell.m; sourceTree = "<group>"; };
 		0061579C19EA7BB400C20203 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		00F1F8C019EC339B00FDBC4E /* Scringo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scringo; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 		0061576019EA3F8100C20203 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				00F1F8C019EC339B00FDBC4E /* Scringo */,
 			);
 			name = Libraries;
 			path = ChatifyMe;
@@ -334,6 +337,7 @@
 				0061574619EA3DF400C20203 /* Main.storyboard in Resources */,
 				0061578419EA4AE100C20203 /* ChatifymeBG.jpg in Resources */,
 				0061574B19EA3DF400C20203 /* LaunchScreen.xib in Resources */,
+				00F1F8C119EC339B00FDBC4E /* Scringo in Resources */,
 				0061578819EA4C0100C20203 /* user.png in Resources */,
 				0061574819EA3DF400C20203 /* Images.xcassets in Resources */,
 				0061578719EA4C0100C20203 /* chat.png in Resources */,

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScringoStickersKeyboardView">
+            <connections>
+                <outlet property="bgImageView" destination="68" id="79"/>
+                <outlet property="pageControl" destination="8" id="33"/>
+                <outlet property="stickersScrollView" destination="13" id="32"/>
+                <outlet property="toolbarBgImageView" destination="51" id="80"/>
+                <outlet property="toolbarScrollView" destination="35" id="48"/>
+                <outlet property="topLevelView" destination="1" id="30"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_KeyboardBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="68" customClass="ScringoResizableView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="172"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <scrollView contentMode="scaleToFill" pagingEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13" userLabel="Stickers Scroll View">
+                    <rect key="frame" x="0.0" y="8" width="320" height="124"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="8">
+                    <rect key="frame" x="141" y="135" width="39" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="pageIndicatorTintColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="pageChanged:" destination="-1" eventType="valueChanged" id="34"/>
+                    </connections>
+                </pageControl>
+                <imageView contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_TabIconsBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="51" customClass="ScringoResizableView">
+                    <rect key="frame" x="0.0" y="172" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <scrollView contentMode="scaleToFill" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35" userLabel="Toolbar Scroll View">
+                    <rect key="frame" x="0.0" y="172" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="50"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="8" secondAttribute="centerX" id="12"/>
+                <constraint firstItem="13" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="16"/>
+                <constraint firstItem="13" firstAttribute="top" secondItem="1" secondAttribute="top" constant="8" id="18"/>
+                <constraint firstItem="8" firstAttribute="top" secondItem="13" secondAttribute="bottom" constant="3" id="20"/>
+                <constraint firstItem="13" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="24"/>
+                <constraint firstItem="35" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="41"/>
+                <constraint firstItem="35" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="44"/>
+                <constraint firstItem="35" firstAttribute="bottom" secondItem="1" secondAttribute="bottom" id="45"/>
+                <constraint firstItem="35" firstAttribute="top" secondItem="8" secondAttribute="bottom" id="46"/>
+                <constraint firstItem="68" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="73"/>
+                <constraint firstItem="68" firstAttribute="top" secondItem="1" secondAttribute="top" id="75"/>
+                <constraint firstItem="68" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="76"/>
+                <constraint firstItem="68" firstAttribute="bottom" secondItem="8" secondAttribute="bottom" id="78"/>
+                <constraint firstItem="51" firstAttribute="top" secondItem="35" secondAttribute="top" id="83"/>
+                <constraint firstItem="51" firstAttribute="bottom" secondItem="35" secondAttribute="bottom" id="84"/>
+                <constraint firstItem="51" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="86"/>
+                <constraint firstItem="51" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="87"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Scringo.bundle/images/dark2/ScrImg_KeyboardBg.png" width="16" height="16"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_TabIconsBg.png" width="16" height="16"/>
+    </resources>
+</document>

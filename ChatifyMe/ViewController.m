@@ -37,59 +37,59 @@
     [self.textField becomeFirstResponder];
     [self loadChat];
     [self.view setFrame:CGRectMake(0, 0, 320, 480)];
-    //[self registerForKeyboardNotifications];
+    [self registerForKeyboardNotifications];
 }
 
 
-//-(void) keyboardWasShown:(NSNotification*)aNotification
-//{
-//    NSLog(@"Keyboard was shown");
-//    NSDictionary* info = [aNotification userInfo];
-//
-//    NSTimeInterval animationDuration;
-//    UIViewAnimationCurve animationCurve;
-//    CGRect keyboardFrame;
-//    [[info objectForKey:UIKeyboardAnimationCurveUserInfoKey] getValue:&animationCurve];
-//    [[info objectForKey:UIKeyboardAnimationDurationUserInfoKey] getValue:&animationDuration];
-//    [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] getValue:&keyboardFrame];
-//
-//    [UIView beginAnimations:nil context:nil];
-//    [UIView setAnimationDuration:animationDuration];
-//    [UIView setAnimationCurve:animationCurve];
-//    [self.view setFrame:CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y- keyboardFrame.size.height, self.view.frame.size.width, self.view.frame.size.height - keyboardFrame.size.height )];
-//    [self.sendButton setFrame:CGRectMake(self.sendButton.frame.origin.x, self.textField.frame.origin.y , self.sendButton.frame.size.width, self.sendButton.frame.size.height)];
-//
-//    [UIView commitAnimations];
-//
-//}
+-(void) keyboardWasShown:(NSNotification*)aNotification
+{
+    NSLog(@"Keyboard was shown");
+    NSDictionary* info = [aNotification userInfo];
 
-//-(void) keyboardWillHide:(NSNotification*)aNotification
-//{
-//    NSLog(@"Keyboard will hide");
-//    NSDictionary* info = [aNotification userInfo];
-//
-//    NSTimeInterval animationDuration;
-//    UIViewAnimationCurve animationCurve;
-//    CGRect keyboardFrame;
-//    [[info objectForKey:UIKeyboardAnimationCurveUserInfoKey] getValue:&animationCurve];
-//    [[info objectForKey:UIKeyboardAnimationDurationUserInfoKey] getValue:&animationDuration];
-//    [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] getValue:&keyboardFrame];
-//
-//    [UIView beginAnimations:nil context:nil];
-//    [UIView setAnimationDuration:animationDuration];
-//    [UIView setAnimationCurve:animationCurve];
-//    [self.view setFrame:CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y + keyboardFrame.size.height, self.view.frame.size.width, self.view.frame.size.height +  - keyboardFrame.size.height)];
-//
-//    [UIView commitAnimations];
-//
-//    [self.textField performSelector:@selector(becomeFirstResponder) withObject:nil afterDelay:2];
-//
-//}
+    NSTimeInterval animationDuration;
+    UIViewAnimationCurve animationCurve;
+    CGRect keyboardFrame;
+    [[info objectForKey:UIKeyboardAnimationCurveUserInfoKey] getValue:&animationCurve];
+    [[info objectForKey:UIKeyboardAnimationDurationUserInfoKey] getValue:&animationDuration];
+    [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] getValue:&keyboardFrame];
+
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:animationDuration];
+    [UIView setAnimationCurve:animationCurve];
+    [self.view setFrame:CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y- keyboardFrame.size.height, self.view.frame.size.width, self.view.frame.size.height - keyboardFrame.size.height )];
+    [self.sendButton setFrame:CGRectMake(self.sendButton.frame.origin.x, self.textField.frame.origin.y , self.sendButton.frame.size.width, self.sendButton.frame.size.height)];
+
+    [UIView commitAnimations];
+
+}
+
+-(void) keyboardWillHide:(NSNotification*)aNotification
+{
+    NSLog(@"Keyboard will hide");
+    NSDictionary* info = [aNotification userInfo];
+
+    NSTimeInterval animationDuration;
+    UIViewAnimationCurve animationCurve;
+    CGRect keyboardFrame;
+    [[info objectForKey:UIKeyboardAnimationCurveUserInfoKey] getValue:&animationCurve];
+    [[info objectForKey:UIKeyboardAnimationDurationUserInfoKey] getValue:&animationDuration];
+    [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] getValue:&keyboardFrame];
+
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:animationDuration];
+    [UIView setAnimationCurve:animationCurve];
+    [self.view setFrame:CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y + keyboardFrame.size.height, self.view.frame.size.width, self.view.frame.size.height +  - keyboardFrame.size.height)];
+
+    [UIView commitAnimations];
+
+    [self.textField performSelector:@selector(becomeFirstResponder) withObject:nil afterDelay:2];
+
+}
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-   // [self freeKeyboardNotifications];
+    [self freeKeyboardNotifications];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -128,18 +128,18 @@
 }
 
 
-//-(void) registerForKeyboardNotifications
-//{
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWasShown:) name:UIKeyboardWillShowNotification object:nil];
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
-//}
-//
-//
-//-(void) freeKeyboardNotifications
-//{
-//    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
-//    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillHideNotification object:nil];
-//}
+-(void) registerForKeyboardNotifications
+{
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWasShown:) name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
+}
+
+
+-(void) freeKeyboardNotifications
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillHideNotification object:nil];
+}
 
 
 
@@ -248,7 +248,6 @@
                 NSLog(@"Error: %@ %@", error, [error userInfo]);
             }
         }];
-        return;
     }
     __block int totalNumberOfEntries = 0;
     [query orderByAscending:@"createdAt"];
