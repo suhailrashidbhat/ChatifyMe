@@ -27,7 +27,6 @@
 		0061577A19EA415700C20203 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0061577919EA415700C20203 /* StoreKit.framework */; };
 		0061577C19EA416300C20203 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0061577B19EA416300C20203 /* SystemConfiguration.framework */; };
 		0061578019EA4A3000C20203 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0061577E19EA4A3000C20203 /* LoginViewController.m */; };
-		0061578119EA4A3000C20203 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0061577F19EA4A3000C20203 /* LoginViewController.xib */; };
 		0061578419EA4AE100C20203 /* ChatifymeBG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0061578319EA4AE100C20203 /* ChatifymeBG.jpg */; };
 		0061578719EA4C0100C20203 /* chat.png in Resources */ = {isa = PBXBuildFile; fileRef = 0061578519EA4C0100C20203 /* chat.png */; };
 		0061578819EA4C0100C20203 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 0061578619EA4C0100C20203 /* user.png */; };
@@ -35,7 +34,16 @@
 		0061579519EA5CA300C20203 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0061579419EA5CA300C20203 /* Foundation.framework */; };
 		0061579B19EA6CB400C20203 /* ChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0061579A19EA6CB400C20203 /* ChatCell.m */; };
 		0061579D19EA7BB400C20203 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0061579C19EA7BB400C20203 /* Parse.framework */; };
-		00F1F8C119EC339B00FDBC4E /* Scringo in Resources */ = {isa = PBXBuildFile; fileRef = 00F1F8C019EC339B00FDBC4E /* Scringo */; };
+		00F1F8C319EC3D9C00FDBC4E /* TransitionControllers in Resources */ = {isa = PBXBuildFile; fileRef = 00F1F8C219EC3D9C00FDBC4E /* TransitionControllers */; };
+		00F1F8C719EC3EDA00FDBC4E /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F1F8C519EC3EDA00FDBC4E /* WelcomeViewController.m */; };
+		00F1F8CC19EC40E500FDBC4E /* DropAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F1F8CA19EC40E500FDBC4E /* DropAnimationController.m */; };
+		00F1F8CD19EC40E500FDBC4E /* ZoomAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F1F8CB19EC40E500FDBC4E /* ZoomAnimationController.m */; };
+		00F1F8CF19EC412700FDBC4E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F1F8CE19EC412700FDBC4E /* UIKit.framework */; };
+		00F1F8D219EC532B00FDBC4E /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F1F8D119EC532B00FDBC4E /* SignUpViewController.m */; };
+		00F1F8D419EC577900FDBC4E /* Scringo in Resources */ = {isa = PBXBuildFile; fileRef = 00F1F8D319EC577900FDBC4E /* Scringo */; };
+		00F1F8D619EC57E300FDBC4E /* Scringo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F1F8D519EC57E300FDBC4E /* Scringo.framework */; };
+		00F1F8DA19EC586F00FDBC4E /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F1F8D919EC586F00FDBC4E /* FacebookSDK.framework */; };
+		00F1F8DC19EC588900FDBC4E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F1F8DB19EC588900FDBC4E /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +84,6 @@
 		0061577B19EA416300C20203 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0061577D19EA4A3000C20203 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		0061577E19EA4A3000C20203 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		0061577F19EA4A3000C20203 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		0061578319EA4AE100C20203 /* ChatifymeBG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ChatifymeBG.jpg; sourceTree = "<group>"; };
 		0061578519EA4C0100C20203 /* chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat.png; sourceTree = "<group>"; };
 		0061578619EA4C0100C20203 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
@@ -85,7 +92,19 @@
 		0061579919EA6CB400C20203 /* ChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatCell.h; sourceTree = "<group>"; };
 		0061579A19EA6CB400C20203 /* ChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatCell.m; sourceTree = "<group>"; };
 		0061579C19EA7BB400C20203 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		00F1F8C019EC339B00FDBC4E /* Scringo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scringo; sourceTree = "<group>"; };
+		00F1F8C219EC3D9C00FDBC4E /* TransitionControllers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TransitionControllers; sourceTree = "<group>"; };
+		00F1F8C419EC3EDA00FDBC4E /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		00F1F8C519EC3EDA00FDBC4E /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		00F1F8CA19EC40E500FDBC4E /* DropAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DropAnimationController.m; path = TransitionControllers/DropAnimationController.m; sourceTree = "<group>"; };
+		00F1F8CB19EC40E500FDBC4E /* ZoomAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZoomAnimationController.m; path = TransitionControllers/ZoomAnimationController.m; sourceTree = "<group>"; };
+		00F1F8CE19EC412700FDBC4E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		00F1F8D019EC532B00FDBC4E /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		00F1F8D119EC532B00FDBC4E /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		00F1F8D319EC577900FDBC4E /* Scringo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scringo; sourceTree = "<group>"; };
+		00F1F8D519EC57E300FDBC4E /* Scringo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Scringo.framework; path = ChatifyMe/Scringo/Scringo.framework; sourceTree = "<group>"; };
+		00F1F8D719EC57EF00FDBC4E /* Scringo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Scringo.bundle; path = ChatifyMe/Scringo/Scringo.framework/Scringo.bundle; sourceTree = "<group>"; };
+		00F1F8D919EC586F00FDBC4E /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		00F1F8DB19EC588900FDBC4E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,9 +112,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F1F8DC19EC588900FDBC4E /* MapKit.framework in Frameworks */,
+				00F1F8D619EC57E300FDBC4E /* Scringo.framework in Frameworks */,
+				00F1F8CF19EC412700FDBC4E /* UIKit.framework in Frameworks */,
 				0061579519EA5CA300C20203 /* Foundation.framework in Frameworks */,
 				0061578A19EA503500C20203 /* Bolts.framework in Frameworks */,
 				0061577C19EA416300C20203 /* SystemConfiguration.framework in Frameworks */,
+				00F1F8DA19EC586F00FDBC4E /* FacebookSDK.framework in Frameworks */,
 				0061577A19EA415700C20203 /* StoreKit.framework in Frameworks */,
 				0061579D19EA7BB400C20203 /* Parse.framework in Frameworks */,
 				0061577819EA414E00C20203 /* Social.framework in Frameworks */,
@@ -161,6 +184,8 @@
 		0061573A19EA3DF400C20203 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				00F1F8CA19EC40E500FDBC4E /* DropAnimationController.m */,
+				00F1F8CB19EC40E500FDBC4E /* ZoomAnimationController.m */,
 				0061573B19EA3DF400C20203 /* Info.plist */,
 				0061573C19EA3DF400C20203 /* main.m */,
 			);
@@ -187,7 +212,8 @@
 		0061576019EA3F8100C20203 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				00F1F8C019EC339B00FDBC4E /* Scringo */,
+				00F1F8D319EC577900FDBC4E /* Scringo */,
+				00F1F8C219EC3D9C00FDBC4E /* TransitionControllers */,
 			);
 			name = Libraries;
 			path = ChatifyMe;
@@ -196,6 +222,11 @@
 		0061576119EA3FAE00C20203 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				00F1F8DB19EC588900FDBC4E /* MapKit.framework */,
+				00F1F8D919EC586F00FDBC4E /* FacebookSDK.framework */,
+				00F1F8D719EC57EF00FDBC4E /* Scringo.bundle */,
+				00F1F8D519EC57E300FDBC4E /* Scringo.framework */,
+				00F1F8CE19EC412700FDBC4E /* UIKit.framework */,
 				0061579C19EA7BB400C20203 /* Parse.framework */,
 				0061579419EA5CA300C20203 /* Foundation.framework */,
 				0061578919EA503500C20203 /* Bolts.framework */,
@@ -232,7 +263,10 @@
 				0061574219EA3DF400C20203 /* ViewController.m */,
 				0061577D19EA4A3000C20203 /* LoginViewController.h */,
 				0061577E19EA4A3000C20203 /* LoginViewController.m */,
-				0061577F19EA4A3000C20203 /* LoginViewController.xib */,
+				00F1F8C419EC3EDA00FDBC4E /* WelcomeViewController.h */,
+				00F1F8C519EC3EDA00FDBC4E /* WelcomeViewController.m */,
+				00F1F8D019EC532B00FDBC4E /* SignUpViewController.h */,
+				00F1F8D119EC532B00FDBC4E /* SignUpViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -333,11 +367,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0061578119EA4A3000C20203 /* LoginViewController.xib in Resources */,
 				0061574619EA3DF400C20203 /* Main.storyboard in Resources */,
 				0061578419EA4AE100C20203 /* ChatifymeBG.jpg in Resources */,
+				00F1F8C319EC3D9C00FDBC4E /* TransitionControllers in Resources */,
 				0061574B19EA3DF400C20203 /* LaunchScreen.xib in Resources */,
-				00F1F8C119EC339B00FDBC4E /* Scringo in Resources */,
+				00F1F8D419EC577900FDBC4E /* Scringo in Resources */,
 				0061578819EA4C0100C20203 /* user.png in Resources */,
 				0061574819EA3DF400C20203 /* Images.xcassets in Resources */,
 				0061578719EA4C0100C20203 /* chat.png in Resources */,
@@ -358,11 +392,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F1F8CC19EC40E500FDBC4E /* DropAnimationController.m in Sources */,
+				00F1F8CD19EC40E500FDBC4E /* ZoomAnimationController.m in Sources */,
 				0061578019EA4A3000C20203 /* LoginViewController.m in Sources */,
 				0061574319EA3DF400C20203 /* ViewController.m in Sources */,
 				0061574019EA3DF400C20203 /* AppDelegate.m in Sources */,
 				0061579B19EA6CB400C20203 /* ChatCell.m in Sources */,
 				0061573D19EA3DF400C20203 /* main.m in Sources */,
+				00F1F8C719EC3EDA00FDBC4E /* WelcomeViewController.m in Sources */,
+				00F1F8D219EC532B00FDBC4E /* SignUpViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +528,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"/Users/suhailbhat/Downloads/parse-library-1",
+					"$(PROJECT_DIR)/ChatifyMe/Scringo",
 				);
 				INFOPLIST_FILE = ChatifyMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -505,6 +544,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"/Users/suhailbhat/Downloads/parse-library-1",
+					"$(PROJECT_DIR)/ChatifyMe/Scringo",
 				);
 				INFOPLIST_FILE = ChatifyMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

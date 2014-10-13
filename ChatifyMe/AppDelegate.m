@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
+#import "Scringo/Scringo.framework/Headers/Scringo.h"
+#import "Scringo/Scringo.framework/Headers/ScringoUser.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +21,19 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [Parse setApplicationId:@"6Xc3lyiOekcqRKPZKLmAHJWwqOafZ3m4DAhAR3lq"
                   clientKey:@"gpa6QKMtnrqX0Rd9dUo6b36hdkdWLqSiqqnEK4cD"];
+    [Scringo initWithAppId:@"6LWoqIGOEwkpa74afzg27Koiv5eorSqe" completion:^{
+        PFUser *currentUser = [PFUser currentUser];
+        if (currentUser.isAuthenticated) {
+            if (! [ScringoUser currentUser].isAuthenticated) {
+                [ScringoUser signUpWithEmail:currentUser.email userName:currentUser.username password:@"Notimportant" completion:^(ScringoUser *aUser, BOOL isSuccess) {
+                    if (isSuccess) {
+                        [currentUser setObject:aUser.userId forKey:@"deesired@gmail.com"];
+                        [currentUser saveInBackground];
+                    }
+                }];
+            }
+        }
+    }];
     return YES;
 }
 
