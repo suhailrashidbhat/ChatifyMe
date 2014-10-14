@@ -121,24 +121,30 @@
             [noInternetAlert show];
             return;
         }
-        currentUser = user;
-        if (currentUser.isAuthenticated) {
-            if (! [ScringoUser currentUser].isAuthenticated) {
-                [ScringoUser signUpWithEmail:currentUser.email userName:currentUser.username password:@"Notimportant" completion:^(ScringoUser *aUser, BOOL isSuccess) {
-                    if (isSuccess) {
-                        [currentUser setObject:aUser.userId forKey:@"ScringoUserId"];
-                        [currentUser saveInBackground];
-                    }
-                }];
+
+        if (!error) {
+            currentUser = user;
+            if (currentUser.isAuthenticated) {
+                if (! [ScringoUser currentUser].isAuthenticated) {
+                    [ScringoUser signUpWithEmail:currentUser.email userName:currentUser.username password:@"Notimportant" completion:^(ScringoUser *aUser, BOOL isSuccess) {
+                        if (isSuccess) {
+                            [currentUser setObject:aUser.userId forKey:@"ScringoUserId"];
+                            [currentUser saveInBackground];
+                        }
+                    }];
+                }
+                [self presentViewController:controller animated:YES completion:nil];
             }
-            [self presentViewController:controller animated:YES completion:nil];
+        } else {
+            UIAlertView *genAl = [[UIAlertView alloc] initWithTitle:@"Error Logginh in..." message:error.description delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+            [genAl show];
         }
     }];
 }
 
 -(BOOL)validateUserNameField {
     if (self.userNameField.text.length == 0) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Please enter username!" message:nil delegate:self cancelButtonTitle:@"Got it!" otherButtonTitles:nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Please enter username!" message:@"If you don't have one. Don't worry Sign up now or use our test account. Username:test Password:test." delegate:self cancelButtonTitle:@"Got it!" otherButtonTitles:nil];
         [alert show];
         return false;
     } else {

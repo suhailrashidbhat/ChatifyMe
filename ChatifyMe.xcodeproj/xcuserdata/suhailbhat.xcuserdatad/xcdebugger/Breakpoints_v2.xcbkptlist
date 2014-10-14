@@ -74,13 +74,43 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ChatifyMe/WelcomeViewController.m"
-            timestampString = "435002051.459686"
+            timestampString = "435004974.890117"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
             landmarkName = "-tableView:didSelectRowAtIndexPath:"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[WelcomeViewController tableView:didSelectRowAtIndexPath:]"
+                  moduleName = "ChatifyMe"
+                  urlString = "file:///Users/suhailbhat/Developer/WorkSpace%20Secondary/ChatifyMe/ChatifyMe/WelcomeViewController.m"
+                  timestampString = "435004975.320146"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__59-[WelcomeViewController tableView:didSelectRowAtIndexPath:]_block_invoke"
+                  moduleName = "ChatifyMe"
+                  urlString = "file:///Users/suhailbhat/Developer/WorkSpace%20Secondary/ChatifyMe/ChatifyMe/WelcomeViewController.m"
+                  timestampString = "435004975.320316"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "64">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -90,11 +120,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ChatifyMe/LoginViewController.m"
-            timestampString = "435003007.206603"
+            timestampString = "435004288.20496"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "172"
-            endingLineNumber = "172"
+            startingLineNumber = "178"
+            endingLineNumber = "178"
             landmarkName = "-signUpViewController:shouldBeginSignUp:"
             landmarkType = "5">
          </BreakpointContent>
@@ -106,11 +136,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ChatifyMe/LoginViewController.m"
-            timestampString = "435003007.206603"
+            timestampString = "435004288.20496"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "193"
-            endingLineNumber = "193"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
             landmarkName = "-signUpViewController:didSignUpUser:"
             landmarkType = "5">
          </BreakpointContent>
@@ -143,22 +173,6 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "119"
             endingLineNumber = "119"
-            landmarkName = "-enterChat:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ChatifyMe/LoginViewController.m"
-            timestampString = "435003007.206603"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "125"
-            endingLineNumber = "125"
             landmarkName = "-enterChat:"
             landmarkType = "5">
          </BreakpointContent>

@@ -85,9 +85,9 @@
 {
     if (indexPath.row == 0) {
         // Open group Chat with all !
-
-        MembersTableViewController *parseVC =  [[MembersTableViewController alloc] init];
-        [self.navigationController pushViewController:parseVC animated:YES];
+        [ScringoChatRoom getChatRoomByObjectId:@"objID" withObjectType:@"type" withTitle:@"Chatify" withData:@"data" completion:^(ScringoChatRoom *chatRoom, BOOL isSuccess) {
+            [Scringo openChatRoomWithTopic:chatRoom withNavigationController:self.navigationController withScringoNavControllerEnabled:YES];
+        }];
     } else if (indexPath.row == 1) {
         AllUsersTableViewController *allUsersVC = [[AllUsersTableViewController alloc] init];
         [self.navigationController pushViewController:allUsersVC animated:YES];
