@@ -30,19 +30,9 @@
     self.window.rootViewController = loginController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-
+    [PFUser logOut];
     [Scringo initWithAppId:@"6LWoqIGOEwkpa74afzg27Koiv5eorSqe" completion:^{
-        PFUser *currentUser = [PFUser currentUser];
-        if (currentUser.isAuthenticated) {
-            if (! [ScringoUser currentUser].isAuthenticated) {
-                [ScringoUser signUpWithEmail:currentUser.email userName:currentUser.username password:@"Notimportant" completion:^(ScringoUser *aUser, BOOL isSuccess) {
-                    if (isSuccess) {
-                        [currentUser setObject:aUser.userId forKey:@"deesired@gmail.com"];
-                        [currentUser saveInBackground];
-                    }
-                }];
-            }
-        }
+        nil;
     }];
 
     return YES;

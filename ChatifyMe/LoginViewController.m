@@ -37,7 +37,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     FBLoginView *loginView = [[FBLoginView alloc] init];
-    loginView.center = self.view.center;
+    [loginView setFrame:CGRectMake((self.view.frame.size.width - loginView.frame.size.width)/2, 230, loginView.frame.size.width, loginView.frame.size.height)];
     [self.view addSubview:loginView];
     self.loginController = [[PFLogInViewController alloc] init];
     self.signUPController = [[PFSignUpViewController alloc] init];
@@ -48,42 +48,48 @@
 
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.userNameField.text = @"";
+    self.passwordField.text = @"";
+}
+
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     self.userNameField.text = nil;
     [self.userNameField becomeFirstResponder];
-    if (! self.duringCancel && ![PFUser currentUser]) { // No user logged in
-        // Create the log in view controller
-        PFLogInViewController *logInViewController = [[PFLogInViewController alloc] init];
-        [logInViewController setDelegate:self]; // Set ourselves as the delegate
-
-        // Create the sign up view controller
-        PFSignUpViewController *signUpViewController = [[PFSignUpViewController alloc] init];
-        [signUpViewController setDelegate:self]; // Set ourselves as the delegate
-
-        // Assign our sign up controller to be displayed from the login controller
-        [logInViewController setSignUpController:signUpViewController];
-
-        // Present the log in view controller
-        [self presentViewController:logInViewController animated:YES completion:NULL];
-    } else if ([PFUser currentUser] && [PFUser currentUser].isAuthenticated) {
-
-        [ScringoUser loginWithEmail:[PFUser currentUser].email password:@"p" completion:^(ScringoUser *user, BOOL isSuccess) {
-            if (isSuccess) {
-                [[PFUser currentUser] setObject:user.userId forKey:@"ScringoUserId"];
-                [[PFUser currentUser] saveInBackground];
-            }
-        }];
-        UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-        UINavigationController* controller;
-        controller = [storyboard instantiateViewControllerWithIdentifier:@"NavViewController"];
-        self.animationController = [[ZoomAnimationController alloc] init];
-        controller.transitioningDelegate  = self;
-        [self presentViewController:controller animated:YES completion:nil];
-    }
-
-    self.duringCancel = NO;
-} 
+//    if (! self.duringCancel && ![PFUser currentUser]) { // No user logged in
+//        // Create the log in view controller
+//        PFLogInViewController *logInViewController = [[PFLogInViewController alloc] init];
+//        [logInViewController setDelegate:self]; // Set ourselves as the delegate
+//
+//        // Create the sign up view controller
+//        PFSignUpViewController *signUpViewController = [[PFSignUpViewController alloc] init];
+//        [signUpViewController setDelegate:self]; // Set ourselves as the delegate
+//
+//        // Assign our sign up controller to be displayed from the login controller
+//        [logInViewController setSignUpController:signUpViewController];
+//
+//        // Present the log in view controller
+//        [self presentViewController:logInViewController animated:YES completion:NULL];
+//    } else if ([PFUser currentUser] && [PFUser currentUser].isAuthenticated) {
+//
+//        [ScringoUser loginWithEmail:[PFUser currentUser].email password:@"p" completion:^(ScringoUser *user, BOOL isSuccess) {
+//            if (isSuccess) {
+//                [[PFUser currentUser] setObject:user.userId forKey:@"ScringoUserId"];
+//                [[PFUser currentUser] saveInBackground];
+//            }
+//        }];
+////        UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+////        UINavigationController* controller;
+////        controller = [storyboard instantiateViewControllerWithIdentifier:@"NavViewController"];
+////        self.animationController = [[ZoomAnimationController alloc] init];
+////        controller.transitioningDelegate  = self;
+////        [self presentViewController:controller animated:YES completion:nil];
+//    }
+//
+//    self.duringCancel = NO;
+}
 
 
 - (void)didReceiveMemoryWarning {
@@ -92,57 +98,42 @@
 }
 
 - (void)enterChat:(id)sender {
-
-    //UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     UINavigationController* controller;
-
     if(sender == self.enterChatButton){
-        controller = (UINavigationController*)self.loginController;//[storyboard instantiateViewControllerWithIdentifier:@"NavViewController"];
+        controller = [storyboard instantiateViewControllerWithIdentifier:@"NavViewController"];
         self.animationController = [[ZoomAnimationController alloc] init];
+        controller.transitioningDelegate  = self;
     }else{
         controller = (UINavigationController*)self.signUPController;//[storyboard instantiateViewControllerWithIdentifier:@"SignUpViewController"];
         self.animationController = [[DropAnimationController alloc] init];
+        controller.transitioningDelegate  = self;
+        [self presentViewController:controller animated:YES completion:nil];
+        return;
     }
-    controller.transitioningDelegate  = self;
-    PFUser *Puser = [PFUser currentUser];
-    if (![PFUser currentUser]) {
-        // Create a User in parse.
-        Puser = [PFUser user];
-        if ([self validateUserNameField]) {
-            Puser.username = self.userNameField.text;
-            Puser.password = @"my pass";
-            Puser.email = [self.userNameField.text stringByAppendingString:@"@chatifyme.com"];
-
-            // other fields can be set if you want to save more information
-            Puser[@"phone"] = @"650-555-0000";
-            [Puser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-                if (!error) {
-                    self.alert = [[UIAlertView alloc] initWithTitle:@"Logging In..." message:@"Please wait" delegate:self cancelButtonTitle:@"" otherButtonTitles:nil];
-                    [self.alert show];
-                    [self performSelector:@selector(loginTheUserToChat:) withObject:Puser afterDelay:0.3];
-                } else {
-                    NSString *errorString = [error userInfo][@"error"];
-                    NSLog(@"%@", errorString);
-                    if ([errorString isEqualToString:[NSString stringWithFormat:@"username %@ already taken", Puser.username]]) {
-                        // Login  him. Already exists.
-                    }
-                    UIAlertView *errorFromParse = [[UIAlertView alloc] initWithTitle:@"Registering Error!" message:errorString delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-                    [errorFromParse show];
-                }
-            }];
-        } else {
-            // Do say !
+    if (![self validateUserNameField]) {
+        return;
+    }
+    __block PFUser *currentUser;
+    [PFUser logInWithUsernameInBackground:self.userNameField.text password:self.passwordField.text block:^(PFUser *user, NSError *error) {
+        if ([(NSNumber*)[error.userInfo valueForKey:@"code"] isEqualToNumber:[NSNumber numberWithInt:100]]) {
+            UIAlertView *noInternetAlert = [[UIAlertView alloc] initWithTitle:@"You are not connected to the Internet. Please check your settings." message:nil delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+            [noInternetAlert show];
+            return;
         }
-
-    }
-//    [ScringoUser loginWithEmail:Puser.username password:Puser.password completion:^(ScringoUser *user, BOOL isSuccess) {
-//        if (isSuccess) {
-//            [Puser setObject:user.userId forKey:@"ScringoUserId"];
-//            [Puser saveInBackground];
-//        }
-//    }];
-
-    [self presentViewController:controller animated:YES completion:nil];
+        currentUser = user;
+        if (currentUser.isAuthenticated) {
+            if (! [ScringoUser currentUser].isAuthenticated) {
+                [ScringoUser signUpWithEmail:currentUser.email userName:currentUser.username password:@"Notimportant" completion:^(ScringoUser *aUser, BOOL isSuccess) {
+                    if (isSuccess) {
+                        [currentUser setObject:aUser.userId forKey:@"ScringoUserId"];
+                        [currentUser saveInBackground];
+                    }
+                }];
+            }
+            [self presentViewController:controller animated:YES completion:nil];
+        }
+    }];
 }
 
 -(BOOL)validateUserNameField {
