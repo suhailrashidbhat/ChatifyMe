@@ -253,6 +253,7 @@
 		0047709619ED244100103217 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0047709419ED244100103217 /* Main.storyboard */; };
 		0047709919ED249600103217 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0047709719ED249600103217 /* Main.storyboard */; };
 		0047709C19ED282A00103217 /* AllUsersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047709B19ED282A00103217 /* AllUsersTableViewController.m */; };
+		0047709F19ED674600103217 /* ScringoStyleCheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047709E19ED674600103217 /* ScringoStyleCheet.m */; };
 		0061573D19EA3DF400C20203 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0061573C19EA3DF400C20203 /* main.m */; };
 		0061574019EA3DF400C20203 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0061573F19EA3DF400C20203 /* AppDelegate.m */; };
 		0061574319EA3DF400C20203 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0061574219EA3DF400C20203 /* ViewController.m */; };
@@ -547,6 +548,9 @@
 		0047709819ED249600103217 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ChatifyMe/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0047709A19ED282A00103217 /* AllUsersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllUsersTableViewController.h; sourceTree = "<group>"; };
 		0047709B19ED282A00103217 /* AllUsersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllUsersTableViewController.m; sourceTree = "<group>"; };
+		0047709D19ED674600103217 /* ScringoStyleCheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScringoStyleCheet.h; sourceTree = "<group>"; };
+		0047709E19ED674600103217 /* ScringoStyleCheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScringoStyleCheet.m; sourceTree = "<group>"; };
+		004770A019ED695200103217 /* Chatify.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Chatify.pch; sourceTree = "<group>"; };
 		0061573719EA3DF400C20203 /* ChatifyMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatifyMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0061573B19EA3DF400C20203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0061573C19EA3DF400C20203 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -637,6 +641,7 @@
 		0061572E19EA3DF400C20203 = {
 			isa = PBXGroup;
 			children = (
+				004770A019ED695200103217 /* Chatify.pch */,
 				0047709719ED249600103217 /* Main.storyboard */,
 				0061573919EA3DF400C20203 /* ChatifyMe */,
 				0061578219EA4A9E00C20203 /* Resources */,
@@ -1012,6 +1017,8 @@
 			children = (
 				0061579919EA6CB400C20203 /* ChatCell.h */,
 				0061579A19EA6CB400C20203 /* ChatCell.m */,
+				0047709D19ED674600103217 /* ScringoStyleCheet.h */,
+				0047709E19ED674600103217 /* ScringoStyleCheet.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -1379,6 +1386,7 @@
 				00F1F8C719EC3EDA00FDBC4E /* WelcomeViewController.m in Sources */,
 				0047709C19ED282A00103217 /* AllUsersTableViewController.m in Sources */,
 				00F1F8D219EC532B00FDBC4E /* SignUpViewController.m in Sources */,
+				0047709F19ED674600103217 /* ScringoStyleCheet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1517,6 +1525,7 @@
 					"$(PROJECT_DIR)/ChatifyMe/Scringo",
 					"$(PROJECT_DIR)/Scringo",
 				);
+				GCC_PREFIX_HEADER = Chatify.pch;
 				INFOPLIST_FILE = ChatifyMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1534,6 +1543,7 @@
 					"$(PROJECT_DIR)/ChatifyMe/Scringo",
 					"$(PROJECT_DIR)/Scringo",
 				);
+				GCC_PREFIX_HEADER = Chatify.pch;
 				INFOPLIST_FILE = ChatifyMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

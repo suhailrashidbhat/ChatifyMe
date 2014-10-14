@@ -83,8 +83,7 @@
     }
 
     self.duringCancel = NO;
-}
-
+} 
 
 
 - (void)didReceiveMemoryWarning {

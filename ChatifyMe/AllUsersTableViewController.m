@@ -9,8 +9,11 @@
 #import "AllUsersTableViewController.h"
 #import <Parse/Parse.h>
 #import <Scringo/Scringo.h>
+#import "ScringoStyleCheet.h"
 
 @interface AllUsersTableViewController ()
+
+@property (nonatomic, strong) ScringoStyleCheet *styleCheet;
 
 @end
 
@@ -25,7 +28,7 @@
     PFQuery *query = [PFUser query];
     self.allUsers = [query findObjects];
     NSLog(@"You have %d users, I am %@", [self.allUsers count], [PFUser currentUser].username);
-
+    self.styleCheet = [[ScringoStyleCheet alloc] init];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
 
@@ -78,6 +81,9 @@
         return;
     }
     NSLog(@"Selected user scringo id is %@", [user objectForKey:@"ScringoUserId"]);
+
+
+    [Scringo setCustomStyleSheet:self.styleCheet];
 
     [ScringoUser getUserByScringoId:[user objectForKey:@"ScringoUserId"] completion:
      ^(ScringoUser *aUser, BOOL isSuccess) {
