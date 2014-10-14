@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ChatifyMe/WelcomeViewController.m"
-            timestampString = "435004974.890117"
+            timestampString = "435008576.153465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
             landmarkName = "-tableView:didSelectRowAtIndexPath:"
             landmarkType = "5">
             <Locations>
@@ -89,11 +89,11 @@
                   symbolName = "-[WelcomeViewController tableView:didSelectRowAtIndexPath:]"
                   moduleName = "ChatifyMe"
                   urlString = "file:///Users/suhailbhat/Developer/WorkSpace%20Secondary/ChatifyMe/ChatifyMe/WelcomeViewController.m"
-                  timestampString = "435004975.320146"
+                  timestampString = "435008386.926404"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "88"
-                  endingLineNumber = "88"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
                   offsetFromSymbolStart = "148">
                </Location>
                <Location
@@ -103,11 +103,11 @@
                   symbolName = "__59-[WelcomeViewController tableView:didSelectRowAtIndexPath:]_block_invoke"
                   moduleName = "ChatifyMe"
                   urlString = "file:///Users/suhailbhat/Developer/WorkSpace%20Secondary/ChatifyMe/ChatifyMe/WelcomeViewController.m"
-                  timestampString = "435004975.320316"
+                  timestampString = "435008386.927015"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "88"
-                  endingLineNumber = "88"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
                   offsetFromSymbolStart = "64">
                </Location>
             </Locations>
@@ -152,11 +152,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ChatifyMe/AllUsersTableViewController.m"
-            timestampString = "434989617.403396"
+            timestampString = "435008213.640547"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
+            startingLineNumber = "187"
+            endingLineNumber = "187"
             landmarkName = "-tableView:didSelectRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -190,6 +190,68 @@
             startingLineNumber = "120"
             endingLineNumber = "120"
             landmarkName = "-enterChat:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChatifyMe/AllUsersTableViewController.m"
+            timestampString = "435008265.917015"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "-seggregateUsersBasedOnLocation"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[AllUsersTableViewController seggregateUsersBasedOnLocation]"
+                  moduleName = "ChatifyMe"
+                  urlString = "file:///Users/suhailbhat/Developer/WorkSpace%20Secondary/ChatifyMe/ChatifyMe/AllUsersTableViewController.m"
+                  timestampString = "435008386.990656"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "489">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[AllUsersTableViewController seggregateUsersBasedOnLocation]"
+                  moduleName = "ChatifyMe"
+                  urlString = "file:///Users/suhailbhat/Developer/WorkSpace%20Secondary/ChatifyMe/ChatifyMe/AllUsersTableViewController.m"
+                  timestampString = "435008386.990891"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "549">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChatifyMe/AllUsersTableViewController.m"
+            timestampString = "435008294.60303"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "-seggregateUsersBasedOnLocation"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

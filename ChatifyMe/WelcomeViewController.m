@@ -28,8 +28,8 @@
     } else {
         self.title = NSLocalizedString(@"Not logged in", nil);
     }
-    
-    [self.tableView setBackgroundColor:[UIColor whiteColor]];
+    [self.navigationController.navigationBar setBackgroundColor:[UIColor brownColor]];
+    [self.tableView setBackgroundColor:[UIColor lightGrayColor]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -52,8 +52,6 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
-    // Return the number of rows in the section.
     return 3;
 }
 
@@ -66,15 +64,15 @@
 
     // Configure the cell (ugly code...)
     if (indexPath.row == 0) {
-        [cell.textLabel setText:NSLocalizedString(@"Just ChatifyMe !!", nil)];
+        [cell.textLabel setText:NSLocalizedString(@"ChatifyMe !!", nil)];
     } else if (indexPath.row == 1) {
         [cell.textLabel setText:NSLocalizedString(@"See other users", nil)];
         [cell.detailTextLabel setText:NSLocalizedString(@"Choose a user to chat with", nil)];
     } else if (indexPath.row == 2) {
-        [cell.textLabel setText:NSLocalizedString(@"Create Group", nil)];
-        [cell.detailTextLabel setText:NSLocalizedString(@"Create a new chat group", nil)];
-    }
-
+        [cell.textLabel setText:@"Delete entire database on Server!"];
+        [cell.detailTextLabel setText:@"Be sure before selecting..."];
+    } 
+    [cell setBackgroundColor:[UIColor clearColor]];
     [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
     return cell;
 }
@@ -92,7 +90,8 @@
         AllUsersTableViewController *allUsersVC = [[AllUsersTableViewController alloc] init];
         [self.navigationController pushViewController:allUsersVC animated:YES];
     } else if (indexPath.row == 2) {
-        [Scringo openCreateChatRoom];
+        UIAlertView *jkAlert = [[UIAlertView alloc] initWithTitle:@"This is a JOKE !! You can't do it... " message:@"Enjoy ChatifyMe" delegate:self cancelButtonTitle:@"Ha ha.." otherButtonTitles:nil];
+        [jkAlert show];
     }
 }
 - (IBAction)createGroup:(id)sender {
