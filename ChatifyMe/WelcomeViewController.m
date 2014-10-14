@@ -7,6 +7,8 @@
 //
 
 #import "WelcomeViewController.h"
+//#import <Scringo/Scringo.h>
+//#import <Scringo/ScringoUser.h>
 
 @interface WelcomeViewController ()
 
@@ -23,20 +25,21 @@
     [self.view addGestureRecognizer:tapGesture];
 
     [self.goButton addTarget:self action:@selector(dismissController:) forControlEvents:UIControlEventTouchUpInside];
-
-
-    UIColor* mainColor = [UIColor colorWithRed:222.0/255 green:59.0/255 blue:47.0/255 alpha:1.0f];
-    [self.view setBackgroundColor:[UIColor clearColor]];
-    [self.view setTintColor:mainColor];
-
+    [self.tableView setBackgroundColor:[UIColor whiteColor]];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)newChat:(id)sender {
+    
+}
 
 -(void)dismissController:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+- (IBAction)logOut:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

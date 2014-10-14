@@ -15,24 +15,26 @@
  */
 
 #import <Foundation/Foundation.h>
+
+#import "FBSDKMacros.h"
 #import "FBSession.h"
 
 /*!
  @typedef FBInsightsFlushBehavior enum
- 
+
  @abstract This enum has been deprecated in favor of FBAppEventsFlushBehavior.
  */
 __attribute__ ((deprecated("use FBAppEventsFlushBehavior instead")))
-typedef enum {
+typedef NS_ENUM(NSUInteger, FBInsightsFlushBehavior) {
     FBInsightsFlushBehaviorAuto __attribute__ ((deprecated("use FBAppEventsFlushBehaviorAuto instead"))),
     FBInsightsFlushBehaviorExplicitOnly __attribute__ ((deprecated("use FBAppEventsFlushBehaviorExplicitOnly instead"))),
-} FBInsightsFlushBehavior;
+};
 
-extern NSString *const FBInsightsLoggingResultNotification __attribute__((deprecated));
+FBSDK_EXTERN NSString *const FBInsightsLoggingResultNotification __attribute__((deprecated));
 
 /*!
  @class FBInsights
- 
+
  @abstract This class has been deprecated in favor of FBAppEvents.
  */
 __attribute__ ((deprecated("Use the FBAppEvents class instead")))

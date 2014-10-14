@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WelcomeViewController : UIViewController
+@interface WelcomeViewController : UITableViewController
 
 @property (strong, nonatomic) IBOutlet UIButton *goButton;
 

@@ -8,8 +8,9 @@
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
-#import "Scringo/Scringo.framework/Headers/Scringo.h"
-#import "Scringo/Scringo.framework/Headers/ScringoUser.h"
+#import <Scringo/Scringo.h>
+#import <FacebookSDK/FacebookSDK.h>
+#import "LoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,6 +22,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [Parse setApplicationId:@"6Xc3lyiOekcqRKPZKLmAHJWwqOafZ3m4DAhAR3lq"
                   clientKey:@"gpa6QKMtnrqX0Rd9dUo6b36hdkdWLqSiqqnEK4cD"];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main"
+                                                             bundle: nil];
+    LoginViewController *loginController = (LoginViewController *)[mainStoryboard
+                                                                instantiateViewControllerWithIdentifier:@"login"];
+    self.window.rootViewController = loginController;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+
     [Scringo initWithAppId:@"6LWoqIGOEwkpa74afzg27Koiv5eorSqe" completion:^{
         PFUser *currentUser = [PFUser currentUser];
         if (currentUser.isAuthenticated) {
@@ -34,6 +44,7 @@
             }
         }
     }];
+
     return YES;
 }
 
@@ -61,6 +72,14 @@
     [PFUser logOut];
     PFQuery *query = [PFQuery queryWithClassName:@"User"];
     [query delete:cUser];
+}
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+    // attempt to extract a token from the url
+    return [FBAppCall handleOpenURL:url sourceApplication:sourceApplication];
 }
 
 @end

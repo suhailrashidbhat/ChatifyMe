@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="scringochatroomstopicnativeappadcell" id="aYF-GB-ZMZ" customClass="ScringoChatRoomsTopicNativeAppAdCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aYF-GB-ZMZ" id="94E-9P-WUC">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="129"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hdP-o7-XYF" userLabel="View - comment">
+                        <rect key="frame" x="5" y="10" width="310" height="117"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" tag="99999" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_AdCell.png" translatesAutoresizingMaskIntoConstraints="NO" id="HSA-tE-q1a" customClass="ScringoCellBackgroundView">
+                                <rect key="frame" x="0.0" y="0.0" width="310" height="117"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b1y-6o-Agr" userLabel="View - top labels">
+                                <rect key="frame" x="10" y="5" width="215" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Suggested App" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flm-Yb-Sau" userLabel="Label - Title">
+                                        <rect key="frame" x="0.0" y="0.0" width="215" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <size key="shadowOffset" width="0.0" height="1"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="7E9-mm-IFa" userLabel="Label - App Name">
+                                        <rect key="frame" x="0.0" y="15" width="215" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <size key="shadowOffset" width="0.0" height="1"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="flm-Yb-Sau" secondAttribute="trailing" id="0C4-c1-yPm"/>
+                                    <constraint firstItem="flm-Yb-Sau" firstAttribute="leading" secondItem="b1y-6o-Agr" secondAttribute="leading" id="3LF-ry-NkU"/>
+                                    <constraint firstAttribute="bottom" secondItem="7E9-mm-IFa" secondAttribute="bottom" id="JMJ-jU-hh8"/>
+                                    <constraint firstItem="7E9-mm-IFa" firstAttribute="leading" secondItem="b1y-6o-Agr" secondAttribute="leading" id="Kl5-60-eCB"/>
+                                    <constraint firstItem="7E9-mm-IFa" firstAttribute="top" secondItem="flm-Yb-Sau" secondAttribute="bottom" id="Mc0-sh-fGV"/>
+                                    <constraint firstItem="flm-Yb-Sau" firstAttribute="top" secondItem="b1y-6o-Agr" secondAttribute="top" id="STS-fU-Pvo"/>
+                                    <constraint firstAttribute="height" constant="35" id="dIc-oK-mmb"/>
+                                    <constraint firstAttribute="bottom" secondItem="flm-Yb-Sau" secondAttribute="bottom" priority="700" constant="20" symbolic="YES" id="jxG-t9-fFA"/>
+                                    <constraint firstAttribute="trailing" secondItem="7E9-mm-IFa" secondAttribute="trailing" id="wch-cA-Yfg"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1uF-m0-qQa" customClass="ScringoResizeableButton">
+                                <rect key="frame" x="235" y="9" width="70" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="6uH-zQ-pRe"/>
+                                    <constraint firstAttribute="width" constant="70" id="CBV-T2-5Le"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <size key="titleShadowOffset" width="0.0" height="1"/>
+                                <state key="normal" title="Install" backgroundImage="Scringo.bundle/images/dark2/ScrImg_DefaultGreyBtn.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" title="Install" backgroundImage="Scringo.bundle/images/dark2/ScrImg_DefaultGreyBtnPressed.png"/>
+                                <connections>
+                                    <action selector="installNowClicked:" destination="aYF-GB-ZMZ" eventType="touchUpInside" id="yfq-YR-nZV"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fc6-lH-QMg" userLabel="Image - App Icon" customClass="ScringoLazyImageView">
+                                <rect key="frame" x="10" y="50" width="57" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="RVE-Bb-AJh"/>
+                                    <constraint firstAttribute="width" constant="57" id="vvy-FU-SNz"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" contentMode="left" text="This is two lines activity feed that I am using to check" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="225" translatesAutoresizingMaskIntoConstraints="NO" id="YXi-9b-tcb" userLabel="Label - Description">
+                                <rect key="frame" x="75" y="50" width="225" height="57"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HSA-tE-q1a" firstAttribute="leading" secondItem="hdP-o7-XYF" secondAttribute="leading" id="3bJ-yF-ZNK"/>
+                            <constraint firstItem="b1y-6o-Agr" firstAttribute="top" secondItem="hdP-o7-XYF" secondAttribute="top" constant="5" id="3gQ-GQ-q3v"/>
+                            <constraint firstAttribute="trailing" secondItem="YXi-9b-tcb" secondAttribute="trailing" constant="10" id="6h3-m6-Jd0"/>
+                            <constraint firstItem="HSA-tE-q1a" firstAttribute="trailing" secondItem="hdP-o7-XYF" secondAttribute="trailing" id="EM6-Ez-Pl4"/>
+                            <constraint firstItem="fc6-lH-QMg" firstAttribute="leading" secondItem="hdP-o7-XYF" secondAttribute="leading" constant="10" id="Mqh-Kg-D7t"/>
+                            <constraint firstItem="YXi-9b-tcb" firstAttribute="leading" secondItem="fc6-lH-QMg" secondAttribute="trailing" constant="8" symbolic="YES" id="PtL-7S-3b6"/>
+                            <constraint firstItem="1uF-m0-qQa" firstAttribute="leading" secondItem="b1y-6o-Agr" secondAttribute="trailing" constant="10" id="Q5M-LD-RaS"/>
+                            <constraint firstAttribute="trailing" secondItem="1uF-m0-qQa" secondAttribute="trailing" constant="5" id="QSW-01-p8Z"/>
+                            <constraint firstItem="fc6-lH-QMg" firstAttribute="top" secondItem="b1y-6o-Agr" secondAttribute="bottom" constant="10" id="YNO-EB-iW0"/>
+                            <constraint firstItem="1uF-m0-qQa" firstAttribute="centerY" secondItem="b1y-6o-Agr" secondAttribute="centerY" id="fjO-LF-0A3"/>
+                            <constraint firstAttribute="bottom" secondItem="HSA-tE-q1a" secondAttribute="bottom" id="hJs-Gs-9yo"/>
+                            <constraint firstItem="b1y-6o-Agr" firstAttribute="leading" secondItem="hdP-o7-XYF" secondAttribute="leading" constant="10" id="kYD-24-6DR"/>
+                            <constraint firstItem="YXi-9b-tcb" firstAttribute="top" secondItem="fc6-lH-QMg" secondAttribute="top" id="mLw-8T-Cnn"/>
+                            <constraint firstItem="YXi-9b-tcb" firstAttribute="bottom" secondItem="fc6-lH-QMg" secondAttribute="bottom" id="sGo-U5-t0y"/>
+                            <constraint firstItem="HSA-tE-q1a" firstAttribute="top" secondItem="hdP-o7-XYF" secondAttribute="top" id="wpz-Zr-0zM"/>
+                        </constraints>
+                        <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hdP-o7-XYF" firstAttribute="top" secondItem="aYF-GB-ZMZ" secondAttribute="top" constant="10" id="5JG-9r-TAe"/>
+                <constraint firstItem="hdP-o7-XYF" firstAttribute="leading" secondItem="aYF-GB-ZMZ" secondAttribute="leading" constant="5" id="9z5-pk-NWW"/>
+                <constraint firstAttribute="bottom" secondItem="hdP-o7-XYF" secondAttribute="bottom" constant="3" id="oct-CP-NCQ"/>
+                <constraint firstAttribute="trailing" secondItem="hdP-o7-XYF" secondAttribute="trailing" constant="5" id="zRE-GN-X8p"/>
+            </constraints>
+            <connections>
+                <outlet property="appDescriptionLabel" destination="YXi-9b-tcb" id="yTX-DL-mQi"/>
+                <outlet property="appIconImageView" destination="fc6-lH-QMg" id="ryb-0Y-fNo"/>
+                <outlet property="appNameLabel" destination="7E9-mm-IFa" id="P6y-Fw-MiN"/>
+                <outlet property="commentBgView" destination="HSA-tE-q1a" id="isI-dr-SqM"/>
+                <outlet property="installNowButton" destination="1uF-m0-qQa" id="h7b-3a-5id"/>
+                <outlet property="titleLabel" destination="flm-Yb-Sau" id="NFo-9U-vps"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Scringo.bundle/images/dark2/ScrImg_AdCell.png" width="16" height="16"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_DefaultGreyBtn.png" width="16" height="16"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_DefaultGreyBtnPressed.png" width="16" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,1147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScringoQuizPlayViewController">
+            <connections>
+                <outlet property="aboveNavBarView" destination="6" id="19"/>
+                <outlet property="appButton" destination="9" id="21"/>
+                <outlet property="backButton" destination="5" id="22"/>
+                <outlet property="backgroundView" destination="3" id="IRc-2R-VVU"/>
+                <outlet property="buyOptionsActivityIndicator" destination="186" id="188"/>
+                <outlet property="firstAnswerButton" destination="11" id="37"/>
+                <outlet property="firstAnswerHintImage" destination="101" id="104"/>
+                <outlet property="firstAnswerHintImageLeadingSpaceConstraint" destination="LE4-Ef-IwK" id="87K-rh-oHm"/>
+                <outlet property="firstAnswerHintImageTrailingSpaceConstraint" destination="ap0-yq-QAr" id="HK3-AA-jdV"/>
+                <outlet property="firstAnswerHintLabel" destination="102" id="103"/>
+                <outlet property="fourthAnswerButton" destination="17" id="30"/>
+                <outlet property="fourthAnswerHintImage" destination="109" id="116"/>
+                <outlet property="fourthAnswerHintImageLeadingSpaceConstraint" destination="iDv-a8-8cz" id="4cs-HD-b0b"/>
+                <outlet property="fourthAnswerHintImageTrailingSpaceConstraint" destination="FMS-4v-evc" id="9ep-WO-aI6"/>
+                <outlet property="fourthAnswerHintLabel" destination="110" id="115"/>
+                <outlet property="gameOverLabel" destination="42" id="45"/>
+                <outlet property="helpButton" destination="18" id="35"/>
+                <outlet property="hintsTitleLabel" destination="68" id="73"/>
+                <outlet property="hintsView" destination="55" id="72"/>
+                <outlet property="leaveTwoBadge" destination="163" id="173"/>
+                <outlet property="leaveTwoLabel" destination="58" id="77"/>
+                <outlet property="leaveTwoView" destination="56" id="76"/>
+                <outlet property="navBarImageView" destination="7" id="b8B-RS-98F"/>
+                <outlet property="pointsReachedLabel" destination="43" id="46"/>
+                <outlet property="popularAnswerBadge" destination="169" id="174"/>
+                <outlet property="popularAnswerLabel" destination="66" id="81"/>
+                <outlet property="popularAnswerView" destination="64" id="80"/>
+                <outlet property="purchaseHintsTitleLabel" destination="86" id="87"/>
+                <outlet property="qaScrollView" destination="149" id="150"/>
+                <outlet property="questionLabel" destination="10" id="26"/>
+                <outlet property="questionScoreLabel" destination="137" id="138"/>
+                <outlet property="quizEndContainerViewTopSpaceConstraint" destination="RJs-7o-pHI" id="ypn-qI-m6v"/>
+                <outlet property="quizEndImageLineTopSpaceToBuyViewConstraint" destination="E9n-Bh-jZB" id="v4L-mJ-n6v"/>
+                <outlet property="quizEndOverlayImageView" destination="141" id="142"/>
+                <outlet property="quizEndPurchaseButton" destination="50" id="52"/>
+                <outlet property="quizEndPurchaseLivesPriceLabel" destination="121" id="122"/>
+                <outlet property="quizEndRewardSubTitleLabel" destination="k8S-Yv-BfM" id="4w7-yB-cf2"/>
+                <outlet property="quizEndRewardTitleLabel" destination="qGm-2T-T4p" id="N7h-9G-df0"/>
+                <outlet property="quizEndRewardView" destination="Sdv-20-eNz" id="wka-Ij-tIO"/>
+                <outlet property="quizEndTable" destination="48" id="49"/>
+                <outlet property="quizEndView" destination="40" id="44"/>
+                <outlet property="quizEndViewBottomSpaceConstraint" destination="L6e-Fd-TRj" id="aIW-gq-IHC"/>
+                <outlet property="quizEndViewTopSpaceConstraint" destination="JBm-eo-gZ3" id="FYz-vD-UXy"/>
+                <outlet property="quizHintsPurchaseOption1Button" destination="88" id="96"/>
+                <outlet property="quizHintsPurchaseOption1PriceLabel" destination="117" id="119"/>
+                <outlet property="quizHintsPurchaseOption1View" destination="182" id="184"/>
+                <outlet property="quizHintsPurchaseOption2Button" destination="91" id="98"/>
+                <outlet property="quizHintsPurchaseOption2PriceLabel" destination="118" id="120"/>
+                <outlet property="quizHintsPurchaseOption2View" destination="183" id="185"/>
+                <outlet property="quizHintsStatusBarLineTopSpaceConstraint" destination="cDD-OX-fDi" id="0wE-DE-wKO"/>
+                <outlet property="quizTimerView" destination="133" id="134"/>
+                <outlet property="replaceQuestionBadge" destination="164" id="175"/>
+                <outlet property="replaceQuestionLabel" destination="62" id="79"/>
+                <outlet property="replaceQuestionView" destination="60" id="78"/>
+                <outlet property="scoreNumberLabel" destination="127" id="129"/>
+                <outlet property="scoreTitleLabel" destination="126" id="128"/>
+                <outlet property="scoresScrollView" destination="135" id="136"/>
+                <outlet property="scringoContentView" destination="180" id="181"/>
+                <outlet property="scringoContentViewTopSpaceConstraint" destination="Nn3-9N-mix" id="TSZ-Bs-ivK"/>
+                <outlet property="secondAnswerButton" destination="15" id="28"/>
+                <outlet property="secondAnswerHintImage" destination="105" id="112"/>
+                <outlet property="secondAnswerHintImageLeadingSpaceConstraint" destination="KRK-MW-f2k" id="u6L-tu-LMz"/>
+                <outlet property="secondAnswerHintImageTrailingSpaceConstraint" destination="R5I-Td-8AX" id="hRb-YS-SIC"/>
+                <outlet property="secondAnswerHintLabel" destination="106" id="111"/>
+                <outlet property="testHintsLabel" destination="160" id="176"/>
+                <outlet property="thirdAnswerButton" destination="16" id="29"/>
+                <outlet property="thirdAnswerHintImage" destination="107" id="114"/>
+                <outlet property="thirdAnswerHintImageLeadingSpaceConstraint" destination="8ah-bf-Kn6" id="yQr-dA-1aH"/>
+                <outlet property="thirdAnswerHintImageTrailingSpaceConstraint" destination="Pxa-uL-gg8" id="1sb-EO-sSL"/>
+                <outlet property="thirdAnswerHintLabel" destination="108" id="113"/>
+                <outlet property="timerContainerView" destination="139" id="140"/>
+                <outlet property="titleLabel" destination="8" id="23"/>
+                <outlet property="topPanelView" destination="4" id="179"/>
+                <outlet property="topPanelViewTopSpaceConstraint" destination="D6t-JR-Fni" id="coX-Ki-3tx"/>
+                <outlet property="view" destination="1" id="20"/>
+                <outlet property="youGotLabel" destination="159" id="178"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_Bg-568h.png" translatesAutoresizingMaskIntoConstraints="NO" id="3">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4" userLabel="View - top panel">
+                    <rect key="frame" x="0.0" y="20" width="320" height="45"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6" userLabel="Above nav bar">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="sRg-bL-dFy"/>
+                            </constraints>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_NavBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="7" customClass="ScringoResizableView">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5" userLabel="Button - Back" customClass="ScringoResizeableButton">
+                            <rect key="frame" x="46" y="6" width="40" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="Y9O-OI-FIh"/>
+                                <constraint firstAttribute="height" constant="34" id="khe-UR-b8l"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="Scringo.bundle/images/dark2/ScrImg_BackArrow.png" backgroundImage="Scringo.bundle/images/dark2/ScrImg_BackBtn.png">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="Scringo.bundle/images/dark2/ScrImg_BackArrow.png" backgroundImage="Scringo.bundle/images/dark2/ScrImg_BackBtnPressed.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="backTapped:" destination="-1" eventType="touchUpInside" id="25"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Play Quiz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="8">
+                            <rect key="frame" x="121" y="11" width="79" height="23"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <size key="shadowOffset" width="0.0" height="1"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UZi-bG-nj4" userLabel="Score View">
+                            <rect key="frame" x="220" y="0.0" width="40" height="45"/>
+                            <subviews>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Score:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="126">
+                                    <rect key="frame" x="0.0" y="10" width="40" height="13"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                    <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </label>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="500000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="127">
+                                    <rect key="frame" x="0.0" y="23" width="40" height="12"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="D8p-yW-TJ0"/>
+                                <constraint firstItem="127" firstAttribute="top" secondItem="126" secondAttribute="bottom" id="FUL-vH-8pM"/>
+                                <constraint firstAttribute="width" constant="40" id="FyA-Kw-hLq"/>
+                                <constraint firstItem="126" firstAttribute="leading" secondItem="UZi-bG-nj4" secondAttribute="leading" id="HJq-1w-dF4"/>
+                                <constraint firstItem="127" firstAttribute="leading" secondItem="UZi-bG-nj4" secondAttribute="leading" id="OkW-XL-BS1"/>
+                                <constraint firstAttribute="trailing" secondItem="126" secondAttribute="trailing" id="PRB-01-9ye"/>
+                                <constraint firstAttribute="trailing" secondItem="127" secondAttribute="trailing" id="dM1-cx-zut"/>
+                                <constraint firstItem="126" firstAttribute="top" secondItem="UZi-bG-nj4" secondAttribute="top" constant="10" id="lQ0-qT-rsI"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9" userLabel="Button - App">
+                            <rect key="frame" x="0.0" y="2" width="46" height="41"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="41" id="i3m-3f-i9a"/>
+                                <constraint firstAttribute="width" constant="46" id="wNv-TS-h2y"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="1"/>
+                            <state key="normal" image="Scringo.bundle/images/dark2/ScrImg_MainIcon.png" backgroundImage="Scringo.bundle/images/dark2/ScrImg_BackRibbon.png">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="Scringo.bundle/images/dark2/ScrImg_BackRibbonPressed.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="appTapped:" destination="-1" eventType="touchUpInside" id="24"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18" userLabel="Button - Help" customClass="ScringoResizeableButton">
+                            <rect key="frame" x="270" y="5" width="40" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="8Hj-sT-aPA"/>
+                                <constraint firstAttribute="width" constant="40" id="RaT-zh-eeL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="Scringo.bundle/images/dark2/ScrImg_HintsBlackIcon.png" backgroundImage="Scringo.bundle/images/dark2/ScrImg_YellowNavBtn.png">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="Scringo.bundle/images/dark2/ScrImg_HintsBlackIcon.png" backgroundImage="Scringo.bundle/images/dark2/ScrImg_YellowNavBtnPressed.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="helpClicked:" destination="-1" eventType="touchUpInside" id="36"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="9" firstAttribute="leading" secondItem="4" secondAttribute="leading" id="1sd-oh-tN4"/>
+                        <constraint firstItem="18" firstAttribute="top" secondItem="4" secondAttribute="top" constant="5" id="6bo-fg-74s"/>
+                        <constraint firstItem="9" firstAttribute="top" secondItem="4" secondAttribute="top" constant="2" id="Iz2-IX-EU6"/>
+                        <constraint firstAttribute="height" constant="45" id="J0i-jf-SWI"/>
+                        <constraint firstItem="5" firstAttribute="leading" secondItem="9" secondAttribute="trailing" id="PQs-pa-at5"/>
+                        <constraint firstItem="UZi-bG-nj4" firstAttribute="top" secondItem="4" secondAttribute="top" id="Pal-cf-Nl5"/>
+                        <constraint firstAttribute="bottom" secondItem="7" secondAttribute="bottom" id="YnB-Po-nQk"/>
+                        <constraint firstAttribute="trailing" secondItem="18" secondAttribute="trailing" constant="10" id="cA4-Kw-QhZ"/>
+                        <constraint firstItem="7" firstAttribute="leading" secondItem="4" secondAttribute="leading" id="cqL-VL-BBb"/>
+                        <constraint firstItem="5" firstAttribute="top" secondItem="4" secondAttribute="top" constant="6" id="dwp-BV-3Bi"/>
+                        <constraint firstAttribute="trailing" secondItem="7" secondAttribute="trailing" id="fHK-Sg-apl"/>
+                        <constraint firstItem="8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5" secondAttribute="trailing" constant="5" id="gCF-JT-Ncq"/>
+                        <constraint firstItem="7" firstAttribute="top" secondItem="4" secondAttribute="top" id="i9r-hj-NEs"/>
+                        <constraint firstAttribute="centerY" secondItem="8" secondAttribute="centerY" id="ivm-vc-hfT"/>
+                        <constraint firstAttribute="trailing" secondItem="6" secondAttribute="trailing" id="mog-Jn-BTK"/>
+                        <constraint firstItem="UZi-bG-nj4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8" secondAttribute="trailing" constant="5" id="nmR-o7-BpI"/>
+                        <constraint firstItem="6" firstAttribute="leading" secondItem="4" secondAttribute="leading" id="o7K-0h-2tE"/>
+                        <constraint firstItem="6" firstAttribute="top" secondItem="4" secondAttribute="top" id="pbq-kT-xuK"/>
+                        <constraint firstAttribute="centerX" secondItem="8" secondAttribute="centerX" id="rRL-ZU-avK"/>
+                        <constraint firstItem="18" firstAttribute="leading" secondItem="UZi-bG-nj4" secondAttribute="trailing" constant="10" id="ub7-we-Rme"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="180" userLabel="View - Content">
+                    <rect key="frame" x="0.0" y="65" width="320" height="503"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" scrollEnabled="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="135" userLabel="Scroll View - Timer">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="79" id="xq3-hY-cAN"/>
+                            </constraints>
+                        </scrollView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="139" userLabel="View - Timer">
+                            <rect key="frame" x="134" y="10" width="53" height="53"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_QuizCurrentBgCircle.png" translatesAutoresizingMaskIntoConstraints="NO" id="130">
+                                    <rect key="frame" x="0.0" y="0.0" width="53" height="53"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </imageView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="133" customClass="ScringoQuizTimerView">
+                                    <rect key="frame" x="0.0" y="0.0" width="53" height="53"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_QuizCurrentShadowCircle.png" translatesAutoresizingMaskIntoConstraints="NO" id="132">
+                                    <rect key="frame" x="2" y="2" width="49" height="49"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </imageView>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="1000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="137">
+                                    <rect key="frame" x="8" y="16" width="38" height="21"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="53" id="3tg-2K-n9d"/>
+                                <constraint firstAttribute="centerY" secondItem="132" secondAttribute="centerY" id="AC9-VF-aKJ"/>
+                                <constraint firstItem="130" firstAttribute="leading" secondItem="139" secondAttribute="leading" id="BhX-Y6-YaY"/>
+                                <constraint firstAttribute="centerX" secondItem="132" secondAttribute="centerX" id="Kft-Sa-WBU"/>
+                                <constraint firstAttribute="bottom" secondItem="133" secondAttribute="bottom" id="KkQ-Fi-ZCO"/>
+                                <constraint firstAttribute="height" constant="53" id="dnm-s4-zX3"/>
+                                <constraint firstAttribute="centerY" secondItem="137" secondAttribute="centerY" id="jCd-dP-7q6"/>
+                                <constraint firstAttribute="trailing" secondItem="133" secondAttribute="trailing" id="p77-Bc-e4B"/>
+                                <constraint firstItem="133" firstAttribute="leading" secondItem="139" secondAttribute="leading" id="qKY-6q-J8C"/>
+                                <constraint firstItem="133" firstAttribute="top" secondItem="139" secondAttribute="top" id="r0P-nO-K9D"/>
+                                <constraint firstAttribute="centerX" secondItem="137" secondAttribute="centerX" id="sdv-GR-WF5"/>
+                                <constraint firstItem="130" firstAttribute="top" secondItem="139" secondAttribute="top" id="wcM-J6-SM0"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" text="Qustion" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="10" userLabel="Label - Question">
+                            <rect key="frame" x="10" y="80" width="300" height="22"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="149" userLabel="Scroll View - Q &amp; A">
+                            <rect key="frame" x="0.0" y="117" width="320" height="210"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11" userLabel="Scringo Resizeable Button - 1st Answer" customClass="ScringoResizeableButton">
+                                    <rect key="frame" x="10" y="0.0" width="300" height="45"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="DUh-Sw-evw"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <size key="titleShadowOffset" width="0.0" height="1"/>
+                                    <state key="normal" title="1st Answer" backgroundImage="Scringo.bundle/images/dark2/ScrImg_GreyBigBtn.png">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="highlighted" backgroundImage="Scringo.bundle/images/dark2/ScrImg_GreyBigBtnPressed.png">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="firstAnswerClicked:" destination="-1" eventType="touchUpInside" id="31"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="45%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="102" userLabel="Label - 45% - 1st">
+                                    <rect key="frame" x="15" y="20" width="26" height="10"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="10" id="qiw-We-ZCT"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_PopularBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="101" customClass="ScringoResizableView">
+                                    <rect key="frame" x="15" y="35" width="290" height="5"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15" userLabel="Scringo Resizeable Button - 2nd Answer" customClass="ScringoResizeableButton">
+                                    <rect key="frame" x="10" y="55" width="300" height="45"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="i6p-sd-NhG"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <size key="titleShadowOffset" width="0.0" height="1"/>
+                                    <state key="normal" title="2nd Answer" backgroundImage="Scringo.bundle/images/dark2/ScrImg_GreyBigBtn.png">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="highlighted" backgroundImage="Scringo.bundle/images/dark2/ScrImg_GreyBigBtnPressed.png">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="secondAnswerClicked:" destination="-1" eventType="touchUpInside" id="32"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="45%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="106" userLabel="Label - 45% - 2nd">
+                                    <rect key="frame" x="15" y="75" width="26" height="10"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="10" id="Nme-WX-Uh6"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_PopularBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="105" customClass="ScringoResizableView">
+                                    <rect key="frame" x="15" y="90" width="290" height="5"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16" userLabel="Scringo Resizeable Button - 3rd Answer" customClass="ScringoResizeableButton">
+                                    <rect key="frame" x="10" y="110" width="300" height="45"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="bY7-iX-Ld2"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <size key="titleShadowOffset" width="0.0" height="1"/>
+                                    <state key="normal" title="3rd Answer" backgroundImage="Scringo.bundle/images/dark2/ScrImg_GreyBigBtn.png">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="highlighted" backgroundImage="Scringo.bundle/images/dark2/ScrImg_GreyBigBtnPressed.png">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="thirdAnswerClicked:" destination="-1" eventType="touchUpInside" id="33"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="45%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="108" userLabel="Label - 45% - 3rd">
+                                    <rect key="frame" x="15" y="130" width="26" height="10"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="10" id="xwM-lO-1ad"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_PopularBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="107" customClass="ScringoResizableView">
+                                    <rect key="frame" x="15" y="145" width="290" height="5"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17" userLabel="Scringo Resizeable Button - 4th Answer" customClass="ScringoResizeableButton">
+                                    <rect key="frame" x="10" y="165" width="300" height="45"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="j63-pA-l6P"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <size key="titleShadowOffset" width="0.0" height="1"/>
+                                    <state key="normal" title="4th Answer" backgroundImage="Scringo.bundle/images/dark2/ScrImg_GreyBigBtn.png">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="highlighted" backgroundImage="Scringo.bundle/images/dark2/ScrImg_GreyBigBtnPressed.png">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="fourthAnswerClicked:" destination="-1" eventType="touchUpInside" id="34"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="45%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="110" userLabel="Label - 45% - 4th">
+                                    <rect key="frame" x="15" y="185" width="26" height="10"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="10" id="2LM-LX-888"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_PopularBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="109" customClass="ScringoResizableView">
+                                    <rect key="frame" x="15" y="200" width="290" height="5"/>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="15" firstAttribute="top" secondItem="106" secondAttribute="top" constant="-20" id="4mw-1h-ykw"/>
+                                <constraint firstAttribute="bottom" secondItem="17" secondAttribute="bottom" id="7IW-2u-5cB"/>
+                                <constraint firstItem="109" firstAttribute="top" secondItem="110" secondAttribute="bottom" constant="5" id="7rc-4w-Os4"/>
+                                <constraint firstAttribute="trailing" secondItem="11" secondAttribute="trailing" constant="10" id="8G6-x4-xH9"/>
+                                <constraint firstItem="107" firstAttribute="leading" secondItem="149" secondAttribute="leading" constant="15" id="8ah-bf-Kn6"/>
+                                <constraint firstItem="16" firstAttribute="top" secondItem="108" secondAttribute="top" constant="-20" id="8tz-dW-fZ7"/>
+                                <constraint firstItem="105" firstAttribute="top" secondItem="106" secondAttribute="bottom" constant="5" id="BUX-5d-Xbz"/>
+                                <constraint firstItem="108" firstAttribute="leading" secondItem="149" secondAttribute="leading" constant="15" id="Bd7-Pn-TT3"/>
+                                <constraint firstItem="11" firstAttribute="top" secondItem="149" secondAttribute="top" id="CqW-QO-VCh"/>
+                                <constraint firstAttribute="trailing" secondItem="17" secondAttribute="trailing" constant="10" id="D3O-9L-5z6"/>
+                                <constraint firstItem="16" firstAttribute="top" secondItem="15" secondAttribute="bottom" constant="10" id="Dtu-jj-52V"/>
+                                <constraint firstAttribute="trailing" secondItem="109" secondAttribute="trailing" constant="15" id="FMS-4v-evc"/>
+                                <constraint firstItem="105" firstAttribute="leading" secondItem="149" secondAttribute="leading" constant="15" id="KRK-MW-f2k"/>
+                                <constraint firstItem="101" firstAttribute="leading" secondItem="149" secondAttribute="leading" constant="15" id="LE4-Ef-IwK"/>
+                                <constraint firstAttribute="height" constant="210" id="Ldu-Mm-nm0"/>
+                                <constraint firstItem="17" firstAttribute="leading" secondItem="149" secondAttribute="leading" constant="10" id="MdJ-Jr-Snv"/>
+                                <constraint firstItem="102" firstAttribute="top" secondItem="11" secondAttribute="top" constant="20" id="NZw-Ve-uDE"/>
+                                <constraint firstItem="17" firstAttribute="top" secondItem="16" secondAttribute="bottom" constant="10" id="PW9-QO-dnb"/>
+                                <constraint firstAttribute="trailing" secondItem="15" secondAttribute="trailing" constant="10" id="Puu-4A-ydH"/>
+                                <constraint firstAttribute="trailing" secondItem="107" secondAttribute="trailing" constant="15" id="Pxa-uL-gg8"/>
+                                <constraint firstItem="106" firstAttribute="leading" secondItem="149" secondAttribute="leading" constant="15" id="R2q-Mq-3SZ"/>
+                                <constraint firstAttribute="trailing" secondItem="105" secondAttribute="trailing" constant="15" id="R5I-Td-8AX"/>
+                                <constraint firstItem="107" firstAttribute="top" secondItem="108" secondAttribute="bottom" constant="5" id="Tee-8q-m9j"/>
+                                <constraint firstItem="101" firstAttribute="top" secondItem="102" secondAttribute="bottom" constant="5" id="VwQ-R8-oFs"/>
+                                <constraint firstAttribute="trailing" secondItem="101" secondAttribute="trailing" constant="15" id="ap0-yq-QAr"/>
+                                <constraint firstItem="17" firstAttribute="top" secondItem="110" secondAttribute="top" constant="-20" id="bih-of-zet"/>
+                                <constraint firstAttribute="centerX" secondItem="11" secondAttribute="centerX" id="br1-Hp-Kqd"/>
+                                <constraint firstItem="16" firstAttribute="leading" secondItem="149" secondAttribute="leading" constant="10" id="dKy-f6-yhL"/>
+                                <constraint firstAttribute="trailing" secondItem="16" secondAttribute="trailing" constant="10" id="eEk-Jl-w8P"/>
+                                <constraint firstItem="11" firstAttribute="leading" secondItem="149" secondAttribute="leading" constant="10" id="i5H-im-kcS"/>
+                                <constraint firstItem="109" firstAttribute="leading" secondItem="149" secondAttribute="leading" constant="15" id="iDv-a8-8cz"/>
+                                <constraint firstItem="15" firstAttribute="leading" secondItem="149" secondAttribute="leading" constant="10" id="js5-Yh-KIG"/>
+                                <constraint firstItem="110" firstAttribute="leading" secondItem="149" secondAttribute="leading" constant="15" id="kyd-kc-Htz"/>
+                                <constraint firstItem="15" firstAttribute="top" secondItem="11" secondAttribute="bottom" constant="10" id="ufX-4N-F3O"/>
+                                <constraint firstItem="102" firstAttribute="leading" secondItem="149" secondAttribute="leading" constant="15" id="xz3-K1-TJS"/>
+                            </constraints>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="135" firstAttribute="top" secondItem="180" secondAttribute="top" id="5Lw-S4-rIo"/>
+                        <constraint firstItem="10" firstAttribute="leading" secondItem="180" secondAttribute="leading" constant="10" id="9nn-pj-VFy"/>
+                        <constraint firstItem="149" firstAttribute="leading" secondItem="180" secondAttribute="leading" id="HlA-fq-Ed8"/>
+                        <constraint firstItem="139" firstAttribute="top" secondItem="180" secondAttribute="top" constant="10" id="ORb-d8-dmq"/>
+                        <constraint firstItem="10" firstAttribute="top" secondItem="135" secondAttribute="bottom" constant="1" id="OzU-Kx-BGn"/>
+                        <constraint firstItem="149" firstAttribute="top" secondItem="10" secondAttribute="bottom" constant="15" id="W3S-cT-ZBp"/>
+                        <constraint firstAttribute="trailing" secondItem="135" secondAttribute="trailing" id="Xut-h5-2FY"/>
+                        <constraint firstAttribute="trailing" secondItem="149" secondAttribute="trailing" id="b2X-Wq-HXo"/>
+                        <constraint firstItem="135" firstAttribute="leading" secondItem="180" secondAttribute="leading" id="egA-89-XnO"/>
+                        <constraint firstAttribute="centerX" secondItem="139" secondAttribute="centerX" id="gT9-2k-uQC"/>
+                        <constraint firstAttribute="trailing" secondItem="10" secondAttribute="trailing" constant="10" id="u1J-eu-Lr3"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="55" userLabel="View - Hints">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PF8-6t-6kE" userLabel="Status Bar line View">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" id="f0l-0x-sj2"/>
+                            </constraints>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_HintsBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="100">
+                            <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Help Opt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="68">
+                            <rect key="frame" x="124" y="31" width="73" height="22"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="0.60392156860000001" green="0.60392156860000001" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="You got:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="159">
+                            <rect key="frame" x="10" y="26" width="57" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.60392156860000001" green="0.60392156860000001" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_CoinsMedIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="161">
+                            <rect key="frame" x="10" y="46" width="21" height="21"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="1000000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="160">
+                            <rect key="frame" x="36" y="46" width="67" height="21"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fjK-Oc-hcC" userLabel="Filler View 1">
+                            <rect key="frame" x="0.0" y="92" width="2" height="150"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="150" id="g0n-sE-aCK"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="56" userLabel="View - Leave Half">
+                            <rect key="frame" x="2" y="92" width="104" height="150"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_5050Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="57">
+                                    <rect key="frame" x="18" y="5" width="67" height="70"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="67" id="9Xb-Bk-CQ9"/>
+                                        <constraint firstAttribute="height" constant="70" id="biy-or-Lz5"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Remove Half" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="13" preferredMaxLayoutWidth="55" translatesAutoresizingMaskIntoConstraints="NO" id="58" userLabel="Label - Leave Half">
+                                    <rect key="frame" x="25" y="80" width="55" height="34"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hnu-r9-N1v" userLabel="Hint Cost View">
+                                    <rect key="frame" x="36" y="118" width="33" height="20"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_CoinsSmallIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="162">
+                                            <rect key="frame" x="0.0" y="5" width="11" height="11"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="163">
+                                            <rect key="frame" x="15" y="0.0" width="18" height="20"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                            <color key="textColor" red="1" green="1" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="162" firstAttribute="leading" secondItem="hnu-r9-N1v" secondAttribute="leading" id="1WW-kZ-kSt"/>
+                                        <constraint firstItem="163" firstAttribute="leading" secondItem="162" secondAttribute="trailing" constant="4" id="EkF-Xe-Nuq"/>
+                                        <constraint firstAttribute="centerY" secondItem="163" secondAttribute="centerY" id="FpR-Ic-K14"/>
+                                        <constraint firstAttribute="trailing" secondItem="163" secondAttribute="trailing" id="VMh-Ra-pO3"/>
+                                        <constraint firstItem="163" firstAttribute="top" secondItem="hnu-r9-N1v" secondAttribute="top" id="g3q-Nc-Uvl"/>
+                                        <constraint firstAttribute="centerY" secondItem="162" secondAttribute="centerY" id="rNa-ZO-ec4"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59" userLabel="Button - Leave Half">
+                                    <rect key="frame" x="0.0" y="0.0" width="104" height="150"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal">
+                                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="highlighted">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="quizHintsLeaveTwoClicked:" destination="-1" eventType="touchUpInside" id="83"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="centerX" secondItem="58" secondAttribute="centerX" id="59J-2A-tCj"/>
+                                <constraint firstAttribute="height" constant="150" id="Eio-7V-IdF"/>
+                                <constraint firstItem="hnu-r9-N1v" firstAttribute="top" secondItem="58" secondAttribute="bottom" constant="4" id="Psd-zB-8PO"/>
+                                <constraint firstAttribute="centerX" secondItem="57" secondAttribute="centerX" id="QhH-Jr-JPf"/>
+                                <constraint firstAttribute="centerX" secondItem="hnu-r9-N1v" secondAttribute="centerX" id="gl2-oI-U8d"/>
+                                <constraint firstItem="58" firstAttribute="top" secondItem="57" secondAttribute="bottom" constant="5" id="gvH-OW-tF9"/>
+                                <constraint firstItem="59" firstAttribute="top" secondItem="56" secondAttribute="top" id="hoP-xw-wfV"/>
+                                <constraint firstAttribute="width" constant="104" id="jrZ-Da-wIk"/>
+                                <constraint firstAttribute="trailing" secondItem="59" secondAttribute="trailing" id="wLD-bs-8B1"/>
+                                <constraint firstItem="59" firstAttribute="leading" secondItem="56" secondAttribute="leading" id="xDI-vf-1Il"/>
+                                <constraint firstItem="57" firstAttribute="top" secondItem="56" secondAttribute="top" constant="5" id="xIB-Fl-pKD"/>
+                                <constraint firstAttribute="bottom" secondItem="59" secondAttribute="bottom" id="z1Y-AZ-4jO"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ka-iQ-QyW" userLabel="Filler View 2">
+                            <rect key="frame" x="106" y="92" width="2" height="150"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="150" id="UyX-Jr-Lgz"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="60" userLabel="View - Replace Question">
+                            <rect key="frame" x="108" y="92" width="104" height="150"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_SwitchQuestionIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="63">
+                                    <rect key="frame" x="18" y="5" width="67" height="70"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="70" id="bfg-nq-dnB"/>
+                                        <constraint firstAttribute="width" constant="67" id="zzf-3w-y4D"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Replace A Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="13" preferredMaxLayoutWidth="68" translatesAutoresizingMaskIntoConstraints="NO" id="62" userLabel="Label - Replace Question">
+                                    <rect key="frame" x="18" y="80" width="68" height="34"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61" userLabel="Button - Replace Question">
+                                    <rect key="frame" x="0.0" y="0.0" width="104" height="150"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal">
+                                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="highlighted">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="quizHintsReplaceQuestionClicked:" destination="-1" eventType="touchUpInside" id="84"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JeN-Uv-CBP" userLabel="Hint cost View">
+                                    <rect key="frame" x="36" y="118" width="33" height="20"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_CoinsSmallIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="165">
+                                            <rect key="frame" x="0.0" y="5" width="11" height="11"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="164">
+                                            <rect key="frame" x="15" y="0.0" width="18" height="20"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                            <color key="textColor" red="1" green="1" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="164" firstAttribute="leading" secondItem="165" secondAttribute="trailing" constant="4" id="L9L-rX-EwG"/>
+                                        <constraint firstItem="164" firstAttribute="top" secondItem="JeN-Uv-CBP" secondAttribute="top" id="Qbz-BY-wgG"/>
+                                        <constraint firstAttribute="centerY" secondItem="165" secondAttribute="centerY" id="Qon-UW-1to"/>
+                                        <constraint firstItem="165" firstAttribute="leading" secondItem="JeN-Uv-CBP" secondAttribute="leading" id="aHy-C7-kes"/>
+                                        <constraint firstAttribute="trailing" secondItem="164" secondAttribute="trailing" id="kP7-Cg-LUh"/>
+                                        <constraint firstAttribute="centerY" secondItem="164" secondAttribute="centerY" id="kq2-wj-cve"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="150" id="3ZO-x4-XIa"/>
+                                <constraint firstAttribute="centerX" secondItem="62" secondAttribute="centerX" id="B4H-SY-och"/>
+                                <constraint firstItem="61" firstAttribute="top" secondItem="60" secondAttribute="top" id="DF1-yi-4So"/>
+                                <constraint firstAttribute="trailing" secondItem="61" secondAttribute="trailing" id="Em4-wb-7RT"/>
+                                <constraint firstAttribute="bottom" secondItem="61" secondAttribute="bottom" id="VTQ-ea-hnk"/>
+                                <constraint firstItem="63" firstAttribute="top" secondItem="60" secondAttribute="top" constant="5" id="VcE-tC-JJT"/>
+                                <constraint firstItem="62" firstAttribute="top" secondItem="63" secondAttribute="bottom" constant="5" id="aXS-c9-nKL"/>
+                                <constraint firstAttribute="centerX" secondItem="63" secondAttribute="centerX" id="ckM-e6-esB"/>
+                                <constraint firstAttribute="centerX" secondItem="JeN-Uv-CBP" secondAttribute="centerX" id="fWr-sb-kfd"/>
+                                <constraint firstAttribute="width" constant="104" id="fhw-5o-JSa"/>
+                                <constraint firstItem="JeN-Uv-CBP" firstAttribute="top" secondItem="62" secondAttribute="bottom" constant="4" id="rf6-5f-YbL"/>
+                                <constraint firstItem="61" firstAttribute="leading" secondItem="60" secondAttribute="leading" id="uLW-Yl-0ud"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5y6-S7-mZ7" userLabel="Filler View 3">
+                            <rect key="frame" x="212" y="92" width="2" height="150"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="150" id="fud-gd-ujT"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="64" userLabel="View - Popular Answer">
+                            <rect key="frame" x="214" y="92" width="104" height="150"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_PoplularAnswerIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="67">
+                                    <rect key="frame" x="18" y="5" width="67" height="70"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="70" id="7fb-rC-x9M"/>
+                                        <constraint firstAttribute="width" constant="67" id="WfA-HH-JEE"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Popular Answer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="13" preferredMaxLayoutWidth="53" translatesAutoresizingMaskIntoConstraints="NO" id="66">
+                                    <rect key="frame" x="26" y="80" width="53" height="34"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h2S-QG-y3S" userLabel="Hint cost View">
+                                    <rect key="frame" x="36" y="118" width="33" height="20"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_CoinsSmallIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="170">
+                                            <rect key="frame" x="0.0" y="5" width="11" height="11"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="15" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="169">
+                                            <rect key="frame" x="15" y="0.0" width="18" height="20"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                            <color key="textColor" red="1" green="1" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="169" firstAttribute="top" secondItem="h2S-QG-y3S" secondAttribute="top" id="Azm-Wl-jMm"/>
+                                        <constraint firstAttribute="centerY" secondItem="169" secondAttribute="centerY" id="LJ2-pc-f72"/>
+                                        <constraint firstAttribute="trailing" secondItem="169" secondAttribute="trailing" id="MuP-qp-nmN"/>
+                                        <constraint firstAttribute="centerY" secondItem="170" secondAttribute="centerY" id="gY9-fX-37P"/>
+                                        <constraint firstItem="169" firstAttribute="leading" secondItem="170" secondAttribute="trailing" constant="4" id="yZU-W7-Cge"/>
+                                        <constraint firstItem="170" firstAttribute="leading" secondItem="h2S-QG-y3S" secondAttribute="leading" id="zR7-gZ-zR4"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65" userLabel="Button - Popular Answer">
+                                    <rect key="frame" x="0.0" y="0.0" width="104" height="150"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal">
+                                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="highlighted">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="quizHintsPopularAnswerClicked:" destination="-1" eventType="touchUpInside" id="85"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="150" id="8Jd-tT-Z6k"/>
+                                <constraint firstAttribute="centerX" secondItem="66" secondAttribute="centerX" id="GZD-H2-h9c"/>
+                                <constraint firstItem="67" firstAttribute="top" secondItem="64" secondAttribute="top" constant="5" id="TEt-eB-5FS"/>
+                                <constraint firstAttribute="trailing" secondItem="65" secondAttribute="trailing" id="U9g-9v-5aa"/>
+                                <constraint firstAttribute="bottom" secondItem="65" secondAttribute="bottom" id="Xju-vH-fRs"/>
+                                <constraint firstItem="65" firstAttribute="leading" secondItem="64" secondAttribute="leading" id="fra-Bk-eAn"/>
+                                <constraint firstAttribute="centerX" secondItem="67" secondAttribute="centerX" id="h3g-qa-nBJ"/>
+                                <constraint firstAttribute="width" constant="104" id="jjq-2z-0oD"/>
+                                <constraint firstAttribute="centerX" secondItem="h2S-QG-y3S" secondAttribute="centerX" id="kzZ-Ia-Pns"/>
+                                <constraint firstItem="h2S-QG-y3S" firstAttribute="top" secondItem="66" secondAttribute="bottom" constant="4" id="nYO-vt-MBl"/>
+                                <constraint firstItem="66" firstAttribute="top" secondItem="67" secondAttribute="bottom" constant="5" id="oNI-6z-02j"/>
+                                <constraint firstItem="65" firstAttribute="top" secondItem="64" secondAttribute="top" id="xAk-Nz-gl3"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQ2-LV-Qfg" userLabel="Filler View 4">
+                            <rect key="frame" x="318" y="92" width="2" height="150"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="150" id="Tzs-zT-SiS"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Purchase Hints" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="86">
+                            <rect key="frame" x="99" y="267" width="123" height="22"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="90" userLabel="View - Purchase Options">
+                            <rect key="frame" x="0.0" y="295" width="320" height="105"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="182">
+                                    <rect key="frame" x="10" y="5" width="300" height="45"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88" userLabel="Scringo Resizeable Button - 1st option" customClass="ScringoResizeableButton">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="45"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <inset key="titleEdgeInsets" minX="16" minY="0.0" maxX="60" maxY="0.0"/>
+                                            <size key="titleShadowOffset" width="0.0" height="1"/>
+                                            <state key="normal" title="Hints Option 1" backgroundImage="Scringo.bundle/images/dark2/ScrImg_YellowBigBtn.png">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <state key="highlighted" backgroundImage="Scringo.bundle/images/dark2/ScrImg_YellowBigBtnPressed.png">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="quizHintsPurchaseOption1Clicked:" destination="-1" eventType="touchUpInside" id="94"/>
+                                            </connections>
+                                        </button>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_CoinsSmallBlackIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="171">
+                                            <rect key="frame" x="4" y="17" width="11" height="11"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="$3.90" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="117">
+                                            <rect key="frame" x="257" y="14" width="38" height="18"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="88" firstAttribute="leading" secondItem="182" secondAttribute="leading" id="Ajw-7N-n9R"/>
+                                        <constraint firstAttribute="height" constant="45" id="F7S-8f-N6f"/>
+                                        <constraint firstAttribute="centerY" secondItem="117" secondAttribute="centerY" id="Gm0-tW-C1K"/>
+                                        <constraint firstItem="88" firstAttribute="top" secondItem="182" secondAttribute="top" id="Hwe-fa-ESR"/>
+                                        <constraint firstAttribute="trailing" secondItem="117" secondAttribute="trailing" constant="5" id="IO8-OQ-vZL"/>
+                                        <constraint firstAttribute="centerY" secondItem="171" secondAttribute="centerY" id="J7Z-BP-tQA"/>
+                                        <constraint firstAttribute="bottom" secondItem="88" secondAttribute="bottom" id="YLS-74-8ee"/>
+                                        <constraint firstAttribute="width" constant="300" id="iAr-Up-dIn"/>
+                                        <constraint firstAttribute="trailing" secondItem="88" secondAttribute="trailing" id="iwi-zF-emF"/>
+                                        <constraint firstItem="171" firstAttribute="leading" secondItem="182" secondAttribute="leading" constant="4" id="sMc-Wu-fCx"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="183">
+                                    <rect key="frame" x="10" y="60" width="300" height="45"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91" userLabel="Scringo Resizeable Button - 2nd option" customClass="ScringoResizeableButton">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="45"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <inset key="titleEdgeInsets" minX="16" minY="0.0" maxX="60" maxY="0.0"/>
+                                            <size key="titleShadowOffset" width="0.0" height="1"/>
+                                            <state key="normal" title="Hints Option 2" backgroundImage="Scringo.bundle/images/dark2/ScrImg_YellowBigBtn.png">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <state key="highlighted" backgroundImage="Scringo.bundle/images/dark2/ScrImg_YellowBigBtnPressed.png">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="quizHintsPurchaseOption2Clicked:" destination="-1" eventType="touchUpInside" id="95"/>
+                                            </connections>
+                                        </button>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_CoinsSmallBlackIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="172">
+                                            <rect key="frame" x="4" y="17" width="11" height="11"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="$3.90" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="118">
+                                            <rect key="frame" x="257" y="14" width="38" height="18"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="centerY" secondItem="118" secondAttribute="centerY" id="0l9-2y-fgo"/>
+                                        <constraint firstItem="91" firstAttribute="top" secondItem="183" secondAttribute="top" id="5Pe-ge-Y1Q"/>
+                                        <constraint firstAttribute="width" constant="300" id="7Rz-rr-qaZ"/>
+                                        <constraint firstItem="172" firstAttribute="leading" secondItem="183" secondAttribute="leading" constant="4" id="JEg-hP-3PD"/>
+                                        <constraint firstAttribute="trailing" secondItem="118" secondAttribute="trailing" constant="5" id="eEn-Vu-Cno"/>
+                                        <constraint firstAttribute="trailing" secondItem="91" secondAttribute="trailing" id="jkC-uH-Rb2"/>
+                                        <constraint firstAttribute="bottom" secondItem="91" secondAttribute="bottom" id="rTG-QI-Ol6"/>
+                                        <constraint firstAttribute="centerY" secondItem="172" secondAttribute="centerY" id="tgG-BJ-Ucw"/>
+                                        <constraint firstAttribute="height" constant="45" id="uh4-Xy-tVW"/>
+                                        <constraint firstItem="91" firstAttribute="leading" secondItem="183" secondAttribute="leading" id="wjQ-TT-kRn"/>
+                                    </constraints>
+                                </view>
+                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="186">
+                                    <rect key="frame" x="142" y="34" width="37" height="37"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </activityIndicatorView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="182" firstAttribute="leading" secondItem="90" secondAttribute="leading" constant="10" id="2gd-hI-erH"/>
+                                <constraint firstAttribute="width" constant="320" id="E2G-lh-Suq"/>
+                                <constraint firstAttribute="centerX" secondItem="186" secondAttribute="centerX" id="UIk-JZ-O32"/>
+                                <constraint firstAttribute="height" constant="105" id="YhF-Hn-KAr"/>
+                                <constraint firstItem="183" firstAttribute="top" secondItem="182" secondAttribute="bottom" constant="10" id="fM9-Ax-wd2"/>
+                                <constraint firstItem="182" firstAttribute="top" secondItem="90" secondAttribute="top" constant="5" id="n9c-nf-kZB"/>
+                                <constraint firstItem="183" firstAttribute="leading" secondItem="90" secondAttribute="leading" constant="10" id="sAO-O0-3oN"/>
+                                <constraint firstAttribute="centerY" secondItem="186" secondAttribute="centerY" id="ui7-uu-UVf"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71" userLabel="Button - Close">
+                            <rect key="frame" x="280" y="27" width="30" height="30"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="0Nd-GB-Duo"/>
+                                <constraint firstAttribute="width" constant="30" id="oEo-dS-Sq8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="Scringo.bundle/images/dark2/ScrImg_ClosexBtn.png">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="quizHintsCloseClicked:" destination="-1" eventType="touchUpInside" id="82"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="71" secondAttribute="trailing" constant="10" id="0td-yi-e0E"/>
+                        <constraint firstAttribute="centerX" secondItem="68" secondAttribute="centerX" id="1dZ-OP-jx8"/>
+                        <constraint firstItem="1Ka-iQ-QyW" firstAttribute="top" secondItem="56" secondAttribute="top" id="8FR-Ca-1OC"/>
+                        <constraint firstItem="60" firstAttribute="leading" secondItem="1Ka-iQ-QyW" secondAttribute="trailing" id="CDi-A9-CFI"/>
+                        <constraint firstItem="1Ka-iQ-QyW" firstAttribute="width" secondItem="bQ2-LV-Qfg" secondAttribute="width" id="CHt-tM-q81"/>
+                        <constraint firstItem="90" firstAttribute="top" secondItem="86" secondAttribute="bottom" constant="6" id="FEs-uV-rJT"/>
+                        <constraint firstAttribute="centerX" secondItem="86" secondAttribute="centerX" id="HAG-vw-sYT"/>
+                        <constraint firstAttribute="trailing" secondItem="PF8-6t-6kE" secondAttribute="trailing" id="HD4-SM-but"/>
+                        <constraint firstItem="bQ2-LV-Qfg" firstAttribute="leading" secondItem="64" secondAttribute="trailing" id="HDz-Xg-lDC"/>
+                        <constraint firstItem="1Ka-iQ-QyW" firstAttribute="leading" secondItem="56" secondAttribute="trailing" id="Mj5-O1-LTc"/>
+                        <constraint firstItem="159" firstAttribute="leading" secondItem="55" secondAttribute="leading" constant="10" id="NCX-zu-jvY"/>
+                        <constraint firstItem="5y6-S7-mZ7" firstAttribute="leading" secondItem="60" secondAttribute="trailing" id="O88-Rl-38j"/>
+                        <constraint firstItem="100" firstAttribute="leading" secondItem="55" secondAttribute="leading" id="Puc-E1-p0y"/>
+                        <constraint firstItem="64" firstAttribute="leading" secondItem="5y6-S7-mZ7" secondAttribute="trailing" id="Rx6-et-FlX"/>
+                        <constraint firstItem="1Ka-iQ-QyW" firstAttribute="top" secondItem="60" secondAttribute="top" id="SYr-LY-eDd"/>
+                        <constraint firstItem="161" firstAttribute="top" secondItem="159" secondAttribute="bottom" constant="2" id="SbW-uv-AIk"/>
+                        <constraint firstItem="159" firstAttribute="top" secondItem="PF8-6t-6kE" secondAttribute="bottom" constant="6" id="Sbp-ff-q91"/>
+                        <constraint firstItem="PF8-6t-6kE" firstAttribute="leading" secondItem="55" secondAttribute="leading" id="Sts-W0-WhQ"/>
+                        <constraint firstItem="1Ka-iQ-QyW" firstAttribute="top" secondItem="fjK-Oc-hcC" secondAttribute="top" id="TMu-4K-LZr"/>
+                        <constraint firstItem="1Ka-iQ-QyW" firstAttribute="top" secondItem="bQ2-LV-Qfg" secondAttribute="top" id="TQr-Sc-mow"/>
+                        <constraint firstItem="68" firstAttribute="top" secondItem="PF8-6t-6kE" secondAttribute="bottom" constant="11" id="WJY-eD-4rC"/>
+                        <constraint firstItem="1Ka-iQ-QyW" firstAttribute="top" secondItem="64" secondAttribute="top" id="XTN-Ez-k1v"/>
+                        <constraint firstItem="71" firstAttribute="top" secondItem="PF8-6t-6kE" secondAttribute="bottom" constant="7" id="XTP-wG-lTU"/>
+                        <constraint firstItem="fjK-Oc-hcC" firstAttribute="leading" secondItem="55" secondAttribute="leading" id="aHr-JF-lCx"/>
+                        <constraint firstItem="PF8-6t-6kE" firstAttribute="top" secondItem="55" secondAttribute="top" constant="20" id="cDD-OX-fDi"/>
+                        <constraint firstItem="160" firstAttribute="top" secondItem="159" secondAttribute="bottom" constant="2" id="ePr-wr-zo4"/>
+                        <constraint firstItem="86" firstAttribute="top" secondItem="60" secondAttribute="bottom" constant="25" id="f6v-PV-PhR"/>
+                        <constraint firstItem="1Ka-iQ-QyW" firstAttribute="width" secondItem="fjK-Oc-hcC" secondAttribute="width" id="h7h-Nd-bbD"/>
+                        <constraint firstItem="1Ka-iQ-QyW" firstAttribute="top" secondItem="5y6-S7-mZ7" secondAttribute="top" id="hRX-rJ-W3f"/>
+                        <constraint firstAttribute="trailing" secondItem="100" secondAttribute="trailing" id="oTI-wh-RhB"/>
+                        <constraint firstItem="56" firstAttribute="leading" secondItem="fjK-Oc-hcC" secondAttribute="trailing" id="ocR-f4-jxE"/>
+                        <constraint firstItem="100" firstAttribute="top" secondItem="PF8-6t-6kE" secondAttribute="bottom" id="peW-Qi-iz0"/>
+                        <constraint firstAttribute="bottom" secondItem="100" secondAttribute="bottom" id="qCX-AC-aFx"/>
+                        <constraint firstItem="1Ka-iQ-QyW" firstAttribute="width" secondItem="5y6-S7-mZ7" secondAttribute="width" id="qi7-mj-axB"/>
+                        <constraint firstItem="161" firstAttribute="leading" secondItem="55" secondAttribute="leading" constant="10" id="t7o-bx-Vff"/>
+                        <constraint firstItem="56" firstAttribute="top" secondItem="160" secondAttribute="bottom" constant="25" id="tcP-9a-os3"/>
+                        <constraint firstItem="160" firstAttribute="leading" secondItem="161" secondAttribute="trailing" constant="5" id="uYF-An-vhn"/>
+                        <constraint firstAttribute="centerX" secondItem="90" secondAttribute="centerX" id="wXJ-ml-nmQ"/>
+                        <constraint firstAttribute="trailing" secondItem="bQ2-LV-Qfg" secondAttribute="trailing" id="xcS-oz-rw8"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="40" userLabel="View - Quiz End">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="141">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="124">
+                            <rect key="frame" x="20" y="50" width="280" height="468"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_DefaultPopupBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="123" customClass="ScringoResizableView">
+                                    <rect key="frame" x="-10" y="-10" width="300" height="493"/>
+                                </imageView>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Game Over" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42">
+                                    <rect key="frame" x="96" y="5" width="88" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.88684475809999996" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="You reached X points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="43">
+                                    <rect key="frame" x="52" y="31" width="177" height="22"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EsY-kV-wtO" userLabel="Buy Opt View">
+                                    <rect key="frame" x="5" y="63" width="270" height="45"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50" userLabel="Scringo Resizeable Button - Buy opt" customClass="ScringoResizeableButton">
+                                            <rect key="frame" x="0.0" y="0.0" width="270" height="45"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                            <size key="titleShadowOffset" width="0.0" height="1"/>
+                                            <state key="normal" backgroundImage="Scringo.bundle/images/dark2/ScrImg_YellowBigBtn.png">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <state key="highlighted" backgroundImage="Scringo.bundle/images/dark2/ScrImg_YellowBigBtnPressed.png">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="quizEndPurchaseLivesClicked:" destination="-1" eventType="touchUpInside" id="54"/>
+                                            </connections>
+                                        </button>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_CoinsSmallBlackIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="177">
+                                            <rect key="frame" x="10" y="17" width="11" height="11"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="11" id="fDv-MR-V8j"/>
+                                                <constraint firstAttribute="height" constant="11" id="lWb-Ya-QMt"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="$3.90" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="121">
+                                            <rect key="frame" x="227" y="14" width="38" height="18"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="centerY" secondItem="177" secondAttribute="centerY" id="5oz-WH-uhf"/>
+                                        <constraint firstItem="177" firstAttribute="leading" secondItem="EsY-kV-wtO" secondAttribute="leading" constant="10" id="Euh-pk-Iv1"/>
+                                        <constraint firstAttribute="width" constant="270" id="L9y-LH-MzN"/>
+                                        <constraint firstAttribute="centerY" secondItem="121" secondAttribute="centerY" id="ONt-Pn-T1E"/>
+                                        <constraint firstAttribute="height" constant="45" id="PKX-us-WhR"/>
+                                        <constraint firstAttribute="trailing" secondItem="121" secondAttribute="trailing" constant="5" id="UFS-HZ-ssa"/>
+                                        <constraint firstAttribute="bottom" secondItem="50" secondAttribute="bottom" id="VoT-Nm-Eec"/>
+                                        <constraint firstItem="50" firstAttribute="top" secondItem="EsY-kV-wtO" secondAttribute="top" id="eff-Vx-NJa"/>
+                                        <constraint firstAttribute="trailing" secondItem="50" secondAttribute="trailing" id="ooi-WA-jXT"/>
+                                        <constraint firstItem="50" firstAttribute="leading" secondItem="EsY-kV-wtO" secondAttribute="leading" id="xXG-TZ-lHt"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sdv-20-eNz" userLabel="Reward View">
+                                    <rect key="frame" x="5" y="118" width="270" height="60"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JB2-iS-cV3" userLabel="Reward Button" customClass="ScringoResizeableButton">
+                                            <rect key="frame" x="0.0" y="0.0" width="270" height="60"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                            <size key="titleShadowOffset" width="0.0" height="1"/>
+                                            <state key="normal" backgroundImage="Scringo.bundle/images/dark2/ScrImg_freeAppBtn.png">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <state key="highlighted" backgroundImage="Scringo.bundle/images/dark2/ScrImg_freeAppBtnPressed.png">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="quizEndRewardsClicked:" destination="-1" eventType="touchUpInside" id="duq-lq-Fwx"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="YOU WON A FREE APP!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGm-2T-T4p">
+                                            <rect key="frame" x="5" y="8" width="260" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="fcW-MG-0Jw"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Claim it on the AppStore" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8S-Yv-BfM">
+                                            <rect key="frame" x="10" y="30" width="250" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="6fY-Ph-hiH"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" white="0.0" alpha="0.69999999999999996" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="k8S-Yv-BfM" secondAttribute="trailing" constant="10" id="H70-ur-HLR"/>
+                                        <constraint firstAttribute="height" constant="60" id="RIe-1j-v4y"/>
+                                        <constraint firstAttribute="trailing" secondItem="qGm-2T-T4p" secondAttribute="trailing" constant="5" id="S9v-3i-hNA"/>
+                                        <constraint firstItem="JB2-iS-cV3" firstAttribute="leading" secondItem="Sdv-20-eNz" secondAttribute="leading" id="VN3-SI-Vu0"/>
+                                        <constraint firstItem="qGm-2T-T4p" firstAttribute="leading" secondItem="Sdv-20-eNz" secondAttribute="leading" constant="5" id="ZGB-P6-LBb"/>
+                                        <constraint firstItem="JB2-iS-cV3" firstAttribute="bottom" secondItem="Sdv-20-eNz" secondAttribute="bottom" id="ckF-na-MEM"/>
+                                        <constraint firstItem="JB2-iS-cV3" firstAttribute="trailing" secondItem="Sdv-20-eNz" secondAttribute="trailing" id="ewv-tz-lbN"/>
+                                        <constraint firstItem="qGm-2T-T4p" firstAttribute="top" secondItem="Sdv-20-eNz" secondAttribute="top" constant="8" id="fNd-mD-2iC"/>
+                                        <constraint firstItem="k8S-Yv-BfM" firstAttribute="leading" secondItem="Sdv-20-eNz" secondAttribute="leading" constant="10" id="fpp-cg-QEi"/>
+                                        <constraint firstItem="JB2-iS-cV3" firstAttribute="top" secondItem="Sdv-20-eNz" secondAttribute="top" id="otM-fc-T3O"/>
+                                        <constraint firstItem="qGm-2T-T4p" firstAttribute="centerX" secondItem="Sdv-20-eNz" secondAttribute="centerX" id="pWu-zY-zHh"/>
+                                        <constraint firstAttribute="centerX" secondItem="k8S-Yv-BfM" secondAttribute="centerX" id="q5z-bq-76v"/>
+                                        <constraint firstItem="k8S-Yv-BfM" firstAttribute="top" secondItem="qGm-2T-T4p" secondAttribute="bottom" constant="1" id="qz9-yJ-dTv"/>
+                                        <constraint firstAttribute="width" constant="270" id="uke-pv-jKH"/>
+                                    </constraints>
+                                </view>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_DashLine.png" translatesAutoresizingMaskIntoConstraints="NO" id="47" userLabel="Image View line ">
+                                    <rect key="frame" x="0.0" y="182" width="280" height="2"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="2" id="QBq-RW-kDM"/>
+                                    </constraints>
+                                </imageView>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="48">
+                                    <rect key="frame" x="0.0" y="184" width="280" height="284"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </tableView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="centerX" secondItem="Sdv-20-eNz" secondAttribute="centerX" id="27u-xV-Nd4"/>
+                                <constraint firstAttribute="bottom" secondItem="123" secondAttribute="bottom" constant="-15" id="4ms-zZ-1un"/>
+                                <constraint firstAttribute="centerX" secondItem="43" secondAttribute="centerX" id="7MW-oj-bFI"/>
+                                <constraint firstAttribute="trailing" secondItem="123" secondAttribute="trailing" constant="-10" id="8Iu-we-kZ1"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="42" secondAttribute="trailing" constant="10" id="BpP-yn-spj"/>
+                                <constraint firstItem="42" firstAttribute="top" secondItem="124" secondAttribute="top" constant="5" id="Ckm-rh-Qa1"/>
+                                <constraint firstItem="47" firstAttribute="top" secondItem="EsY-kV-wtO" secondAttribute="bottom" priority="500" constant="4" id="E9n-Bh-jZB"/>
+                                <constraint firstItem="123" firstAttribute="top" secondItem="124" secondAttribute="top" constant="-10" id="F5Q-Va-6pO"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="43" secondAttribute="trailing" constant="10" id="Gbr-AJ-yyI"/>
+                                <constraint firstItem="EsY-kV-wtO" firstAttribute="top" secondItem="43" secondAttribute="bottom" constant="10" id="Gwz-Hq-jLL"/>
+                                <constraint firstItem="43" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="124" secondAttribute="leading" constant="10" id="HQP-EX-Nuz"/>
+                                <constraint firstItem="48" firstAttribute="top" secondItem="47" secondAttribute="bottom" id="LlF-x5-CMe"/>
+                                <constraint firstAttribute="bottom" secondItem="48" secondAttribute="bottom" id="MFl-ke-ID2"/>
+                                <constraint firstAttribute="centerX" secondItem="EsY-kV-wtO" secondAttribute="centerX" id="RzZ-H7-tyN"/>
+                                <constraint firstItem="48" firstAttribute="leading" secondItem="124" secondAttribute="leading" id="TU3-YF-mAE"/>
+                                <constraint firstItem="47" firstAttribute="top" secondItem="Sdv-20-eNz" secondAttribute="bottom" priority="800" constant="4" id="aAH-QE-IYc"/>
+                                <constraint firstItem="43" firstAttribute="top" secondItem="42" secondAttribute="bottom" constant="5" id="buc-TU-BHb"/>
+                                <constraint firstItem="48" firstAttribute="trailing" secondItem="124" secondAttribute="trailing" id="cTN-hw-yJJ"/>
+                                <constraint firstItem="47" firstAttribute="trailing" secondItem="124" secondAttribute="trailing" id="eTs-i8-b59"/>
+                                <constraint firstItem="Sdv-20-eNz" firstAttribute="top" secondItem="EsY-kV-wtO" secondAttribute="bottom" constant="10" id="ecZ-dC-oYo"/>
+                                <constraint firstItem="42" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="124" secondAttribute="leading" constant="10" id="ipY-mq-kgH"/>
+                                <constraint firstAttribute="centerX" secondItem="42" secondAttribute="centerX" id="nII-Y2-i7Y"/>
+                                <constraint firstItem="123" firstAttribute="leading" secondItem="124" secondAttribute="leading" constant="-10" id="wr2-Jw-Ncl"/>
+                                <constraint firstItem="47" firstAttribute="leading" secondItem="124" secondAttribute="leading" id="xVi-BI-x8Y"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="141" firstAttribute="bottom" secondItem="40" secondAttribute="bottom" id="3hz-gY-EdS"/>
+                        <constraint firstItem="141" firstAttribute="top" secondItem="40" secondAttribute="top" id="6jr-uG-c1U"/>
+                        <constraint firstItem="124" firstAttribute="top" secondItem="40" secondAttribute="top" constant="50" id="JBm-eo-gZ3"/>
+                        <constraint firstAttribute="bottom" secondItem="124" secondAttribute="bottom" constant="50" id="L6e-Fd-TRj"/>
+                        <constraint firstItem="124" firstAttribute="leading" secondItem="40" secondAttribute="leading" constant="20" symbolic="YES" id="RGR-EI-2U3"/>
+                        <constraint firstItem="141" firstAttribute="leading" secondItem="40" secondAttribute="leading" id="TfO-eu-ZAD"/>
+                        <constraint firstItem="141" firstAttribute="trailing" secondItem="40" secondAttribute="trailing" id="rS0-V8-rti"/>
+                        <constraint firstAttribute="trailing" secondItem="124" secondAttribute="trailing" constant="20" symbolic="YES" id="zu6-W2-6X6"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="40" firstAttribute="bottom" secondItem="1" secondAttribute="bottom" id="4aN-be-IVf"/>
+                <constraint firstItem="55" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="6Ny-J4-hFz"/>
+                <constraint firstItem="4" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="9rn-VV-tM6"/>
+                <constraint firstItem="4" firstAttribute="top" secondItem="1" secondAttribute="top" constant="20" id="D6t-JR-Fni"/>
+                <constraint firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="DNX-8c-I7q"/>
+                <constraint firstAttribute="trailing" secondItem="180" secondAttribute="trailing" id="EuO-Gs-k2b"/>
+                <constraint firstItem="3" firstAttribute="top" secondItem="1" secondAttribute="top" id="Kbc-aQ-5uU"/>
+                <constraint firstAttribute="trailing" secondItem="4" secondAttribute="trailing" id="ME0-rA-TLa"/>
+                <constraint firstItem="40" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="Nfi-4N-e2v"/>
+                <constraint firstItem="180" firstAttribute="top" secondItem="4" secondAttribute="bottom" id="Nn3-9N-mix"/>
+                <constraint firstItem="40" firstAttribute="top" secondItem="1" secondAttribute="top" id="RJs-7o-pHI"/>
+                <constraint firstAttribute="trailing" secondItem="55" secondAttribute="trailing" id="a5d-De-Vlr"/>
+                <constraint firstItem="55" firstAttribute="top" secondItem="1" secondAttribute="top" id="adN-0Q-5Gl"/>
+                <constraint firstAttribute="bottom" secondItem="180" secondAttribute="bottom" id="he0-GI-4Wi"/>
+                <constraint firstItem="40" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="iw0-xK-dgs"/>
+                <constraint firstAttribute="bottom" secondItem="55" secondAttribute="bottom" id="jFO-HQ-lwK"/>
+                <constraint firstItem="3" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="k2S-R4-wBa"/>
+                <constraint firstAttribute="bottom" secondItem="3" secondAttribute="bottom" id="lqe-By-erj"/>
+                <constraint firstItem="180" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="rnj-lR-EXu"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="Scringo.bundle/images/dark2/ScrImg_5050Icon.png" width="57" height="58"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_BackArrow.png" width="21" height="21"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_BackBtn.png" width="38" height="33"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_BackBtnPressed.png" width="38" height="33"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_BackRibbon.png" width="46" height="41"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_BackRibbonPressed.png" width="46" height="41"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_Bg-568h.png" width="39" height="33"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_ClosexBtn.png" width="28" height="30"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_CoinsMedIcon.png" width="21" height="21"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_CoinsSmallBlackIcon.png" width="11" height="11"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_CoinsSmallIcon.png" width="11" height="11"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_DashLine.png" width="320" height="2"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_DefaultPopupBg.png" width="299" height="162"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_GreyBigBtn.png" width="33" height="43"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_GreyBigBtnPressed.png" width="33" height="43"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_HintsBg.png" width="320" height="464"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_HintsBlackIcon.png" width="24" height="24"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_MainIcon.png" width="22" height="21"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_NavBar.png" width="320" height="45"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_PoplularAnswerIcon.png" width="57" height="58"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_PopularBar.png" width="16" height="5"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_QuizCurrentBgCircle.png" width="53" height="53"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_QuizCurrentShadowCircle.png" width="49" height="49"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_SwitchQuestionIcon.png" width="57" height="58"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_YellowBigBtn.png" width="28" height="43"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_YellowBigBtnPressed.png" width="28" height="43"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_YellowNavBtn.png" width="35" height="33"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_YellowNavBtnPressed.png" width="35" height="33"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_freeAppBtn.png" width="16" height="16"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_freeAppBtnPressed.png" width="16" height="16"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

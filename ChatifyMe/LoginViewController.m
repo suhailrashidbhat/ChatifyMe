@@ -13,6 +13,7 @@
 #import "TransitionControllers/ADVAnimationController.h"
 #import "TransitionControllers/DropAnimationController.h"
 #import "TransitionControllers/ZoomAnimationController.h"
+#import <FacebookSDK/FacebookSDK.h>
 
 @interface LoginViewController ()
 
@@ -30,6 +31,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    FBLoginView *loginView = [[FBLoginView alloc] init];
+    loginView.center = self.view.center;
+    [self.view addSubview:loginView];
+    
     [self.enterChatButton addTarget:self action:@selector(enterChat:) forControlEvents:UIControlEventTouchUpInside];
     [self.signUpButton addTarget:self action:@selector(enterChat:) forControlEvents:UIControlEventTouchUpInside];
     // Do any additional setup after loading the view from its nib.
@@ -49,10 +54,10 @@
 - (void)enterChat:(id)sender {
 
     UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-    UIViewController* controller;
+    UINavigationController* controller;
 
     if(sender == self.enterChatButton){
-        controller = [storyboard instantiateViewControllerWithIdentifier:@"WelcomeViewController"];
+        controller = [storyboard instantiateViewControllerWithIdentifier:@"NavViewController"];
         self.animationController = [[ZoomAnimationController alloc] init];
     }else{
         controller = [storyboard instantiateViewControllerWithIdentifier:@"SignUpViewController"];
