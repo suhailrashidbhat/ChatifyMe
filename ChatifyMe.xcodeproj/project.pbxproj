@@ -550,7 +550,7 @@
 		0047709B19ED282A00103217 /* AllUsersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllUsersTableViewController.m; sourceTree = "<group>"; };
 		0047709D19ED674600103217 /* ScringoStyleCheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScringoStyleCheet.h; sourceTree = "<group>"; };
 		0047709E19ED674600103217 /* ScringoStyleCheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScringoStyleCheet.m; sourceTree = "<group>"; };
-		004770A019ED695200103217 /* Chatify.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Chatify.pch; sourceTree = "<group>"; };
+		004770A019ED695200103217 /* Chatify.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Chatify.pch; path = ../Chatify.pch; sourceTree = "<group>"; };
 		0061573719EA3DF400C20203 /* ChatifyMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatifyMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0061573B19EA3DF400C20203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0061573C19EA3DF400C20203 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -641,8 +641,6 @@
 		0061572E19EA3DF400C20203 = {
 			isa = PBXGroup;
 			children = (
-				004770A019ED695200103217 /* Chatify.pch */,
-				0047709719ED249600103217 /* Main.storyboard */,
 				0061573919EA3DF400C20203 /* ChatifyMe */,
 				0061578219EA4A9E00C20203 /* Resources */,
 				0061576119EA3FAE00C20203 /* Frameworks */,
@@ -680,6 +678,7 @@
 		0061573A19EA3DF400C20203 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				004770A019ED695200103217 /* Chatify.pch */,
 				00F1F8CA19EC40E500FDBC4E /* DropAnimationController.m */,
 				00F1F8CB19EC40E500FDBC4E /* ZoomAnimationController.m */,
 				0061573B19EA3DF400C20203 /* Info.plist */,
@@ -745,6 +744,7 @@
 		0061578219EA4A9E00C20203 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0047709719ED249600103217 /* Main.storyboard */,
 				0047709219ED21A800103217 /* Scringo.bundle */,
 				00476FAE19ED204F00103217 /* iPad_ScringoActivationRibonView.xib */,
 				00476FAF19ED204F00103217 /* iPad_ScringoActivationView.xib */,

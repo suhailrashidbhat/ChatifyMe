@@ -10,8 +10,8 @@
 #import "MembersTableViewController.h"
 #import "AllUsersTableViewController.h"
 #import <Parse/Parse.h>
-//#import <Scringo/Scringo.h>
-//#import <Scringo/ScringoUser.h>
+#import <Scringo/Scringo.h>
+#import <Scringo/ScringoUser.h>
 
 @interface WelcomeViewController ()
 
@@ -53,7 +53,7 @@
 {
 
     // Return the number of rows in the section.
-    return 2;
+    return 3;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -69,6 +69,9 @@
     } else if (indexPath.row == 1) {
         [cell.textLabel setText:NSLocalizedString(@"See other users", nil)];
         [cell.detailTextLabel setText:NSLocalizedString(@"Choose a user to chat with", nil)];
+    } else if (indexPath.row == 2) {
+        [cell.textLabel setText:NSLocalizedString(@"Create Group", nil)];
+        [cell.detailTextLabel setText:NSLocalizedString(@"Create a new chat group", nil)];
     }
 
     [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
@@ -80,12 +83,19 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row == 0) {
+        // Open group Chat with all !
+
         MembersTableViewController *parseVC =  [[MembersTableViewController alloc] init];
         [self.navigationController pushViewController:parseVC animated:YES];
     } else if (indexPath.row == 1) {
         AllUsersTableViewController *allUsersVC = [[AllUsersTableViewController alloc] init];
         [self.navigationController pushViewController:allUsersVC animated:YES];
+    } else if (indexPath.row == 2) {
+        [Scringo openCreateChatRoom];
     }
+}
+- (IBAction)createGroup:(id)sender {
+    [Scringo openCreateChatRoom];
 }
 
 
