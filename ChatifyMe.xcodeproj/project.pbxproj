@@ -252,6 +252,7 @@
 		0047709319ED21A800103217 /* Scringo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0047709219ED21A800103217 /* Scringo.bundle */; };
 		0047709619ED244100103217 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0047709419ED244100103217 /* Main.storyboard */; };
 		0047709919ED249600103217 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0047709719ED249600103217 /* Main.storyboard */; };
+		0047709C19ED282A00103217 /* AllUsersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047709B19ED282A00103217 /* AllUsersTableViewController.m */; };
 		0061573D19EA3DF400C20203 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0061573C19EA3DF400C20203 /* main.m */; };
 		0061574019EA3DF400C20203 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0061573F19EA3DF400C20203 /* AppDelegate.m */; };
 		0061574319EA3DF400C20203 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0061574219EA3DF400C20203 /* ViewController.m */; };
@@ -544,6 +545,8 @@
 		0047709219ED21A800103217 /* Scringo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Scringo.bundle; path = Scringo/Scringo.bundle; sourceTree = "<group>"; };
 		0047709519ED244100103217 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0047709819ED249600103217 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ChatifyMe/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0047709A19ED282A00103217 /* AllUsersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllUsersTableViewController.h; sourceTree = "<group>"; };
+		0047709B19ED282A00103217 /* AllUsersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllUsersTableViewController.m; sourceTree = "<group>"; };
 		0061573719EA3DF400C20203 /* ChatifyMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatifyMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0061573B19EA3DF400C20203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0061573C19EA3DF400C20203 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -998,6 +1001,8 @@
 				00F1F8DE19EC5D3E00FDBC4E /* MembersTableViewController.m */,
 				00F1F8E019EC5DDE00FDBC4E /* NavViewController.h */,
 				00F1F8E119EC5DDE00FDBC4E /* NavViewController.m */,
+				0047709A19ED282A00103217 /* AllUsersTableViewController.h */,
+				0047709B19ED282A00103217 /* AllUsersTableViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -1372,6 +1377,7 @@
 				0061573D19EA3DF400C20203 /* main.m in Sources */,
 				00F1F8DF19EC5D3E00FDBC4E /* MembersTableViewController.m in Sources */,
 				00F1F8C719EC3EDA00FDBC4E /* WelcomeViewController.m in Sources */,
+				0047709C19ED282A00103217 /* AllUsersTableViewController.m in Sources */,
 				00F1F8D219EC532B00FDBC4E /* SignUpViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

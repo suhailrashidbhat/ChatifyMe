@@ -70,8 +70,6 @@
     // Delete the user and log him out from Parse
     PFUser *cUser = [PFUser currentUser];
     [PFUser logOut];
-    PFQuery *query = [PFQuery queryWithClassName:@"User"];
-    [query delete:cUser];
 }
 
 - (BOOL)application:(UIApplication *)application

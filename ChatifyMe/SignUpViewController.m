@@ -39,4 +39,33 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+//    // Create a User in parse.
+//    PFUser *user = [PFUser user];
+//    if ([self validateUserNameField]) {
+//        user.username = self.userNameField.text;
+//        user.password = @"my pass";
+//        user.email = [self.userNameField.text stringByAppendingString:@"@chatifyme.com"];
+//
+//        // other fields can be set if you want to save more information
+//        user[@"phone"] = @"650-555-0000";
+//
+//        [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+//            if (!error) {
+//                self.alert = [[UIAlertView alloc] initWithTitle:@"Logging In..." message:@"Please wait" delegate:self cancelButtonTitle:@"" otherButtonTitles:nil];
+//                [self.alert show];
+//                [self performSelector:@selector(loginTheUserToChat:) withObject:user afterDelay:0.3];
+//            } else {
+//                NSString *errorString = [error userInfo][@"error"];
+//                NSLog(@"%@", errorString);
+//                if ([errorString isEqualToString:[NSString stringWithFormat:@"username %@ already taken", user.username]]) {
+//                    // Login  him. Already exists.
+//                }
+//                UIAlertView *errorFromParse = [[UIAlertView alloc] initWithTitle:@"Registering Error!" message:errorString delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+//                [errorFromParse show];
+//            }
+//        }];
+//    } else {
+//        // Do say !
+//    }
+
 @end
