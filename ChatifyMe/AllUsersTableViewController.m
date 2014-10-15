@@ -37,6 +37,7 @@
     self.usersWithin1000m = [NSMutableArray array];
     self.usersWithin5000m = [NSMutableArray array];
     self.usersFar = [NSMutableArray array];
+    [self.tableView setBackgroundColor:UIColorFromRGB(0xCCFFFF)];
     [self seggregateUsersBasedOnLocation];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

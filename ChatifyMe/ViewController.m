@@ -32,59 +32,15 @@
     self.chatData = [NSMutableArray array];
     self.chatTable.delegate = self;
     self.chatTable.dataSource = self;
-    self.sendButton.backgroundColor = [UIColor greenColor];
     [self.textField setReturnKeyType:UIReturnKeySend];
     [self.textField becomeFirstResponder];
     [self loadChat];
     [self.view setFrame:CGRectMake(0, 0, 320, 480)];
-    [self registerForKeyboardNotifications];
+    [self.view setBackgroundColor:UIColorFromRGB(0xCCFFFF)];
+    [self.chatTable setBackgroundColor:[UIColor clearColor]];
+    //[self registerForKeyboardNotifications];
 }
 
-
--(void) keyboardWasShown:(NSNotification*)aNotification
-{
-    NSLog(@"Keyboard was shown");
-    NSDictionary* info = [aNotification userInfo];
-
-    NSTimeInterval animationDuration;
-    UIViewAnimationCurve animationCurve;
-    CGRect keyboardFrame;
-    [[info objectForKey:UIKeyboardAnimationCurveUserInfoKey] getValue:&animationCurve];
-    [[info objectForKey:UIKeyboardAnimationDurationUserInfoKey] getValue:&animationDuration];
-    [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] getValue:&keyboardFrame];
-
-    [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:animationDuration];
-    [UIView setAnimationCurve:animationCurve];
-    [self.view setFrame:CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y- keyboardFrame.size.height, self.view.frame.size.width, self.view.frame.size.height - keyboardFrame.size.height )];
-    [self.sendButton setFrame:CGRectMake(self.sendButton.frame.origin.x, self.textField.frame.origin.y , self.sendButton.frame.size.width, self.sendButton.frame.size.height)];
-
-    [UIView commitAnimations];
-
-}
-
--(void) keyboardWillHide:(NSNotification*)aNotification
-{
-    NSLog(@"Keyboard will hide");
-    NSDictionary* info = [aNotification userInfo];
-
-    NSTimeInterval animationDuration;
-    UIViewAnimationCurve animationCurve;
-    CGRect keyboardFrame;
-    [[info objectForKey:UIKeyboardAnimationCurveUserInfoKey] getValue:&animationCurve];
-    [[info objectForKey:UIKeyboardAnimationDurationUserInfoKey] getValue:&animationDuration];
-    [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] getValue:&keyboardFrame];
-
-    [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:animationDuration];
-    [UIView setAnimationCurve:animationCurve];
-    [self.view setFrame:CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y + keyboardFrame.size.height, self.view.frame.size.width, self.view.frame.size.height +  - keyboardFrame.size.height)];
-
-    [UIView commitAnimations];
-
-    [self.textField performSelector:@selector(becomeFirstResponder) withObject:nil afterDelay:2];
-
-}
 
 - (void)viewWillDisappear:(BOOL)animated
 {
@@ -118,13 +74,13 @@
 {
     NSLog(@"the text content%@",self.textField.text);
     if (textField == self.textField) {
-        [textField resignFirstResponder];
+        [textField becomeFirstResponder];
         if (self.textField.text.length>0) {
             [self sendChat:nil];
 
         }
     }
-    return YES;
+    return NO;
 }
 
 
@@ -154,7 +110,6 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     ChatCell *cell = (ChatCell *)[tableView dequeueReusableCellWithIdentifier: @"chatCell"];
     NSUInteger row = [self.chatData count]-[indexPath row]-1;
-
     if (row < self.chatData.count){
         NSString *chatText = [[self.chatData objectAtIndex:row] objectForKey:@"text"];
         cell.chatTextLabel.lineBreakMode = UILineBreakModeWordWrap;
@@ -168,6 +123,7 @@
         cell.dateLabel.text = timeString;
         cell.nameLabel.text = [[self.chatData objectAtIndex:row] objectForKey:@"userName"];
     }
+    [cell setBackgroundColor:UIColorFromRGB(0xCCFFFF)];
     return cell;
 }
 
@@ -248,6 +204,7 @@
                 NSLog(@"Error: %@ %@", error, [error userInfo]);
             }
         }];
+        return;
     }
     __block int totalNumberOfEntries = 0;
     [query orderByAscending:@"createdAt"];

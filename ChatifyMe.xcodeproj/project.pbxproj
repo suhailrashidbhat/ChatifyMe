@@ -250,10 +250,9 @@
 		0047708F19ED205100103217 /* iPad_ScringoWelcomePopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0047701E19ED205000103217 /* iPad_ScringoWelcomePopupView.xib */; };
 		0047709119ED208100103217 /* Scringo.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = 0047709019ED208100103217 /* Scringo.bundle */; };
 		0047709319ED21A800103217 /* Scringo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0047709219ED21A800103217 /* Scringo.bundle */; };
-		0047709619ED244100103217 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0047709419ED244100103217 /* Main.storyboard */; };
-		0047709919ED249600103217 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0047709719ED249600103217 /* Main.storyboard */; };
 		0047709C19ED282A00103217 /* AllUsersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047709B19ED282A00103217 /* AllUsersTableViewController.m */; };
 		0047709F19ED674600103217 /* ScringoStyleCheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047709E19ED674600103217 /* ScringoStyleCheet.m */; };
+		004770A119EE52F700103217 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0047709419ED244100103217 /* Main.storyboard */; };
 		0061573D19EA3DF400C20203 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0061573C19EA3DF400C20203 /* main.m */; };
 		0061574019EA3DF400C20203 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0061573F19EA3DF400C20203 /* AppDelegate.m */; };
 		0061574319EA3DF400C20203 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0061574219EA3DF400C20203 /* ViewController.m */; };
@@ -551,6 +550,7 @@
 		0047709D19ED674600103217 /* ScringoStyleCheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScringoStyleCheet.h; sourceTree = "<group>"; };
 		0047709E19ED674600103217 /* ScringoStyleCheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScringoStyleCheet.m; sourceTree = "<group>"; };
 		004770A019ED695200103217 /* Chatify.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Chatify.pch; path = ../Chatify.pch; sourceTree = "<group>"; };
+		004770A219EE561300103217 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ../Constants.h; sourceTree = "<group>"; };
 		0061573719EA3DF400C20203 /* ChatifyMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatifyMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0061573B19EA3DF400C20203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0061573C19EA3DF400C20203 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -678,6 +678,7 @@
 		0061573A19EA3DF400C20203 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				004770A219EE561300103217 /* Constants.h */,
 				004770A019ED695200103217 /* Chatify.pch */,
 				00F1F8CA19EC40E500FDBC4E /* DropAnimationController.m */,
 				00F1F8CB19EC40E500FDBC4E /* ZoomAnimationController.m */,
@@ -1110,7 +1111,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0047709919ED249600103217 /* Main.storyboard in Resources */,
+				004770A119EE52F700103217 /* Main.storyboard in Resources */,
 				0047705A19ED205000103217 /* iPad_ScringoNewMessageView.xib in Resources */,
 				0047708619ED205000103217 /* iPad_ScringoUploadImageKeyboardLandscapeView.xib in Resources */,
 				0047703419ED205000103217 /* iPad_ScringoFeedActivityCell.xib in Resources */,
@@ -1318,7 +1319,6 @@
 				0047704619ED205000103217 /* iPad_ScringoGeneralLoadingView.xib in Resources */,
 				0047701F19ED205000103217 /* iPad_ScringoActivationRibonView.xib in Resources */,
 				00476F6019ED1FA200103217 /* ScringoForgotPasswordView.xib in Resources */,
-				0047709619ED244100103217 /* Main.storyboard in Resources */,
 				00476F7E19ED1FA300103217 /* ScringoOneChatMessageCell.xib in Resources */,
 				00476F3319ED1FA200103217 /* el.lproj in Resources */,
 				0047708B19ED205000103217 /* iPad_ScringoUserSettingsView.xib in Resources */,
@@ -1518,6 +1518,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Suhail Rashid Bhat (NPEB9RTHA8)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1529,6 +1530,7 @@
 				INFOPLIST_FILE = ChatifyMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -1536,6 +1538,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Suhail Rashid Bhat (NPEB9RTHA8)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1547,6 +1550,7 @@
 				INFOPLIST_FILE = ChatifyMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

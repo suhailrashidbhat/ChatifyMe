@@ -9,9 +9,11 @@
 #import "WelcomeViewController.h"
 #import "MembersTableViewController.h"
 #import "AllUsersTableViewController.h"
+#import "ViewController.h"
 #import <Parse/Parse.h>
 #import <Scringo/Scringo.h>
 #import <Scringo/ScringoUser.h>
+#import "ScringoStyleCheet.h"
 
 @interface WelcomeViewController ()
 
@@ -29,7 +31,7 @@
         self.title = NSLocalizedString(@"Not logged in", nil);
     }
     [self.navigationController.navigationBar setBackgroundColor:[UIColor brownColor]];
-    [self.tableView setBackgroundColor:[UIColor lightGrayColor]];
+    [self.tableView setBackgroundColor:UIColorFromRGB(0xCCFFFF)];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -83,9 +85,23 @@
 {
     if (indexPath.row == 0) {
         // Open group Chat with all !
-        [ScringoChatRoom getChatRoomByObjectId:@"objID" withObjectType:@"type" withTitle:@"Chatify" withData:@"data" completion:^(ScringoChatRoom *chatRoom, BOOL isSuccess) {
+        UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+        UINavigationController* controller;
+            controller = [storyboard instantiateViewControllerWithIdentifier:@"chatView"];
+            [self.navigationController pushViewController:controller animated:YES];
+            return;
+
+        // We can create the universal group in Scringo and open that too !
+
+/*
+ ScringoStyleCheet *cheet = [[ScringoStyleCheet alloc] init];
+        [Scringo setCustomStyleSheet:cheet];
+
+        [ScringoChatRoom getChatRoomByObjectId:@"iOKLkHLrC5" withObjectType:@"ChatRooms" withTitle:@"Chatify" withData:@"data" completion:^(ScringoChatRoom *chatRoom, BOOL isSuccess) {
             [Scringo openChatRoomWithTopic:chatRoom withNavigationController:self.navigationController withScringoNavControllerEnabled:YES];
         }];
+*/
+
     } else if (indexPath.row == 1) {
         AllUsersTableViewController *allUsersVC = [[AllUsersTableViewController alloc] init];
         [self.navigationController pushViewController:allUsersVC animated:YES];
