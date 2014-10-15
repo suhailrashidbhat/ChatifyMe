@@ -15,4 +15,12 @@ To read more about Scringo : http://www.scringo.com/docs/ios-guides/
 
 You can test the app using test account - test username and password. 
 
+TODO::
+1. Improve group chat.
+2. Write test cases.
+3. Add Appicons.
+4. Add new launch image.
+5. Improve UI and UX.
+
+
 ChatApp with Parse
