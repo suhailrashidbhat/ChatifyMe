@@ -146,6 +146,7 @@
     self.reloading = YES;
     [self loadChat];
     [self.chatTable reloadData];
+    [self.chatTable scrollToRowAtIndexPath:[NSIndexPath indexPathForItem:[self.chatTable numberOfRowsInSection:0]-1 inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:YES];
 }
 
 - (void)doneLoadingTableViewData{
