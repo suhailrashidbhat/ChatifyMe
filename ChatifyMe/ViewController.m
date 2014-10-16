@@ -114,6 +114,7 @@
         NSString *chatText = [[self.chatData objectAtIndex:row] objectForKey:@"text"];
         cell.chatTextLabel.lineBreakMode = UILineBreakModeWordWrap;
         cell.chatTextLabel.text = chatText;
+        [cell.chatTextLabel setTextColor:[UIColor blueColor]];
         [cell.chatTextLabel sizeToFit];
 
         NSDate *theDate = [[self.chatData objectAtIndex:row] objectForKey:@"date"];
