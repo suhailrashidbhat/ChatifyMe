@@ -285,7 +285,6 @@
 		00F1F8CF19EC412700FDBC4E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F1F8CE19EC412700FDBC4E /* UIKit.framework */; };
 		00F1F8D219EC532B00FDBC4E /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F1F8D119EC532B00FDBC4E /* SignUpViewController.m */; };
 		00F1F8DC19EC588900FDBC4E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F1F8DB19EC588900FDBC4E /* MapKit.framework */; };
-		00F1F8DF19EC5D3E00FDBC4E /* MembersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F1F8DE19EC5D3E00FDBC4E /* MembersTableViewController.m */; };
 		00F1F8E219EC5DDE00FDBC4E /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F1F8E119EC5DDE00FDBC4E /* NavViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -594,8 +593,6 @@
 		00F1F8D019EC532B00FDBC4E /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		00F1F8D119EC532B00FDBC4E /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		00F1F8DB19EC588900FDBC4E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		00F1F8DD19EC5D3E00FDBC4E /* MembersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MembersTableViewController.h; sourceTree = "<group>"; };
-		00F1F8DE19EC5D3E00FDBC4E /* MembersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MembersTableViewController.m; sourceTree = "<group>"; };
 		00F1F8E019EC5DDE00FDBC4E /* NavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavViewController.h; sourceTree = "<group>"; };
 		00F1F8E119EC5DDE00FDBC4E /* NavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1003,8 +1000,6 @@
 				00F1F8C519EC3EDA00FDBC4E /* WelcomeViewController.m */,
 				00F1F8D019EC532B00FDBC4E /* SignUpViewController.h */,
 				00F1F8D119EC532B00FDBC4E /* SignUpViewController.m */,
-				00F1F8DD19EC5D3E00FDBC4E /* MembersTableViewController.h */,
-				00F1F8DE19EC5D3E00FDBC4E /* MembersTableViewController.m */,
 				00F1F8E019EC5DDE00FDBC4E /* NavViewController.h */,
 				00F1F8E119EC5DDE00FDBC4E /* NavViewController.m */,
 				0047709A19ED282A00103217 /* AllUsersTableViewController.h */,
@@ -1382,7 +1377,6 @@
 				0061574019EA3DF400C20203 /* AppDelegate.m in Sources */,
 				0061579B19EA6CB400C20203 /* ChatCell.m in Sources */,
 				0061573D19EA3DF400C20203 /* main.m in Sources */,
-				00F1F8DF19EC5D3E00FDBC4E /* MembersTableViewController.m in Sources */,
 				00F1F8C719EC3EDA00FDBC4E /* WelcomeViewController.m in Sources */,
 				0047709C19ED282A00103217 /* AllUsersTableViewController.m in Sources */,
 				00F1F8D219EC532B00FDBC4E /* SignUpViewController.m in Sources */,

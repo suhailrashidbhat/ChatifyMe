@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ChatifyMe/WelcomeViewController.m"
-            timestampString = "435048277.091163"
+            timestampString = "435135223.873994"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ChatifyMe/LoginViewController.m"
-            timestampString = "435004288.20496"
+            timestampString = "435133892.812581"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "178"
-            endingLineNumber = "178"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
             landmarkName = "-signUpViewController:shouldBeginSignUp:"
             landmarkType = "5">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ChatifyMe/LoginViewController.m"
-            timestampString = "435004288.20496"
+            timestampString = "435133892.812581"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "199"
-            endingLineNumber = "199"
+            startingLineNumber = "200"
+            endingLineNumber = "200"
             landmarkName = "-signUpViewController:didSignUpUser:"
             landmarkType = "5">
          </BreakpointContent>
@@ -122,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ChatifyMe/LoginViewController.m"
-            timestampString = "435003007.206603"
+            timestampString = "435133892.812581"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
             landmarkName = "-enterChat:"
             landmarkType = "5">
          </BreakpointContent>
@@ -138,11 +138,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ChatifyMe/LoginViewController.m"
-            timestampString = "435003139.291284"
+            timestampString = "435133892.812581"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
             landmarkName = "-enterChat:"
             landmarkType = "5">
          </BreakpointContent>
@@ -169,11 +169,11 @@
                   symbolName = "-[AllUsersTableViewController seggregateUsersBasedOnLocation]"
                   moduleName = "ChatifyMe"
                   urlString = "file:///Users/suhailbhat/Developer/WorkSpace%20Secondary/ChatifyMe/ChatifyMe/AllUsersTableViewController.m"
-                  timestampString = "435048761.441941"
+                  timestampString = "435051319.151321"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "63"
-                  endingLineNumber = "63"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
                   offsetFromSymbolStart = "489">
                </Location>
                <Location
@@ -183,11 +183,11 @@
                   symbolName = "-[AllUsersTableViewController seggregateUsersBasedOnLocation]"
                   moduleName = "ChatifyMe"
                   urlString = "file:///Users/suhailbhat/Developer/WorkSpace%20Secondary/ChatifyMe/ChatifyMe/AllUsersTableViewController.m"
-                  timestampString = "435048761.442134"
+                  timestampString = "435051319.151728"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "63"
-                  endingLineNumber = "63"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
                   offsetFromSymbolStart = "549">
                </Location>
             </Locations>

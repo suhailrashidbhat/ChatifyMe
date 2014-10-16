@@ -7,7 +7,6 @@
 //
 
 #import "WelcomeViewController.h"
-#import "MembersTableViewController.h"
 #import "AllUsersTableViewController.h"
 #import "ViewController.h"
 #import <Parse/Parse.h>

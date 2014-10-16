@@ -108,6 +108,7 @@
         controller = (UINavigationController*)self.signUPController;//[storyboard instantiateViewControllerWithIdentifier:@"SignUpViewController"];
         self.animationController = [[DropAnimationController alloc] init];
         controller.transitioningDelegate  = self;
+        [[UIApplication sharedApplication].keyWindow addSubview:controller.view];
         [self presentViewController:controller animated:YES completion:nil];
         return;
     }
