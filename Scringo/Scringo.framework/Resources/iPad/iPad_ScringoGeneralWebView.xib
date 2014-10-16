@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScringoGeneralWebViewController">
+            <connections>
+                <outlet property="aboveNavBarView" destination="RO8-8B-dhK" id="jBP-8K-1tu"/>
+                <outlet property="activityIndicator" destination="xma-1x-Fpx" id="Geb-yZ-32d"/>
+                <outlet property="appButton" destination="5EU-dN-7XJ" id="x2D-8A-Trh"/>
+                <outlet property="backButton" destination="uEA-It-bCR" id="vby-2e-1rB"/>
+                <outlet property="backgroundView" destination="SJ6-2A-Bwp" id="O23-AE-NTc"/>
+                <outlet property="linkWebView" destination="Qtz-Fi-MYr" id="BAw-3B-3TU"/>
+                <outlet property="scringoContentView" destination="jCn-ih-0Q3" id="Pkh-ZH-L8b"/>
+                <outlet property="scringoContentViewTopSpaceConstraint" destination="GLU-ag-008" id="7Ln-h6-gji"/>
+                <outlet property="titleLabel" destination="jTf-9X-Dzp" id="rkN-7B-LPh"/>
+                <outlet property="topPanelView" destination="NdX-sd-zKI" id="3Ym-GC-0TW"/>
+                <outlet property="topPanelViewTopSpaceConstraint" destination="75c-fM-plo" id="fcr-dc-b3h"/>
+                <outlet property="view" destination="1" id="oiz-oN-b6A"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_Bg-568h.png" translatesAutoresizingMaskIntoConstraints="NO" id="SJ6-2A-Bwp">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NdX-sd-zKI" userLabel="View - top panel">
+                    <rect key="frame" x="0.0" y="20" width="320" height="45"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RO8-8B-dhK" userLabel="Above nav bar">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="DeM-Zb-YUZ"/>
+                            </constraints>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_NavBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="f30-QX-ZIF" customClass="ScringoResizableView">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEA-It-bCR" userLabel="Button - Back" customClass="ScringoResizeableButton">
+                            <rect key="frame" x="46" y="6" width="40" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="GhL-V8-GLV"/>
+                                <constraint firstAttribute="height" constant="34" id="yKo-7X-0wG"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="Scringo.bundle/images/dark2/ScrImg_BackArrow.png" backgroundImage="Scringo.bundle/images/dark2/ScrImg_BackBtn.png">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="Scringo.bundle/images/dark2/ScrImg_BackArrow.png" backgroundImage="Scringo.bundle/images/dark2/ScrImg_BackBtnPressed.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="backTapped:" destination="-1" eventType="touchUpInside" id="qQi-xu-biH"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="System Message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="jTf-9X-Dzp" userLabel="Label - Name">
+                            <rect key="frame" x="91" y="0.0" width="138" height="45"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                            <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <size key="shadowOffset" width="0.0" height="1"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5EU-dN-7XJ" userLabel="Button - App">
+                            <rect key="frame" x="0.0" y="2" width="46" height="41"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="46" id="Qua-mv-Dv7"/>
+                                <constraint firstAttribute="height" constant="41" id="afN-Jo-lC2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                            <state key="normal" image="Scringo.bundle/images/dark2/ScrImg_MainIcon.png" backgroundImage="Scringo.bundle/images/dark2/ScrImg_BackRibbon.png">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="Scringo.bundle/images/dark2/ScrImg_BackRibbonPressed.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="appTapped:" destination="-1" eventType="touchUpInside" id="b39-5J-Jg1"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="f30-QX-ZIF" firstAttribute="leading" secondItem="NdX-sd-zKI" secondAttribute="leading" id="0lM-4B-QRx"/>
+                        <constraint firstItem="f30-QX-ZIF" firstAttribute="top" secondItem="NdX-sd-zKI" secondAttribute="top" id="6KU-TD-lh9"/>
+                        <constraint firstAttribute="centerX" secondItem="jTf-9X-Dzp" secondAttribute="centerX" id="Bdo-dU-mHS"/>
+                        <constraint firstItem="uEA-It-bCR" firstAttribute="top" secondItem="NdX-sd-zKI" secondAttribute="top" constant="6" id="FM9-bE-XKm"/>
+                        <constraint firstAttribute="height" constant="45" id="LsK-Ko-Qs4"/>
+                        <constraint firstItem="uEA-It-bCR" firstAttribute="leading" secondItem="5EU-dN-7XJ" secondAttribute="trailing" id="McA-tI-nwt"/>
+                        <constraint firstItem="RO8-8B-dhK" firstAttribute="leading" secondItem="NdX-sd-zKI" secondAttribute="leading" id="NE6-Wi-VqN"/>
+                        <constraint firstAttribute="bottom" secondItem="jTf-9X-Dzp" secondAttribute="bottom" id="RNF-yT-fzw"/>
+                        <constraint firstAttribute="trailing" secondItem="RO8-8B-dhK" secondAttribute="trailing" id="VNL-ou-Ezx"/>
+                        <constraint firstItem="5EU-dN-7XJ" firstAttribute="top" secondItem="NdX-sd-zKI" secondAttribute="top" constant="2" id="Zg9-eL-PN2"/>
+                        <constraint firstAttribute="trailing" secondItem="f30-QX-ZIF" secondAttribute="trailing" id="aor-FH-C6j"/>
+                        <constraint firstItem="5EU-dN-7XJ" firstAttribute="leading" secondItem="NdX-sd-zKI" secondAttribute="leading" id="fIU-pq-DgD"/>
+                        <constraint firstAttribute="bottom" secondItem="f30-QX-ZIF" secondAttribute="bottom" id="ixL-vo-msk"/>
+                        <constraint firstAttribute="centerY" secondItem="jTf-9X-Dzp" secondAttribute="centerY" id="lN6-Xw-0Md"/>
+                        <constraint firstItem="jTf-9X-Dzp" firstAttribute="top" secondItem="NdX-sd-zKI" secondAttribute="top" id="wcH-L9-Epz"/>
+                        <constraint firstItem="RO8-8B-dhK" firstAttribute="top" secondItem="NdX-sd-zKI" secondAttribute="top" id="wie-n7-HZb"/>
+                        <constraint firstItem="jTf-9X-Dzp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="uEA-It-bCR" secondAttribute="trailing" constant="5" id="ycC-W4-IBb"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jCn-ih-0Q3" userLabel="View - Content">
+                    <rect key="frame" x="0.0" y="65" width="320" height="503"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qtz-Fi-MYr">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="503"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                        </webView>
+                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="xma-1x-Fpx">
+                            <rect key="frame" x="142" y="233" width="37" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="centerX" secondItem="xma-1x-Fpx" secondAttribute="centerX" id="HWP-N4-RbT"/>
+                        <constraint firstItem="Qtz-Fi-MYr" firstAttribute="top" secondItem="jCn-ih-0Q3" secondAttribute="top" id="HuI-rz-DgU"/>
+                        <constraint firstItem="Qtz-Fi-MYr" firstAttribute="leading" secondItem="jCn-ih-0Q3" secondAttribute="leading" id="hKW-jf-u5F"/>
+                        <constraint firstAttribute="bottom" secondItem="Qtz-Fi-MYr" secondAttribute="bottom" id="m8T-Dj-c73"/>
+                        <constraint firstAttribute="trailing" secondItem="Qtz-Fi-MYr" secondAttribute="trailing" id="uym-cK-UC7"/>
+                        <constraint firstAttribute="centerY" secondItem="xma-1x-Fpx" secondAttribute="centerY" id="vwu-94-Itt"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="NdX-sd-zKI" firstAttribute="top" secondItem="1" secondAttribute="top" constant="20" id="75c-fM-plo"/>
+                <constraint firstAttribute="bottom" secondItem="SJ6-2A-Bwp" secondAttribute="bottom" id="8yz-z1-naO"/>
+                <constraint firstItem="jCn-ih-0Q3" firstAttribute="top" secondItem="NdX-sd-zKI" secondAttribute="bottom" id="GLU-ag-008"/>
+                <constraint firstAttribute="trailing" secondItem="jCn-ih-0Q3" secondAttribute="trailing" id="IhN-DH-PTh"/>
+                <constraint firstAttribute="trailing" secondItem="SJ6-2A-Bwp" secondAttribute="trailing" id="cAE-uF-t6t"/>
+                <constraint firstItem="SJ6-2A-Bwp" firstAttribute="top" secondItem="1" secondAttribute="top" id="eSt-nf-J7s"/>
+                <constraint firstItem="SJ6-2A-Bwp" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="iY6-JD-zAC"/>
+                <constraint firstItem="NdX-sd-zKI" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="nHV-rT-TJk"/>
+                <constraint firstAttribute="bottom" secondItem="jCn-ih-0Q3" secondAttribute="bottom" id="nv2-Tq-Fq1"/>
+                <constraint firstItem="jCn-ih-0Q3" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="wPp-R3-9EL"/>
+                <constraint firstAttribute="trailing" secondItem="NdX-sd-zKI" secondAttribute="trailing" id="yBo-5e-pHe"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Scringo.bundle/images/dark2/ScrImg_BackArrow.png" width="640" height="1136"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_BackBtn.png" width="640" height="1136"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_BackBtnPressed.png" width="640" height="1136"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_BackRibbon.png" width="640" height="1136"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_BackRibbonPressed.png" width="640" height="1136"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_Bg-568h.png" width="640" height="1136"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_MainIcon.png" width="640" height="1136"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_NavBar.png" width="640" height="1136"/>
+    </resources>
+</document>

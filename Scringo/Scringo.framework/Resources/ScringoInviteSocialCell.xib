@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="ScringoInviteSocialFriendsCell" id="2" customClass="ScringoInviteSocialFriendCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2" id="4Ih-eR-RXt">
+                <rect key="frame" x="0.0" y="0.0" width="319.99999999999994" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3" customClass="ScringoLazyImageView">
+                        <rect key="frame" x="5" y="6" width="47" height="47"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="47" id="YM3-dS-WuS"/>
+                            <constraint firstAttribute="width" constant="47" id="sYa-Xn-Fi8"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_UserThumbMedium.png" translatesAutoresizingMaskIntoConstraints="NO" id="19">
+                        <rect key="frame" x="5" y="6" width="47" height="48"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="47" id="EKH-aL-U2R"/>
+                            <constraint firstAttribute="height" constant="48" id="JHC-T7-90U"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4" userLabel="Label - Name">
+                        <rect key="frame" x="65" y="21" width="155" height="17"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23" userLabel="Scringo Resizeable Button - Invite Facebook" customClass="ScringoResizeableButton">
+                        <rect key="frame" x="219.99999999999994" y="16" width="70" height="28"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="Bdf-Oh-QEf"/>
+                            <constraint firstAttribute="width" constant="70" id="fho-uk-vjF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="Invite" backgroundImage="Scringo.bundle/images/dark2/ScrImg_FacebookConnectSmall.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="highlighted" title="Invite" backgroundImage="Scringo.bundle/images/dark2/ScrImg_FacebookConnectSmallPressed.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="inviteTapped:" destination="2" eventType="touchUpInside" id="38"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39" userLabel="Scringo Resizeable Button - Invite Twitter" customClass="ScringoResizeableButton">
+                        <rect key="frame" x="219.99999999999994" y="16" width="70" height="28"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="Yhs-r0-zTG"/>
+                            <constraint firstAttribute="width" constant="70" id="juo-6e-S1R"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="Invite" backgroundImage="Scringo.bundle/images/dark2/ScrImg_TwitterConnectSmall.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="highlighted" title="Invite" backgroundImage="Scringo.bundle/images/dark2/ScrImg_TwitterConnectSmallPressed.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="inviteTapped:" destination="2" eventType="touchUpInside" id="40"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_DashLine.png" translatesAutoresizingMaskIntoConstraints="NO" id="20">
+                        <rect key="frame" x="0.0" y="59" width="319.99999999999994" height="2"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="nLB-fi-9uN"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4" firstAttribute="leading" secondItem="3" secondAttribute="trailing" constant="13" id="4Hx-pE-r0x"/>
+                <constraint firstItem="23" firstAttribute="leading" secondItem="4" secondAttribute="trailing" id="4xM-lq-bw3"/>
+                <constraint firstAttribute="trailing" secondItem="39" secondAttribute="trailing" constant="30" id="9CM-tC-kUh"/>
+                <constraint firstItem="3" firstAttribute="top" secondItem="2" secondAttribute="top" constant="6" id="Dng-Qy-agw"/>
+                <constraint firstItem="3" firstAttribute="centerY" secondItem="2" secondAttribute="centerY" constant="-0.5" id="Eb9-WO-c5h"/>
+                <constraint firstItem="39" firstAttribute="top" secondItem="2" secondAttribute="top" constant="16" id="Ho9-rT-9KI"/>
+                <constraint firstItem="20" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="fLw-bH-Ig7"/>
+                <constraint firstItem="23" firstAttribute="top" secondItem="2" secondAttribute="top" constant="16" id="gBw-Ww-O4d"/>
+                <constraint firstItem="19" firstAttribute="top" secondItem="2" secondAttribute="top" constant="6" id="i4T-MJ-rQd"/>
+                <constraint firstItem="19" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="5" id="i7h-62-8MR"/>
+                <constraint firstAttribute="trailing" secondItem="20" secondAttribute="trailing" id="lVO-IN-Ecq"/>
+                <constraint firstItem="20" firstAttribute="top" secondItem="3" secondAttribute="bottom" constant="6" id="obB-yv-XPS"/>
+                <constraint firstAttribute="trailing" secondItem="23" secondAttribute="trailing" constant="30" id="pfq-t9-th3"/>
+                <constraint firstAttribute="centerY" secondItem="4" secondAttribute="centerY" id="rVQ-Wn-N6k"/>
+                <constraint firstItem="3" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="5" id="zmg-1m-zGi"/>
+            </constraints>
+            <connections>
+                <outlet property="fbInviteButton" destination="23" id="41"/>
+                <outlet property="nameLabel" destination="4" id="24"/>
+                <outlet property="twitterInviteButton" destination="39" id="42"/>
+                <outlet property="userFrameView" destination="19" id="21"/>
+                <outlet property="userPhoto" destination="3" id="14"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Scringo.bundle/images/dark2/ScrImg_DashLine.png" width="320" height="2"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_FacebookConnectSmall.png" width="16" height="16"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_FacebookConnectSmallPressed.png" width="16" height="16"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_TwitterConnectSmall.png" width="16" height="16"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_TwitterConnectSmallPressed.png" width="16" height="16"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_UserThumbMedium.png" width="16" height="16"/>
+    </resources>
+</document>

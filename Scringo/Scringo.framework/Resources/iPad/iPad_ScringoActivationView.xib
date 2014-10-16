@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScringoActivationView">
+            <connections>
+                <outlet property="activationButton" destination="8" id="42"/>
+                <outlet property="activationImageView" destination="reg-Mf-lpI" id="VHm-oS-kIW"/>
+                <outlet property="badgeLeftView" destination="20" id="30"/>
+                <outlet property="badgeNumberLabel" destination="19" id="49"/>
+                <outlet property="landscapeActivationButton" destination="35" id="44"/>
+                <outlet property="landscapeActivationImageView" destination="wLf-Fr-VGP" id="Jdp-mg-9B0"/>
+                <outlet property="landscapeBadgeLeftView" destination="34" id="45"/>
+                <outlet property="landscapeBadgeNumberLabel" destination="37" id="50"/>
+                <outlet property="landscapeView" destination="33" id="41"/>
+                <outlet property="portraitView" destination="4" id="43"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="4" userLabel="Portrait">
+            <rect key="frame" x="0.0" y="0.0" width="46" height="37"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="reg-Mf-lpI" userLabel="Activation Image View">
+                    <rect key="frame" x="11" y="6" width="25" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="BLN-go-h4J"/>
+                        <constraint firstAttribute="height" constant="25" id="lus-NE-kWq"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20" userLabel="View - badge">
+                    <rect key="frame" x="24" y="0.0" width="22" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_HomeBadgeBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="18">
+                            <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="10+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="19" userLabel="Label - Badge">
+                            <rect key="frame" x="3" y="3" width="16" height="15"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="7Nr-o4-5SS"/>
+                        <constraint firstItem="18" firstAttribute="leading" secondItem="20" secondAttribute="leading" id="7Xg-Gz-JfE"/>
+                        <constraint firstItem="18" firstAttribute="top" secondItem="20" secondAttribute="top" id="8Qh-ON-1P9"/>
+                        <constraint firstAttribute="centerY" secondItem="19" secondAttribute="centerY" id="Akn-TD-n3g"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="19" secondAttribute="trailing" constant="3" id="NzF-hA-K8O"/>
+                        <constraint firstAttribute="width" constant="22" id="Rmc-GR-yPt"/>
+                        <constraint firstAttribute="trailing" secondItem="18" secondAttribute="trailing" id="fIR-UW-84i"/>
+                        <constraint firstAttribute="bottom" secondItem="18" secondAttribute="bottom" id="iVV-Y5-ImA"/>
+                        <constraint firstAttribute="centerX" secondItem="19" secondAttribute="centerX" id="jsR-kC-pwd"/>
+                        <constraint firstItem="19" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="20" secondAttribute="leading" constant="3" id="pZJ-GD-kpQ"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8" userLabel="Scringo Resizeable Button - Portrait" customClass="ScringoResizeableButton">
+                    <rect key="frame" x="0.0" y="0.0" width="46" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="6" maxY="0.0"/>
+                    <inset key="titleEdgeInsets" minX="7" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="8" minY="0.0" maxX="2" maxY="1"/>
+                    <state key="normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="17"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="reg-Mf-lpI" secondAttribute="centerX" id="1hZ-oI-RSI"/>
+                <constraint firstItem="20" firstAttribute="top" secondItem="4" secondAttribute="top" id="284-KE-Sub"/>
+                <constraint firstAttribute="centerY" secondItem="reg-Mf-lpI" secondAttribute="centerY" id="Jly-M2-hHo"/>
+                <constraint firstItem="8" firstAttribute="leading" secondItem="4" secondAttribute="leading" id="L7w-Ru-RSl"/>
+                <constraint firstAttribute="trailing" secondItem="20" secondAttribute="trailing" id="TcT-Je-tCJ"/>
+                <constraint firstAttribute="bottom" secondItem="8" secondAttribute="bottom" id="aCU-bN-SRE"/>
+                <constraint firstAttribute="trailing" secondItem="8" secondAttribute="trailing" id="pkx-Ck-VEG"/>
+                <constraint firstItem="8" firstAttribute="top" secondItem="4" secondAttribute="top" id="vGX-lu-8Hr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+        <view contentMode="scaleToFill" id="33" userLabel="Landscape">
+            <rect key="frame" x="0.0" y="0.0" width="46" height="31"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wLf-Fr-VGP" userLabel="Activation Image View">
+                    <rect key="frame" x="12" y="5" width="22" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="2CE-hM-bEY"/>
+                        <constraint firstAttribute="height" constant="22" id="wVp-Tt-b77"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="34" userLabel="View - badge">
+                    <rect key="frame" x="24" y="0.0" width="22" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_HomeBadgeBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="36">
+                            <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="10+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="37" userLabel="Label - Badge">
+                            <rect key="frame" x="4" y="3" width="15" height="15"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="36" firstAttribute="top" secondItem="34" secondAttribute="top" id="5Gu-It-frB"/>
+                        <constraint firstAttribute="width" constant="22" id="8y9-7w-NNe"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="37" secondAttribute="trailing" constant="3" id="Ahb-tE-byi"/>
+                        <constraint firstItem="36" firstAttribute="leading" secondItem="34" secondAttribute="leading" id="EWd-Js-lC8"/>
+                        <constraint firstAttribute="centerX" secondItem="37" secondAttribute="centerX" id="Onn-r9-Sv2"/>
+                        <constraint firstAttribute="centerY" secondItem="37" secondAttribute="centerY" id="PwG-zK-6Ph"/>
+                        <constraint firstItem="37" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="34" secondAttribute="leading" constant="3" id="UTv-lF-XKc"/>
+                        <constraint firstAttribute="height" constant="22" id="eAZ-ab-7Gt"/>
+                        <constraint firstAttribute="trailing" secondItem="36" secondAttribute="trailing" id="is3-lc-WrI"/>
+                        <constraint firstAttribute="bottom" secondItem="36" secondAttribute="bottom" id="wVw-jx-ofg"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35" userLabel="Scringo Resizeable Button - Landscape" customClass="ScringoResizeableButton">
+                    <rect key="frame" x="0.0" y="0.0" width="46" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="6" maxY="0.0"/>
+                    <inset key="titleEdgeInsets" minX="7" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="8" minY="0.0" maxX="2" maxY="1"/>
+                    <state key="normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="38"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="35" secondAttribute="trailing" id="3ht-LM-rkw"/>
+                <constraint firstAttribute="bottom" secondItem="35" secondAttribute="bottom" id="50G-Np-XE4"/>
+                <constraint firstItem="35" firstAttribute="leading" secondItem="33" secondAttribute="leading" id="EAK-ah-auF"/>
+                <constraint firstItem="34" firstAttribute="top" secondItem="33" secondAttribute="top" id="H2E-Qo-Uaw"/>
+                <constraint firstAttribute="trailing" secondItem="34" secondAttribute="trailing" id="H8f-bk-UsY"/>
+                <constraint firstItem="35" firstAttribute="top" secondItem="33" secondAttribute="top" id="OhO-TI-gPV"/>
+                <constraint firstAttribute="centerX" secondItem="wLf-Fr-VGP" secondAttribute="centerX" id="dNL-P2-P80"/>
+                <constraint firstAttribute="centerY" secondItem="wLf-Fr-VGP" secondAttribute="centerY" id="ido-xw-FV3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Scringo.bundle/images/dark2/ScrImg_HomeBadgeBg.png" width="22" height="22"/>
+    </resources>
+</document>

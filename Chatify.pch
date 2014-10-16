@@ -1,0 +1,18 @@
+//
+//  Chatify.pch
+//  ChatifyMe
+//
+//  Created by Suhail Bhat on 14/10/14.
+//  Copyright (c) 2014 Suhail Bhat. All rights reserved.
+//
+
+#ifndef ChatifyMe_Chatify_pch
+#define ChatifyMe_Chatify_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <UIKit/UIKit.h>
+#import "Constants.h"
+
+#endif

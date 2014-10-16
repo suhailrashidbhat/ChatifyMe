@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
+#import <Scringo/Scringo.h>
+#import <FacebookSDK/FacebookSDK.h>
+#import "LoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +20,21 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [Parse setApplicationId:@"6Xc3lyiOekcqRKPZKLmAHJWwqOafZ3m4DAhAR3lq"
+                  clientKey:@"gpa6QKMtnrqX0Rd9dUo6b36hdkdWLqSiqqnEK4cD"];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main"
+                                                             bundle: nil];
+    LoginViewController *loginController = (LoginViewController *)[mainStoryboard
+                                                                instantiateViewControllerWithIdentifier:@"login"];
+    self.window.rootViewController = loginController;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    [PFUser logOut];
+    [Scringo initWithAppId:@"6LWoqIGOEwkpa74afzg27Koiv5eorSqe" completion:^{
+        nil;
+    }];
+
     return YES;
 }
 
@@ -39,7 +57,17 @@
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    // Delete the user and log him out from Parse
+    PFUser *cUser = [PFUser currentUser];
+    [PFUser logOut];
+}
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+    // attempt to extract a token from the url
+    return [FBAppCall handleOpenURL:url sourceApplication:sourceApplication];
 }
 
 @end

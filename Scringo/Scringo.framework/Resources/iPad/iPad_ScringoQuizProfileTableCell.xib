@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="scringoquizprofilecell" id="2" customClass="ScringoQuizProfileTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2" id="sW4-tV-0Tt">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Option title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4">
+                        <rect key="frame" x="10" y="13" width="240" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_DashbaordArrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="5" userLabel="Image View - more">
+                        <rect key="frame" x="300" y="16" width="7" height="12"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="7" id="sXE-3k-XVW"/>
+                            <constraint firstAttribute="height" constant="12" id="y7O-mh-Gbj"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18" userLabel="Scringo Resizeable Button - 1st Answer" customClass="ScringoResizeableButton">
+                        <rect key="frame" x="10" y="10" width="300" height="24"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="300" id="ma9-cT-mkB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <size key="titleShadowOffset" width="0.0" height="1"/>
+                        <state key="normal" title="Play New Game" backgroundImage="Scringo.bundle/images/dark2/ScrImg_YellowBigBtn.png">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="highlighted" backgroundImage="Scringo.bundle/images/dark2/ScrImg_YellowBigBtnPressed.png">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="playGameClicked:" destination="2" eventType="touchUpInside" id="22"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="27" userLabel="View - Off">
+                        <rect key="frame" x="250" y="0.0" width="60" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_SoundsOff.png" translatesAutoresizingMaskIntoConstraints="NO" id="25">
+                                <rect key="frame" x="0.0" y="11" width="26" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="26" id="czd-o5-dKH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Off" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26">
+                                <rect key="frame" x="30" y="12" width="30" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Q7T-Lv-2OA"/>
+                                    <constraint firstAttribute="width" constant="30" id="utA-12-snD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="26" secondAttribute="trailing" id="0N6-yb-Q14"/>
+                            <constraint firstAttribute="height" constant="44" id="46H-so-h5i"/>
+                            <constraint firstItem="25" firstAttribute="bottom" secondItem="26" secondAttribute="bottom" id="8MZ-Uc-fL6"/>
+                            <constraint firstItem="26" firstAttribute="centerY" secondItem="27" secondAttribute="centerY" id="Azw-xy-3dl"/>
+                            <constraint firstAttribute="width" constant="60" id="JJa-Lv-0ed"/>
+                            <constraint firstItem="25" firstAttribute="centerY" secondItem="26" secondAttribute="centerY" id="OqA-GB-DJm"/>
+                            <constraint firstItem="25" firstAttribute="leading" secondItem="27" secondAttribute="leading" id="eoy-1q-odh"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="28" userLabel="View - On">
+                        <rect key="frame" x="250" y="0.0" width="60" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_SoundsOn.png" translatesAutoresizingMaskIntoConstraints="NO" id="30">
+                                <rect key="frame" x="0.0" y="11" width="26" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="26" id="kK8-rf-9u3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="On" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29">
+                                <rect key="frame" x="30" y="12" width="30" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Isa-UB-IHR"/>
+                                    <constraint firstAttribute="height" constant="21" id="i2W-kW-Yao"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="30" firstAttribute="centerY" secondItem="28" secondAttribute="centerY" id="N89-qd-YgN"/>
+                            <constraint firstItem="30" firstAttribute="centerY" secondItem="29" secondAttribute="centerY" id="PL9-n4-Ryq"/>
+                            <constraint firstItem="30" firstAttribute="bottom" secondItem="29" secondAttribute="bottom" id="UzT-K9-Ji8"/>
+                            <constraint firstItem="30" firstAttribute="leading" secondItem="28" secondAttribute="leading" id="X08-sx-jSk"/>
+                            <constraint firstAttribute="height" constant="44" id="jgp-xk-C1D"/>
+                            <constraint firstAttribute="trailing" secondItem="29" secondAttribute="trailing" id="lba-V6-hAc"/>
+                            <constraint firstAttribute="width" constant="60" id="umR-C5-L8Z"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_DashLine.png" translatesAutoresizingMaskIntoConstraints="NO" id="3" userLabel="Image View line ">
+                        <rect key="frame" x="0.0" y="42" width="320" height="2"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="EHB-gD-MTl"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="27" firstAttribute="leading" secondItem="4" secondAttribute="trailing" id="6fo-0d-eUj"/>
+                <constraint firstItem="18" firstAttribute="baseline" secondItem="4" secondAttribute="baseline" id="DgN-PA-0Ds"/>
+                <constraint firstItem="3" firstAttribute="top" secondItem="2" secondAttribute="top" priority="750" constant="42" id="GzF-RT-6jQ"/>
+                <constraint firstAttribute="centerY" secondItem="5" secondAttribute="centerY" id="I17-Zc-sZy"/>
+                <constraint firstAttribute="centerX" secondItem="18" secondAttribute="centerX" id="Iwr-lr-0sp"/>
+                <constraint firstItem="3" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="KS7-OJ-m4i"/>
+                <constraint firstAttribute="centerY" secondItem="28" secondAttribute="centerY" id="Kbl-Mc-Qr3"/>
+                <constraint firstAttribute="centerY" secondItem="4" secondAttribute="centerY" id="OTO-wD-z2C"/>
+                <constraint firstAttribute="trailing" secondItem="28" secondAttribute="trailing" constant="10" id="TJJ-4S-BJt"/>
+                <constraint firstItem="3" firstAttribute="top" secondItem="18" secondAttribute="bottom" priority="800" constant="8" id="Yqc-JJ-Gdj"/>
+                <constraint firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="cGB-fW-9KR"/>
+                <constraint firstItem="4" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="10" id="crk-0g-ouk"/>
+                <constraint firstAttribute="trailing" secondItem="5" secondAttribute="trailing" constant="13" id="fRO-hH-0ho"/>
+                <constraint firstAttribute="trailing" secondItem="27" secondAttribute="trailing" constant="10" id="hb8-KN-fuy"/>
+                <constraint firstAttribute="centerY" secondItem="18" secondAttribute="centerY" id="jaY-76-QWV"/>
+                <constraint firstAttribute="centerY" secondItem="27" secondAttribute="centerY" id="lWa-xS-4Sq"/>
+                <constraint firstItem="18" firstAttribute="top" secondItem="2" secondAttribute="top" constant="10" id="wJW-j5-JHU"/>
+            </constraints>
+            <connections>
+                <outlet property="moreImage" destination="5" id="20"/>
+                <outlet property="playGameButton" destination="18" id="21"/>
+                <outlet property="seperatorLineImage" destination="3" id="23"/>
+                <outlet property="soundsOffLabel" destination="26" id="32"/>
+                <outlet property="soundsOffView" destination="27" id="31"/>
+                <outlet property="soundsOnLabel" destination="29" id="34"/>
+                <outlet property="soundsOnView" destination="28" id="33"/>
+                <outlet property="titleLabel" destination="4" id="19"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Scringo.bundle/images/dark2/ScrImg_DashLine.png" width="16" height="16"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_DashbaordArrow.png" width="16" height="16"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_SoundsOff.png" width="16" height="16"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_SoundsOn.png" width="16" height="16"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_YellowBigBtn.png" width="16" height="16"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_YellowBigBtnPressed.png" width="16" height="16"/>
+    </resources>
+</document>

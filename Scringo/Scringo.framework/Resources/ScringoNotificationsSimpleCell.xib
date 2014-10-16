@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="scringonotificationscell" rowHeight="55" id="jXt-ps-rUt" customClass="ScringoNotificationsSimpleCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jXt-ps-rUt" id="pnz-wq-Yn9">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="ndh-bl-mgd" customClass="ScringoLazyUserImageView">
+                        <rect key="frame" x="5" y="11" width="32" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="Hhs-aD-WC4"/>
+                            <constraint firstAttribute="width" constant="32" id="h43-zZ-PzJ"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_UserThumbSmall.png" translatesAutoresizingMaskIntoConstraints="NO" id="igX-Sw-0uM">
+                        <rect key="frame" x="5" y="11" width="32" height="33"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="33" id="UtE-bn-DAs"/>
+                            <constraint firstAttribute="width" constant="32" id="Zk5-bR-yDW"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPb-Mp-Zx7">
+                        <rect key="frame" x="5" y="11" width="32" height="33"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="cee-0l-TfZ"/>
+                            <constraint firstAttribute="height" constant="33" id="kka-dj-4Wu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <state key="normal">
+                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="highlighted">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="profileTapped:" destination="jXt-ps-rUt" eventType="touchUpInside" id="c5u-rZ-g83"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" preferredMaxLayoutWidth="195" translatesAutoresizingMaskIntoConstraints="NO" id="s1a-OO-Lto" userLabel="Label - Name" customClass="ScringoTTTAttributedLabel">
+                        <rect key="frame" x="45" y="6" width="195" height="32"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="6pN-aj-jQl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="749" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ah2-bd-jvn" userLabel="Label - Time">
+                        <rect key="frame" x="45" y="38" width="195" height="12"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dL1-2g-FZM" userLabel="Buttons View">
+                        <rect key="frame" x="242" y="10" width="70" height="34"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vg6-0p-R0y" userLabel="Scringo Resizeable Button - Do action" customClass="ScringoResizeableButton">
+                                <rect key="frame" x="0.0" y="0.0" width="70" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <state key="normal" backgroundImage="Scringo.bundle/images/dark2/ScrImg_DefaultGreyBtn.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="Scringo.bundle/images/dark2/ScrImg_DefaultGreyBtnPressed.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="followTapped:" destination="jXt-ps-rUt" eventType="touchUpInside" id="3mZ-GF-nim"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ge8-gF-ly1" userLabel="Scringo Resizeable Button - Unfollow" customClass="ScringoResizeableButton">
+                                <rect key="frame" x="0.0" y="0.0" width="70" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <state key="normal" backgroundImage="Scringo.bundle/images/dark2/ScrImg_DefaultGreyBtnPressed.png">
+                                    <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="unfollowTapped:" destination="jXt-ps-rUt" eventType="touchUpInside" id="jOy-Ww-5gN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Ge8-gF-ly1" secondAttribute="bottom" id="06s-9E-OEZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Ge8-gF-ly1" secondAttribute="trailing" id="4Za-Ik-N3e"/>
+                            <constraint firstAttribute="height" constant="34" id="4gD-OY-mcP"/>
+                            <constraint firstItem="vg6-0p-R0y" firstAttribute="leading" secondItem="dL1-2g-FZM" secondAttribute="leading" id="583-aV-6Jw"/>
+                            <constraint firstItem="vg6-0p-R0y" firstAttribute="top" secondItem="dL1-2g-FZM" secondAttribute="top" id="FBl-MS-Qow"/>
+                            <constraint firstItem="Ge8-gF-ly1" firstAttribute="leading" secondItem="dL1-2g-FZM" secondAttribute="leading" id="Ijx-vN-hsU"/>
+                            <constraint firstAttribute="trailing" secondItem="vg6-0p-R0y" secondAttribute="trailing" id="Kq4-8X-uyq"/>
+                            <constraint firstAttribute="bottom" secondItem="vg6-0p-R0y" secondAttribute="bottom" id="SgA-dt-Qhh"/>
+                            <constraint firstAttribute="width" constant="70" id="mdB-qZ-11N"/>
+                            <constraint firstItem="Ge8-gF-ly1" firstAttribute="top" secondItem="dL1-2g-FZM" secondAttribute="top" id="odt-hl-QH1"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_DashLine.png" translatesAutoresizingMaskIntoConstraints="NO" id="3gc-F8-uhG">
+                        <rect key="frame" x="0.0" y="53" width="320" height="2"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="jAA-TU-Gzj"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hPb-Mp-Zx7" firstAttribute="bottom" secondItem="igX-Sw-0uM" secondAttribute="bottom" id="04q-a5-ZlE"/>
+                    <constraint firstItem="hPb-Mp-Zx7" firstAttribute="leading" secondItem="igX-Sw-0uM" secondAttribute="leading" id="1Ph-MF-Rar"/>
+                    <constraint firstItem="s1a-OO-Lto" firstAttribute="leading" secondItem="ndh-bl-mgd" secondAttribute="trailing" constant="8" symbolic="YES" id="84n-pq-A09"/>
+                    <constraint firstItem="3gc-F8-uhG" firstAttribute="top" secondItem="ah2-bd-jvn" secondAttribute="bottom" constant="3" id="85B-gy-sPz"/>
+                    <constraint firstAttribute="centerY" secondItem="ndh-bl-mgd" secondAttribute="centerY" id="9Tx-9z-ZVF"/>
+                    <constraint firstItem="ndh-bl-mgd" firstAttribute="leading" secondItem="pnz-wq-Yn9" secondAttribute="leading" constant="5" id="BHW-Bf-YmG"/>
+                    <constraint firstItem="hPb-Mp-Zx7" firstAttribute="top" secondItem="igX-Sw-0uM" secondAttribute="top" id="D9J-Vk-EpS"/>
+                    <constraint firstItem="dL1-2g-FZM" firstAttribute="leading" secondItem="s1a-OO-Lto" secondAttribute="trailing" priority="750" constant="2" id="GNN-Jc-41k"/>
+                    <constraint firstAttribute="trailing" secondItem="3gc-F8-uhG" secondAttribute="trailing" id="HCr-ek-1Af"/>
+                    <constraint firstItem="ndh-bl-mgd" firstAttribute="top" secondItem="igX-Sw-0uM" secondAttribute="top" id="HY7-X3-QqN"/>
+                    <constraint firstItem="3gc-F8-uhG" firstAttribute="leading" secondItem="pnz-wq-Yn9" secondAttribute="leading" id="NWQ-4L-4S5"/>
+                    <constraint firstItem="hPb-Mp-Zx7" firstAttribute="trailing" secondItem="igX-Sw-0uM" secondAttribute="trailing" id="V9I-Sd-Ytf"/>
+                    <constraint firstAttribute="trailing" secondItem="s1a-OO-Lto" secondAttribute="trailing" priority="700" constant="5" id="XoU-uZ-edB"/>
+                    <constraint firstItem="ah2-bd-jvn" firstAttribute="top" secondItem="s1a-OO-Lto" secondAttribute="bottom" id="asl-oc-RWm"/>
+                    <constraint firstAttribute="trailing" secondItem="dL1-2g-FZM" secondAttribute="trailing" constant="8" id="bhd-83-LEv"/>
+                    <constraint firstItem="ndh-bl-mgd" firstAttribute="leading" secondItem="igX-Sw-0uM" secondAttribute="leading" id="fxK-Tv-1yx"/>
+                    <constraint firstAttribute="centerY" secondItem="dL1-2g-FZM" secondAttribute="centerY" id="gCP-6i-jwr"/>
+                    <constraint firstItem="ah2-bd-jvn" firstAttribute="leading" secondItem="ndh-bl-mgd" secondAttribute="trailing" constant="8" symbolic="YES" id="jlv-iF-RV3"/>
+                    <constraint firstItem="s1a-OO-Lto" firstAttribute="top" secondItem="pnz-wq-Yn9" secondAttribute="top" constant="6" id="lHu-Jd-AU1"/>
+                    <constraint firstItem="dL1-2g-FZM" firstAttribute="leading" secondItem="ah2-bd-jvn" secondAttribute="trailing" constant="2" id="yrK-Kd-L8P"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="attributedNameLabel" destination="s1a-OO-Lto" id="loU-DO-Ymr"/>
+                <outlet property="buttonsView" destination="dL1-2g-FZM" id="Vql-ZA-JGy"/>
+                <outlet property="dashLineView" destination="3gc-F8-uhG" id="cDr-Mw-P2c"/>
+                <outlet property="followButton" destination="vg6-0p-R0y" id="Cgm-qR-wEV"/>
+                <outlet property="nameLabelTrailingSpaceToButtonsConstraint" destination="GNN-Jc-41k" id="mxj-je-qsS"/>
+                <outlet property="nameLabelTrailingSpaceToSuperviewConstraint" destination="XoU-uZ-edB" id="Thu-bn-BvR"/>
+                <outlet property="timeLabel" destination="ah2-bd-jvn" id="WxI-KE-oeG"/>
+                <outlet property="unfollowinButton" destination="Ge8-gF-ly1" id="ncS-eO-KuB"/>
+                <outlet property="userPhotoFrameImage" destination="igX-Sw-0uM" id="sAf-ZT-OdB"/>
+                <outlet property="userPhotoImage" destination="ndh-bl-mgd" id="pR3-C5-3TJ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Scringo.bundle/images/dark2/ScrImg_DashLine.png" width="32" height="33"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_DefaultGreyBtn.png" width="32" height="33"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_DefaultGreyBtnPressed.png" width="32" height="33"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_UserThumbSmall.png" width="32" height="33"/>
+    </resources>
+</document>

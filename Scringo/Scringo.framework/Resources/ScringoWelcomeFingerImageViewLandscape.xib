@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScringoWelcomeFingerImageView">
+            <connections>
+                <outlet property="swipeLeftImageView" destination="8" id="11"/>
+                <outlet property="swipeRightImageView" destination="9" id="10"/>
+                <outlet property="toplevelSubview" destination="1" id="12"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_AlphaBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="3">
+                    <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="center" image="Scringo.bundle/images/dark2/ScrImg_Swipe-Left.png" translatesAutoresizingMaskIntoConstraints="NO" id="8">
+                    <rect key="frame" x="442" y="32" width="76" height="155"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="155" id="b1q-Su-YeL"/>
+                        <constraint firstAttribute="width" constant="76" id="c8s-4W-CuA"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_Swipe-Right.png" translatesAutoresizingMaskIntoConstraints="NO" id="9">
+                    <rect key="frame" x="50" y="32" width="76" height="155"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="76" id="QIQ-4P-yx7"/>
+                        <constraint firstAttribute="height" constant="155" id="yC5-6F-RQd"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="8" secondAttribute="trailing" constant="50" id="9jR-fd-SJt"/>
+                <constraint firstItem="8" firstAttribute="top" secondItem="1" secondAttribute="top" constant="32" id="I5o-7V-y2Y"/>
+                <constraint firstItem="3" firstAttribute="top" secondItem="1" secondAttribute="top" id="Jw1-pm-q3O"/>
+                <constraint firstAttribute="bottom" secondItem="3" secondAttribute="bottom" id="KwU-dO-rYL"/>
+                <constraint firstItem="9" firstAttribute="top" secondItem="1" secondAttribute="top" constant="32" id="MHk-kb-dur"/>
+                <constraint firstItem="3" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="Pp6-l4-Hna"/>
+                <constraint firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="kVi-by-k71"/>
+                <constraint firstItem="9" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="50" id="mnu-9n-Tce"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Scringo.bundle/images/dark2/ScrImg_AlphaBg.png" width="67" height="67"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_Swipe-Left.png" width="76" height="155"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_Swipe-Right.png" width="69" height="158"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

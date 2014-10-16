@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="5053" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="scringoleaderboardcell" id="3" customClass="ScringoLeaderboardTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3" id="g9Q-qW-pcH">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4" customClass="ScringoLazyUserImageView">
+                        <rect key="frame" x="45" y="6" width="32" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="A5W-q6-JZ5"/>
+                            <constraint firstAttribute="height" constant="32" id="Vti-yB-Jgq"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_UserThumbMedium.png" translatesAutoresizingMaskIntoConstraints="NO" id="5" userLabel="Image View - user frame">
+                        <rect key="frame" x="45" y="6" width="32" height="33"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="33" id="I2k-do-UzM"/>
+                            <constraint firstAttribute="width" constant="32" id="oTL-C7-sdk"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="12323" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="7">
+                        <rect key="frame" x="0.0" y="0.0" width="40" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="g9g-LC-oX0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="highlightedColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <size key="shadowOffset" width="0.0" height="1"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name w/ Initial" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="9">
+                        <rect key="frame" x="85" y="0.0" width="140" height="25"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="5uL-0k-isb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <size key="shadowOffset" width="0.0" height="1"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="10">
+                        <rect key="frame" x="85" y="27" width="140" height="17"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="highlightedColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <size key="shadowOffset" width="0.0" height="1"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="19432546" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="8">
+                        <rect key="frame" x="230" y="0.0" width="80" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="JJw-as-wdk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="highlightedColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <size key="shadowOffset" width="0.0" height="1"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_DashLine.png" translatesAutoresizingMaskIntoConstraints="NO" id="6">
+                        <rect key="frame" x="0.0" y="43" width="320" height="2"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="82c-uT-oe5"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="8" firstAttribute="leading" secondItem="9" secondAttribute="trailing" constant="5" id="1Ob-Cx-CjM"/>
+                <constraint firstItem="7" firstAttribute="top" secondItem="3" secondAttribute="top" id="5wc-9e-HPi"/>
+                <constraint firstItem="8" firstAttribute="top" secondItem="3" secondAttribute="top" id="AnA-hv-02h"/>
+                <constraint firstItem="5" firstAttribute="leading" secondItem="7" secondAttribute="trailing" constant="5" id="Gxo-Gj-jgV"/>
+                <constraint firstItem="10" firstAttribute="leading" secondItem="5" secondAttribute="trailing" constant="8" symbolic="YES" id="IwY-us-HBn"/>
+                <constraint firstItem="9" firstAttribute="top" secondItem="3" secondAttribute="top" id="NF1-8Y-bo4"/>
+                <constraint firstItem="4" firstAttribute="top" secondItem="3" secondAttribute="top" constant="6" id="Q8x-Am-fUN"/>
+                <constraint firstItem="5" firstAttribute="top" secondItem="3" secondAttribute="top" constant="6" id="QRs-WD-3D7"/>
+                <constraint firstItem="4" firstAttribute="leading" secondItem="7" secondAttribute="trailing" constant="5" id="WUR-x8-zHJ"/>
+                <constraint firstAttribute="bottom" secondItem="8" secondAttribute="bottom" id="dAh-2g-xRp"/>
+                <constraint firstItem="6" firstAttribute="top" secondItem="4" secondAttribute="bottom" constant="5" id="eTD-aJ-rjF"/>
+                <constraint firstAttribute="trailing" secondItem="6" secondAttribute="trailing" id="gnF-ez-CR8"/>
+                <constraint firstAttribute="trailing" secondItem="8" secondAttribute="trailing" constant="10" id="lva-y8-bno"/>
+                <constraint firstItem="10" firstAttribute="top" secondItem="9" secondAttribute="bottom" constant="2" id="n5j-50-ORm"/>
+                <constraint firstAttribute="bottom" secondItem="7" secondAttribute="bottom" id="nZn-Ui-6dj"/>
+                <constraint firstItem="9" firstAttribute="leading" secondItem="4" secondAttribute="trailing" constant="8" symbolic="YES" id="nap-Pc-0ds"/>
+                <constraint firstItem="6" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="uMK-Nk-qUl"/>
+                <constraint firstItem="8" firstAttribute="leading" secondItem="10" secondAttribute="trailing" constant="5" id="uPg-BZ-fMh"/>
+                <constraint firstItem="7" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="uPy-0w-Dbs"/>
+            </constraints>
+            <connections>
+                <outlet property="userImageFrameView" destination="5" id="12"/>
+                <outlet property="userImageView" destination="4" id="11"/>
+                <outlet property="userLocationLabel" destination="10" id="16"/>
+                <outlet property="userNameLabel" destination="9" id="15"/>
+                <outlet property="userPositionLabel" destination="7" id="14"/>
+                <outlet property="userScoreLabel" destination="8" id="17"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Scringo.bundle/images/dark2/ScrImg_DashLine.png" width="16" height="16"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_UserThumbMedium.png" width="16" height="16"/>
+    </resources>
+</document>

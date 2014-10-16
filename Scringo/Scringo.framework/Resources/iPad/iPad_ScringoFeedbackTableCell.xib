@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="scringofeedbackcell" id="4nJ-T6-rSf" customClass="ScringoFeedbackViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4nJ-T6-rSf" id="QjG-Xw-cpd">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7dW-2o-AAY" userLabel="Image View - option background">
+                        <rect key="frame" x="5" y="6" width="32" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="8st-Qg-9Cc"/>
+                            <constraint firstAttribute="width" constant="32" id="mSX-UC-5V0"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oH1-Ha-iqR" customClass="ScringoLazyImageView">
+                        <rect key="frame" x="5" y="6" width="32" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9o-XM-3KS">
+                        <rect key="frame" x="47" y="2" width="192" height="17"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiq-3F-dkB" userLabel="Label - Description">
+                        <rect key="frame" x="47" y="19" width="237" height="14"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="center" image="Scringo.bundle/images/dark2/ScrImg_DashbaordArrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="fLl-CR-kHz" userLabel="DashbaordArrow">
+                        <rect key="frame" x="300" y="11" width="13" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="2OO-Di-aHY"/>
+                            <constraint firstAttribute="width" constant="13" id="2ud-js-ii3"/>
+                        </constraints>
+                    </imageView>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzl-dG-OVK" userLabel="Scringo Resizeable Button - Connect Twitter" customClass="ScringoResizeableButton">
+                        <rect key="frame" x="240" y="9" width="73" height="26"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="SWI-nS-iQ7"/>
+                            <constraint firstAttribute="width" constant="73" id="ouA-1z-eGU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="Connect" backgroundImage="Scringo.bundle/images/dark2/ScrImg_TwitterConnectSmall.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="highlighted" title="Connect" backgroundImage="Scringo.bundle/images/dark2/ScrImg_TwitterConnectSmallPressed.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="connectTapped:" destination="4nJ-T6-rSf" eventType="touchUpInside" id="Om5-cb-sms"/>
+                        </connections>
+                    </button>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tku-2R-2O2" userLabel="Scringo Resizeable Button - Connect FB" customClass="ScringoResizeableButton">
+                        <rect key="frame" x="240" y="9" width="73" height="26"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="EiB-xj-cWL"/>
+                            <constraint firstAttribute="width" constant="73" id="JpI-VL-Wbz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="Connect" backgroundImage="Scringo.bundle/images/dark2/ScrImg_FacebookConnectSmall.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="highlighted" title="Connect" backgroundImage="Scringo.bundle/images/dark2/ScrImg_FacebookConnectSmallPressed.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="connectTapped:" destination="4nJ-T6-rSf" eventType="touchUpInside" id="OqI-Fe-mTF"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_DashLine.png" translatesAutoresizingMaskIntoConstraints="NO" id="x1m-93-nso" userLabel="Image View line">
+                        <rect key="frame" x="0.0" y="43" width="320" height="2"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="GOC-vc-yiQ"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="fLl-CR-kHz" secondAttribute="trailing" constant="7" id="1es-i7-8o8"/>
+                <constraint firstItem="oH1-Ha-iqR" firstAttribute="top" secondItem="7dW-2o-AAY" secondAttribute="top" id="FHI-s9-nBV"/>
+                <constraint firstItem="tku-2R-2O2" firstAttribute="top" secondItem="4nJ-T6-rSf" secondAttribute="top" constant="9" id="FNb-nO-O83"/>
+                <constraint firstItem="oH1-Ha-iqR" firstAttribute="leading" secondItem="7dW-2o-AAY" secondAttribute="leading" id="Iqe-Do-0SV"/>
+                <constraint firstItem="oH1-Ha-iqR" firstAttribute="trailing" secondItem="7dW-2o-AAY" secondAttribute="trailing" id="JOC-cc-R7X"/>
+                <constraint firstItem="vzl-dG-OVK" firstAttribute="top" secondItem="4nJ-T6-rSf" secondAttribute="top" constant="9" id="Jy2-Mj-ASJ"/>
+                <constraint firstItem="7dW-2o-AAY" firstAttribute="leading" secondItem="4nJ-T6-rSf" secondAttribute="leading" constant="5" id="Mhg-a0-d3c"/>
+                <constraint firstItem="c9o-XM-3KS" firstAttribute="leading" secondItem="oH1-Ha-iqR" secondAttribute="trailing" constant="10" id="QqT-6h-DPc"/>
+                <constraint firstAttribute="trailing" secondItem="tku-2R-2O2" secondAttribute="trailing" constant="7" id="SAl-Yc-eKF"/>
+                <constraint firstItem="vzl-dG-OVK" firstAttribute="leading" secondItem="c9o-XM-3KS" secondAttribute="trailing" constant="1" id="Siy-Mc-Gpk"/>
+                <constraint firstItem="hiq-3F-dkB" firstAttribute="top" secondItem="c9o-XM-3KS" secondAttribute="bottom" id="a8a-K5-c1e"/>
+                <constraint firstItem="x1m-93-nso" firstAttribute="leading" secondItem="4nJ-T6-rSf" secondAttribute="leading" id="dhV-SA-ypC"/>
+                <constraint firstItem="c9o-XM-3KS" firstAttribute="top" secondItem="4nJ-T6-rSf" secondAttribute="top" constant="2" id="gL6-xc-siS"/>
+                <constraint firstItem="7dW-2o-AAY" firstAttribute="top" secondItem="4nJ-T6-rSf" secondAttribute="top" constant="6" id="hm6-Vj-fsc"/>
+                <constraint firstItem="7dW-2o-AAY" firstAttribute="bottom" secondItem="oH1-Ha-iqR" secondAttribute="bottom" id="ifD-WV-f9Y"/>
+                <constraint firstAttribute="trailing" secondItem="vzl-dG-OVK" secondAttribute="trailing" constant="7" id="khs-o6-wfl"/>
+                <constraint firstItem="hiq-3F-dkB" firstAttribute="leading" secondItem="oH1-Ha-iqR" secondAttribute="trailing" constant="10" id="og2-am-W3B"/>
+                <constraint firstAttribute="trailing" secondItem="x1m-93-nso" secondAttribute="trailing" id="pTe-MH-OOX"/>
+                <constraint firstItem="x1m-93-nso" firstAttribute="top" secondItem="oH1-Ha-iqR" secondAttribute="bottom" constant="5" id="u3v-ZK-vgl"/>
+                <constraint firstItem="fLl-CR-kHz" firstAttribute="top" secondItem="4nJ-T6-rSf" secondAttribute="top" constant="11" id="yhk-ty-XRz"/>
+                <constraint firstAttribute="trailing" secondItem="hiq-3F-dkB" secondAttribute="trailing" constant="36" id="zGP-V1-kVc"/>
+            </constraints>
+            <connections>
+                <outlet property="accessory" destination="fLl-CR-kHz" id="qyf-Ei-QnA"/>
+                <outlet property="description" destination="hiq-3F-dkB" id="aad-xn-s0s"/>
+                <outlet property="fbConnectButton" destination="tku-2R-2O2" id="smB-XA-SQV"/>
+                <outlet property="lineView" destination="x1m-93-nso" id="cDo-Ox-yJB"/>
+                <outlet property="optionBacground" destination="7dW-2o-AAY" id="UMm-b2-eO9"/>
+                <outlet property="optionIcon" destination="oH1-Ha-iqR" id="Htz-77-AHY"/>
+                <outlet property="title" destination="c9o-XM-3KS" id="1hm-Rb-V36"/>
+                <outlet property="twitterConnectButton" destination="vzl-dG-OVK" id="fcY-aN-8Xu"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Scringo.bundle/images/dark2/ScrImg_DashLine.png" width="16" height="16"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_DashbaordArrow.png" width="16" height="16"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_FacebookConnectSmall.png" width="16" height="16"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_FacebookConnectSmallPressed.png" width="16" height="16"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_TwitterConnectSmall.png" width="16" height="16"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_TwitterConnectSmallPressed.png" width="16" height="16"/>
+    </resources>
+</document>

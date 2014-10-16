@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScringoPanelAppDealsCell" id="lPR-bW-13Y" customClass="ScringoPanelViewAppDealsCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lPR-bW-13Y" id="CkW-on-nVi">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_AppsDealBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="yNE-Rv-dBJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="KN9-iM-xN3" userLabel="Image View icon">
+                        <rect key="frame" x="13" y="10" width="23" height="23"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="23" id="0ef-p3-wCH"/>
+                            <constraint firstAttribute="height" constant="23" id="vi1-oe-AaP"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9yf-bL-rp5" userLabel="Label - name">
+                        <rect key="frame" x="44" y="11" width="0.0" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="XCJ-6G-cKL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Xs-BZ-zeO" customClass="ScringoSuggestedAppDealsScrollView">
+                        <rect key="frame" x="0.0" y="44" width="270" height="55"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="55" id="TQb-3I-v2F"/>
+                        </constraints>
+                    </scrollView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Scringo.bundle/images/dark2/ScrImg_DashLine.png" translatesAutoresizingMaskIntoConstraints="NO" id="fGI-8d-Uw2" userLabel="Image View - line">
+                        <rect key="frame" x="0.0" y="109" width="270" height="2"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="270" id="iDK-Ix-Mwu"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="KN9-iM-xN3" firstAttribute="centerY" secondItem="9yf-bL-rp5" secondAttribute="centerY" id="7yX-HB-r3t"/>
+                <constraint firstAttribute="bottom" secondItem="yNE-Rv-dBJ" secondAttribute="bottom" constant="1" id="IPb-c2-axg"/>
+                <constraint firstItem="9yf-bL-rp5" firstAttribute="leading" secondItem="KN9-iM-xN3" secondAttribute="trailing" constant="8" symbolic="YES" id="MWf-W5-85d"/>
+                <constraint firstItem="3Xs-BZ-zeO" firstAttribute="top" secondItem="lPR-bW-13Y" secondAttribute="top" constant="44" id="OJa-ES-wg7"/>
+                <constraint firstItem="KN9-iM-xN3" firstAttribute="top" secondItem="lPR-bW-13Y" secondAttribute="top" constant="10" id="Wty-ID-1Oy"/>
+                <constraint firstItem="yNE-Rv-dBJ" firstAttribute="top" secondItem="lPR-bW-13Y" secondAttribute="top" id="ZSv-bY-chr"/>
+                <constraint firstItem="fGI-8d-Uw2" firstAttribute="top" secondItem="lPR-bW-13Y" secondAttribute="top" constant="109" id="Zvw-Ud-gOw"/>
+                <constraint firstItem="KN9-iM-xN3" firstAttribute="leading" secondItem="lPR-bW-13Y" secondAttribute="leading" constant="13" id="aAJ-ui-6rB"/>
+                <constraint firstItem="fGI-8d-Uw2" firstAttribute="trailing" secondItem="3Xs-BZ-zeO" secondAttribute="trailing" id="eHX-9F-24r"/>
+                <constraint firstItem="3Xs-BZ-zeO" firstAttribute="leading" secondItem="lPR-bW-13Y" secondAttribute="leading" id="iR6-AN-l6f"/>
+                <constraint firstItem="yNE-Rv-dBJ" firstAttribute="leading" secondItem="3Xs-BZ-zeO" secondAttribute="leading" id="j70-RE-tdn"/>
+                <constraint firstItem="fGI-8d-Uw2" firstAttribute="leading" secondItem="3Xs-BZ-zeO" secondAttribute="leading" id="zHr-gn-DXQ"/>
+            </constraints>
+            <connections>
+                <outlet property="appDealsScrollView" destination="3Xs-BZ-zeO" id="UED-T7-JCn"/>
+                <outlet property="dealsIcon" destination="KN9-iM-xN3" id="hfd-Eg-6et"/>
+                <outlet property="dealsTitleLabel" destination="9yf-bL-rp5" id="TZk-RU-Mf2"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Scringo.bundle/images/dark2/ScrImg_AppsDealBg.png" width="320" height="2"/>
+        <image name="Scringo.bundle/images/dark2/ScrImg_DashLine.png" width="320" height="2"/>
+    </resources>
+</document>
