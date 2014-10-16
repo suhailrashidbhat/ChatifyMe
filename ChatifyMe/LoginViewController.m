@@ -43,6 +43,8 @@
     self.signUPController = [[PFSignUpViewController alloc] init];
     self.loginController.delegate = self;
     self.signUPController.delegate = self;
+    [self.passwordField setKeyboardType:UIKeyboardTypeWebSearch];
+    self.passwordField.secureTextEntry = YES;
     [self.enterChatButton addTarget:self action:@selector(enterChat:) forControlEvents:UIControlEventTouchUpInside];
     [self.signUpButton addTarget:self action:@selector(enterChat:) forControlEvents:UIControlEventTouchUpInside];
 

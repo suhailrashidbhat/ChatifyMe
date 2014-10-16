@@ -38,6 +38,7 @@
     [self.view setFrame:CGRectMake(0, 0, 320, 480)];
     [self.view setBackgroundColor:UIColorFromRGB(0xCCFFFF)];
     [self.chatTable setBackgroundColor:[UIColor clearColor]];
+    [self.chatTable setContentOffset:CGPointMake(0, CGFLOAT_MAX)];
     //[self registerForKeyboardNotifications];
 }
 
@@ -101,7 +102,9 @@
 
 #pragma mark - Table view delegate
 
-
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.chatData count];
@@ -163,13 +166,12 @@
     NSArray *keys = [NSArray arrayWithObjects:@"text", @"userName", @"date", nil];
     NSArray *objects = [NSArray arrayWithObjects:self.textField.text, [PFUser currentUser].username, [NSDate date], nil];
     NSDictionary *dictionary = [NSDictionary dictionaryWithObjects:objects forKeys:keys];
-    [self.chatData addObject:dictionary];
+    [self.chatData insertObject:dictionary atIndex:0];
 
-    NSMutableArray *insertIndexPaths = [[NSMutableArray alloc] init];
-    NSIndexPath *newPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [insertIndexPaths addObject:newPath];
+    int rowCount = [self.chatTable numberOfRowsInSection:0];
+    NSIndexPath *newPath = [NSIndexPath indexPathForRow:rowCount inSection:0];
     [self.chatTable beginUpdates];
-    [self.chatTable insertRowsAtIndexPaths:insertIndexPaths withRowAnimation:UITableViewRowAnimationTop];
+    [self.chatTable insertRowsAtIndexPaths:[NSArray arrayWithObject:newPath] withRowAnimation:UITableViewRowAnimationBottom];
     [self.chatTable endUpdates];
     [self.chatTable reloadData];
 
@@ -180,6 +182,7 @@
     [newMessage setObject:[NSDate date] forKey:@"date"];
     [newMessage saveInBackground];
     self.textField.text = @"";
+    [self.chatTable scrollToRowAtIndexPath:[NSIndexPath indexPathForItem:[self.chatTable numberOfRowsInSection:0]-1 inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:YES];
     [self loadChat];
 }
 
@@ -191,7 +194,7 @@
     PFQuery *query = [PFQuery queryWithClassName:@"Chats"];
     if ([self.chatData count] == 0) {
         query.cachePolicy = kPFCachePolicyCacheThenNetwork;
-        [query orderByAscending:@"createdAt"];
+        [query orderByDescending:@"createdAt"];
         NSLog(@"Trying to retrieve from cache");
         [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
             if (!error) {
@@ -205,11 +208,11 @@
                 NSLog(@"Error: %@ %@", error, [error userInfo]);
             }
         }];
-        return;
     }
+    PFQuery *query2 = [PFQuery queryWithClassName:@"Chats"];
     __block int totalNumberOfEntries = 0;
-    [query orderByAscending:@"createdAt"];
-    [query countObjectsInBackgroundWithBlock:^(int number, NSError *error) {
+    [query2 orderByDescending:@"createdAt"];
+    [query2 countObjectsInBackgroundWithBlock:^(int number, NSError *error) {
         if (!error) {
             // The count request succeeded. Log the count
             NSLog(@"There are currently %d entries", number);
@@ -223,8 +226,8 @@
                 else {
                     theLimit = totalNumberOfEntries-[self.chatData count];
                 }
-                query.limit = theLimit;
-                [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+                query2.limit = theLimit;
+                [query2 findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
                     if (!error) {
                         // The find succeeded.
                         NSLog(@"Successfully retrieved %d chats.", objects.count);
