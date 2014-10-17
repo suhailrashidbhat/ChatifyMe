@@ -43,6 +43,9 @@
     self.signUPController = [[PFSignUpViewController alloc] init];
     self.loginController.delegate = self;
     self.signUPController.delegate = self;
+    self.userNameField.delegate = self;
+    self.passwordField.delegate = self;
+    [self.userNameField setKeyboardType:UIKeyboardTypeDefault];
     [self.passwordField setKeyboardType:UIKeyboardTypeWebSearch];
     self.passwordField.secureTextEntry = YES;
     [self.enterChatButton addTarget:self action:@selector(enterChat:) forControlEvents:UIControlEventTouchUpInside];
@@ -253,6 +256,11 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [self enterChat:self.enterChatButton];
+    return YES;
+}
 
 
 @end

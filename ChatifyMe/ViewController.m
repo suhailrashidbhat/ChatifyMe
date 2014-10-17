@@ -120,6 +120,11 @@
         [cell.chatTextLabel setTextColor:[UIColor blueColor]];
         [cell.chatTextLabel sizeToFit];
 
+        cell.chatTextLabel.layer.cornerRadius = 8.0;
+        cell.chatTextLabel.layer.masksToBounds = YES;
+        [cell.chatTextLabel setBackgroundColor:[UIColor whiteColor]];
+
+
         NSDate *theDate = [[self.chatData objectAtIndex:row] objectForKey:@"date"];
         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
         [formatter setDateFormat:@"HH:mm a"];
@@ -146,7 +151,6 @@
     self.reloading = YES;
     [self loadChat];
     [self.chatTable reloadData];
-    [self.chatTable scrollToRowAtIndexPath:[NSIndexPath indexPathForItem:[self.chatTable numberOfRowsInSection:0]-1 inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:YES];
 }
 
 - (void)doneLoadingTableViewData{
@@ -183,7 +187,7 @@
     [newMessage setObject:[NSDate date] forKey:@"date"];
     [newMessage saveInBackground];
     self.textField.text = @"";
-    [self.chatTable scrollToRowAtIndexPath:[NSIndexPath indexPathForItem:[self.chatTable numberOfRowsInSection:0]-1 inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:YES];
+     [self.chatTable scrollToRowAtIndexPath:[NSIndexPath indexPathForItem:[self.chatTable numberOfRowsInSection:0]-1 inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:YES];
     [self loadChat];
 }
 
@@ -242,7 +246,7 @@
                         [self.chatTable insertRowsAtIndexPaths:insertIndexPaths withRowAnimation:UITableViewRowAnimationTop];
                         [self.chatTable endUpdates];
                         [self.chatTable reloadData];
-                        [self.chatTable scrollsToTop];
+                        [self.chatTable scrollToRowAtIndexPath:[NSIndexPath indexPathForItem:[self.chatTable numberOfRowsInSection:0]-1 inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:NO];
                     } else {
                         // Log details of the failure
                         NSLog(@"Error: %@ %@", error, [error userInfo]);
